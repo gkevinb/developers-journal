@@ -1,5 +1,5 @@
 ---
-title: "Developer's Almanac"
+title: "A Developer's Journal"
 ---
 
 # Homepage
