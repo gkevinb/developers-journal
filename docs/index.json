@@ -14,18 +14,39 @@
 	"content": "Introduction Hello bro\n"
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/categories/",
-	"title": "Categories",
+	"uri": "https://gaborkevinbarta.com/developers-journal/vue/",
+	"title": "Vue",
+	"tags": [],
+	"description": "",
+	"content": "Chapter Vue "
+},
+{
+	"uri": "https://gaborkevinbarta.com/developers-journal/vue/vue/",
+	"title": "Vue",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
+	"uri": "https://gaborkevinbarta.com/developers-journal/basics/second-content/",
+	"title": "Second Content",
+	"tags": [],
+	"description": "",
+	"content": "This is the second content ide irjunk va\nhelo htyu ty s\n"
+},
+{
 	"uri": "https://gaborkevinbarta.com/developers-journal/",
-	"title": "Developer&#39;s Almanac",
+	"title": "A Developer&#39;s Journal",
 	"tags": [],
 	"description": "",
 	"content": "Homepage Whats up bro\n"
+},
+{
+	"uri": "https://gaborkevinbarta.com/developers-journal/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/tags/",
