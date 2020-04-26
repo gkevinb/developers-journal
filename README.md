@@ -1,4 +1,4 @@
-# Developer's Almanac
+# A Developer's Journal
 
 
 ## Themes

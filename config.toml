@@ -1,4 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "https://gaborkevinbarta.com/developers-journal/"
+publishDir = "docs"
 languageCode = "en-us"
 title = "My New Hugo Site"
 
