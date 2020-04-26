@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.62.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
+
+    <title>Docker :: A Developer&#39;s Journal</title>
+
+    
+    <link href="/developers-journal/css/nucleus.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1587922709" rel="stylesheet">
+    
+    <link href="/developers-journal/css/theme-green.css?1587922709" rel="stylesheet">
+    
+    <link href="/developers-journal/css/custom.css?1587922709" rel="stylesheet">
+
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1587922709"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/developers-journal/technology/docker/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="website-title">
+    <a href='/developers-journal/'>A Developer's Journal</a>
+</div>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1587922709"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1587922709"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
+    
+</script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1587922709"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/basics/">
+          Basics
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/developers-journal/technology/">
+          Technology
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/docker/" title="Docker" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/developers-journal/technology/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/" title="JS Frameworks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/">
+          JS Frameworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/vue/" title="Vue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/vue/">
+          Vue
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/technology/'>Technology</a> > Docker
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#docker">Docker</a></li>
+    <li><a href="#tutorial">Tutorial</a></li>
+    <li><a href="#commands">Commands</a></li>
+    <li><a href="#deploy-static-website-as-container">Deploy Static website as container</a>
+      <ul>
+        <li><a href="#dockerfile">dockerfile</a></li>
+        <li><a href="#nginxconf">nginx.conf</a></li>
+        <li><a href="#docker-composeyaml">docker-compose.yaml</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Docker
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="docker">Docker</h2>
+<p>Environments are not the same. For example you develop on a Macbook and server is Ubuntu server. Docker runs on containers. Docker file builds a docker image, which contains all project code,installments of needed programs, complete application wrapped in an image, which is designed to sit on top of a container.</p>
+<p><a href="https://www.youtube.com/watch?v=Qw9zlE3t8Ko&amp;t=623s">Video Source</a></p>
+<p><a href="https://tecadmin.net/tutorial/docker/docker-tutorials/">Solid written tutorial</a></p>
+<h2 id="tutorial">Tutorial</h2>
+<p>Create file called <code>Dockerfile</code></p>
+<p>Take a look at <code>workspace/tutorial</code> project.</p>
+<ul>
+<li><code>FROM</code> will take from the Python image for <a href="https://hub.docker.com">DockerHub</a>.</li>
+<li><code>COPY</code> current directory</li>
+<li><code>RUN</code> python specific stuff in requirements.txt</li>
+<li><code>CMD</code> Commands to run, first the python command and then any python files</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3-onbuild</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /usr/src/app<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install -r requirements.txt<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;python&#34;</span>, <span style="color:#e6db74">&#34;api.py&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>You can run services like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run 
+</code></pre></div><p>These usually has several arguments like port numbers, which can become tedious that is why it is better to use a <code>docker-compose.yml</code> file, like below. <code>docker-compose</code> is a yaml file and spins up all the containers we need.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">version: <span style="color:#e6db74">&#39;3&#39;</span>
+
+services:
+	<span style="color:#75715e"># you name the services</span>
+    product-service:
+    	<span style="color:#75715e"># Directory where the dockerfile is</span>
+        build: ./product
+        <span style="color:#75715e"># sourcedirectory:/directoryonhost</span>
+        volumes:
+            - ./product:/usr/src/app
+        <span style="color:#75715e"># localhostport:containerport</span>
+        ports:
+            - <span style="color:#ae81ff">5001</span>:<span style="color:#ae81ff">80</span>
+
+    website:
+    	<span style="color:#75715e"># gets from dockerhub</span>
+        image: php:apache
+        volumes:
+            - ./website:/var/www/html
+        ports:
+            - <span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">80</span>
+        depends_on:
+            - product-service
+
+</code></pre></div><p>Run docker-compose file by running this command <code>docker-compose up</code>. You can stop the services with <code>CTRL + C</code>. The containers can be started up by using <code>docker-compose up -d</code> This will allow you to still navigate in the terminal and you can stop it by <code>docker-compose stop</code>.</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><code>docker ps -a</code> : List containers with name, ID, etc</li>
+<li><code>docker stop d31a3b925d89</code> :  Stop container with ID</li>
+<li><code>docker system prune</code> : Remove stopped containers and dangling images</li>
+<li><code>docker images</code> : List images with repository, image ID, etc</li>
+<li><code>docker rmi e91727a11cd7</code> : Remove image with image ID</li>
+<li><code>docker build -t webserver-image:v1 .</code> :  Build image with name: web server-image version: v1</li>
+<li><code>docker run -d -p 5000:80 webserver-image:v1</code>  : Run image in container port 5000 locally and port 80 on container</li>
+<li><code>docker-compose up</code> : Build image and run in container based on configuration in docker-compose.yaml file</li>
+<li><code>docker-compose up --build</code> : To do a fresh build of images. Needed to update files.</li>
+<li><code>docker-compose up -d</code> : Create containers and <code>-d</code> to launch in daemon mood (still navigate cmd)</li>
+<li><code>docker-compose stop</code> : Stop all containers</li>
+</ul>
+<h2 id="deploy-static-website-as-container">Deploy Static website as container</h2>
+<p>Medium article](<a href="https://medium.com/myriatek/using-docker-to-run-a-simple-nginx-server-75a48d74500b">https://medium.com/myriatek/using-docker-to-run-a-simple-nginx-server-75a48d74500b</a>)</p>
+<h3 id="dockerfile">dockerfile</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> nginx:alpine</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir /www<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/index.html /www/index.html<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/css /www/css<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/js /www/js<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/img /www/img<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> nginx.conf /etc/nginx/nginx.conf<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>The first line defines our base image. The second line copies the content of the current directory into a particular location inside the container.</p>
+<h3 id="nginxconf">nginx.conf</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#66d9ef">events</span> {}
+
+<span style="color:#66d9ef">http</span> {
+    <span style="color:#f92672">server</span> {
+        <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
+
+        <span style="color:#f92672">root</span> <span style="color:#e6db74">/www</span>;
+        <span style="color:#f92672">index</span> <span style="color:#e6db74">index.html</span>;
+
+        <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
+            <span style="color:#f92672">include</span>  <span style="color:#e6db74">/etc/nginx/mime.types</span>;
+            <span style="color:#f92672">try_files</span> $uri $uri/ <span style="color:#e6db74">/index.html</span>;
+        }
+    }
+}
+
+</code></pre></div><h3 id="docker-composeyaml">docker-compose.yaml</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">version: <span style="color:#e6db74">&#39;3.7&#39;</span>
+
+services:
+    web-service:
+        build: ./
+        ports:
+            - <span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">80</span>
+
+</code></pre></div>
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/developers-journal/js/clipboard.min.js?1587922709"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1587922709"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1587922709"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1587922709"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1587922709"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1587922709"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1587922709"></script>
+    <script src="/developers-journal/js/learn.js?1587922709"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1587922709"></script>
+
+    <link href="/developers-journal/mermaid/mermaid.css?1587922709" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1587922709"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

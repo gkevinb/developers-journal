@@ -4,7 +4,7 @@ date: 2020-04-26T17:49:23+02:00
 # draft: true
 ---
 
-<!-- # Vue -->
+## Vue.js
 
 Front end javascript framework to build static and dynamic websites. Vue fundamentally changes how you think of web development.
 

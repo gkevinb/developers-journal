@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.62.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
+
+    <title>Vue :: A Developer&#39;s Journal</title>
+
+    
+    <link href="/developers-journal/css/nucleus.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1587922709" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1587922709" rel="stylesheet">
+    
+    <link href="/developers-journal/css/theme-green.css?1587922709" rel="stylesheet">
+    
+    <link href="/developers-journal/css/custom.css?1587922709" rel="stylesheet">
+
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1587922709"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/developers-journal/js-frameworks/vue/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div id="website-title">
+    <a href='/developers-journal/'>A Developer's Journal</a>
+</div>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1587922709"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1587922709"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
+    
+</script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1587922709"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/basics/">
+          Basics
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/">
+          Technology
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/docker/" title="Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/" title="JS Frameworks" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/">
+          JS Frameworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/vue/" title="Vue" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/developers-journal/js-frameworks/vue/">
+          Vue
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/js-frameworks/'>JS Frameworks</a> > Vue
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#vuejs">Vue.js</a></li>
+    <li><a href="#vue-instance">Vue Instance</a>
+      <ul>
+        <li><a href="#vue-expression">Vue Expression</a></li>
+      </ul>
+    </li>
+    <li><a href="#javascript-refresher">Javascript Refresher</a></li>
+    <li><a href="#debug-mode-in-vue">Debug mode in Vue</a></li>
+    <li><a href="#separation-of-concern">Separation of Concern</a></li>
+    <li><a href="#template">Template</a></li>
+    <li><a href="#directive">Directive</a>
+      <ul>
+        <li><a href="#v-model">v-model</a></li>
+        <li><a href="#v-bind">v-bind</a></li>
+        <li><a href="#v-show">v-show</a></li>
+        <li><a href="#v-on">v-on</a></li>
+      </ul>
+    </li>
+    <li><a href="#conditional-rendering">Conditional Rendering</a></li>
+    <li><a href="#list-rendering">List Rendering</a></li>
+    <li><a href="#communicating-events">Communicating Events</a>
+      <ul>
+        <li><a href="#styling-with-vuehttpsvuejsorgv2guideclass-and-stylehtml">Styling with Vue</a></li>
+      </ul>
+    </li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#control-flow">Control-Flow</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#prevent-on-click-on-parent-when-clicking-button-inside-divhttpsstackoverflowcomquestions45700632prevent-on-click-on-parent-when-clicking-button-inside-div">Prevent on click on parent when clicking button inside div</a></li>
+    <li><a href="#timeout-in-vue-js-componenthttpsstackoverflowcomquestions37465289how-to-set-timeout-in-a-vuejs-method">Timeout in Vue js component</a></li>
+    <li><a href="#environmental-variables">Environmental Variables</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Vue
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="vuejs">Vue.js</h2>
+<p>Front end javascript framework to build static and dynamic websites. Vue fundamentally changes how you think of web development.</p>
+<h2 id="vue-instance">Vue Instance</h2>
+<p>The heart of the application.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+    <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+    <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+      <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Application&#39;</span>
+    }
+})
+</code></pre></div><h3 id="vue-expression">Vue Expression</h3>
+<p>Vue expressions can express all kinds of following JavaScript logic including string manipulation, tenirary operator, and built-in JavaScript functions.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;{{ product }}&lt;/<span style="color:#f92672">h1</span>&gt;
+
+{{ product + &#39;!&#39; }}
+{{ firstName + &#39; &#39; + lastName }}
+{{ clicked ? true : false }}
+{{ message.split(&#39;&#39;).reverse().join(&#39;&#39;) }}
+</code></pre></div><p><a href="https://vuejs.org/v2/style-guide/">Best Practices</a></p>
+<p>Look at Scrimba videos as well.</p>
+<h2 id="javascript-refresher">Javascript Refresher</h2>
+<p>To turn on strict mode in Javascript add <code>use strict</code> to top of Javascript file, to omit a few warnings. Strict mode makes it easier to write &ldquo;secure&rdquo; JavaScript.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#34;use strict&#34;</span>
+
+</code></pre></div><p>Objects are like structs in other programming languages.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">obj1</span> <span style="color:#f92672">=</span> {
+	<span style="color:#a6e22e">key1</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;val1&#34;</span>, <span style="color:#75715e">// or &#34;key1&#34;
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">key2</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;val2&#34;</span>
+}
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj1</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj1</span>.<span style="color:#a6e22e">key1</span>)
+<span style="color:#75715e">// console.log(obj1.key2)
+</span><span style="color:#75715e"></span><span style="color:#75715e">// console.log(obj1[&#34;key1&#34;])
+</span><span style="color:#75715e"></span><span style="color:#75715e">// console.log(obj1[&#34;key2&#34;])
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Nesting objects
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">obj2</span> <span style="color:#f92672">=</span> {
+ 	<span style="color:#a6e22e">obj3</span><span style="color:#f92672">:</span> {
+ 		<span style="color:#a6e22e">key1</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;val1&#34;</span>,
+ 		<span style="color:#a6e22e">key2</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;val2&#34;</span>
+ 	},
+ }
+
+<span style="color:#75715e">// console.log(obj2)
+</span><span style="color:#75715e"></span><span style="color:#75715e">// console.log(obj2.obj3)
+</span><span style="color:#75715e"></span><span style="color:#75715e">// console.log(obj2.obj3.key1)
+</span><span style="color:#75715e"></span><span style="color:#75715e">// console.log(obj2.obj3.key2)
+</span><span style="color:#75715e"></span><span style="color:#75715e">// console.log(obj2.obj3[&#34;key1&#34;])
+</span><span style="color:#75715e"></span><span style="color:#75715e">// console.log(obj2.obj3[&#34;key2&#34;])
+</span><span style="color:#75715e"></span>
+
+</code></pre></div><h2 id="debug-mode-in-vue">Debug mode in Vue</h2>
+<p>By addign keyword <code>debug</code> to HTML element tags, it triggers debug mode for that elements and all children elements.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">debug</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
+        <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> different ways to render data in DOM, most simplest: {{ }} </span><span style="color:#75715e">--&gt;</span>
+        &lt;<span style="color:#f92672">p</span>&gt;{{ message }}&lt;/<span style="color:#f92672">p</span>&gt;
+        <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> v</span><span style="color:#75715e">-</span><span style="color:#75715e">text tag renders message as plain text </span><span style="color:#75715e">--&gt;</span>
+        &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">v-text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;message&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+        <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> v</span><span style="color:#75715e">-</span><span style="color:#75715e">html tag renders message as HTML  </span><span style="color:#75715e">--&gt;</span>
+        &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">v-html</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;message_2&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">script</span>&gt;
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+        <span style="color:#75715e">// el specifiy where in the DOM to render the app
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+    	<span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+        	<span style="color:#a6e22e">message</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hello world!&#34;</span>,
+            <span style="color:#a6e22e">message_2</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hello &lt;br&gt; world!&#34;</span>
+    	}
+	})
+    &lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+</code></pre></div><h2 id="separation-of-concern">Separation of Concern</h2>
+<p>Separate data from HTML.</p>
+<p>Virtualization the DOM. (Virtual DOM)</p>
+<p>Two-binding. Bind the user input and HTML element. Using v-model tag</p>
+<p>Property is a variable attached to an object. Method is a function attached to an object.</p>
+<h2 id="template">Template</h2>
+<p>Serves as an invisible wrapper.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">template</span>&gt;
+
+&lt;/<span style="color:#f92672">template</span>&gt;
+</code></pre></div><h2 id="directive">Directive</h2>
+<h3 id="v-model">v-model</h3>
+<p>Two-way binding</p>
+<p>Two way data bindings on form input and elements. Keeps DOM and Vue app in sync.</p>
+<h3 id="v-bind">v-bind</h3>
+<p>One-way binding</p>
+<p>Short version <code>:</code></p>
+<p>Attribute binding, binds attribute with expression in virtual DOM.</p>
+<pre><code>:alt=&quot;description&quot;
+:href=&quot;url&quot;
+:class=&quot;isActive&quot;
+</code></pre><h3 id="v-show">v-show</h3>
+<p>Just makes element display hidden, instead of not rendering it as with <code>v-if</code> and <code>v-else</code></p>
+<p>Makes for better performance.</p>
+<pre><code>v-show='true' 		Element is visible
+v-show='false' 		Element is hidden
+</code></pre><h3 id="v-on">v-on</h3>
+<p>Event Handling, such as click, hover mouse over, etc.</p>
+<p>Short version: <code>@</code></p>
+<pre><code>@mouseover
+@click
+@submit
+@keyup.enter
+</code></pre><h2 id="conditional-rendering">Conditional Rendering</h2>
+<pre><code>&lt;span v-if=&quot;seen &gt; 100&quot;&gt;ABC&lt;/span&gt;
+&lt;span v-if-else=&quot;seen &lt; 10 &amp;&amp; seen &gt; 5&quot;&gt;DEF&lt;/span&gt;
+&lt;span v-else&gt;EFG&lt;/span&gt;
+</code></pre><h2 id="list-rendering">List Rendering</h2>
+<pre><code>&lt;div v-for=&quot;element in list&quot; :key=&quot;element.id&quot;&gt;{{ element.name }}&lt;/div&gt;
+</code></pre><h2 id="communicating-events">Communicating Events</h2>
+<p>Emit data from child components to parent component.</p>
+<p><img src="event.png" alt="Event"></p>
+<h3 id="styling-with-vuehttpsvuejsorgv2guideclass-and-stylehtml"><a href="https://vuejs.org/v2/guide/class-and-style.html">Styling with Vue</a></h3>
+<h2 id="components">Components</h2>
+<p>Most powerful feature a Vue. Makes code more reusable and markup more readable. Make a block of code a smaller block of code.</p>
+<p>Best practice: HTML elements without hypens, Vue components name with hyphens.</p>
+<p><a href="https://alligator.io/vuejs/component-lifecycle/">Component Lifecycle</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/* created(): since the processing of the options is finished you have access to reactive
+</span><span style="color:#75715e">data properties and change them if you want. At this stage DOM has not been mounted or
+</span><span style="color:#75715e">added yet. So you cannot do any DOM manipulation here. Typically used for data fetching */</span>
+<span style="color:#a6e22e">created</span>() {
+},
+<span style="color:#75715e">/* mounted(): called after the DOM has been mounted or rendered. Here you have access to 
+</span><span style="color:#75715e">the DOM elements and DOM manipulation can be performed for example get the innerHTML: 
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">mounted</span>() {
+},
+</code></pre></div><p>Components are like HTML functions. When a component is created, you essentially make a custom HTML tag. The <code>props</code> field represents property, which you set inside the component's HTML tag. The <code>:</code> in <code>:name</code> indicates that it is a Vue attribute. So the value you give to <code>:name</code> is looked for in th  Vue apps <code>data</code> field.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">animal</span> <span style="color:#a6e22e">:name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dog&#34;</span>&gt;&lt;/<span style="color:#f92672">animal</span>&gt;
+
+&lt;<span style="color:#f92672">script</span>&gt;
+
+<span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">component</span>(<span style="color:#e6db74">&#34;animal&#34;</span>, {
+	<span style="color:#a6e22e">props</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;name&#34;</span>],
+	<span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&lt;p v-html=&#34;name&#34;&gt;&lt;/p&gt;&#39;</span>
+})
+    
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+	<span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#app&#34;</span>,
+    <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+		<span style="color:#a6e22e">dog</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Doggy!&#34;</span>,
+		<span style="color:#a6e22e">cat</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Kitty!!&#34;</span>,
+		<span style="color:#a6e22e">bird</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Birdy!!!&#34;</span> }
+})
+
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p><code>@click</code> triggers when clicked on, <code>:class</code> chooses which class is this element belongs to, used for styling.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span> <span style="color:#a6e22e">:style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ background: background() }&#34;</span>&gt;
+    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">v-html</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;actice&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;animagus&#34;</span> <span style="color:#a6e22e">:class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breathe()&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><h2 id="control-flow">Control-Flow</h2>
+<p>The way we control the flow of the program through conditional statements and loops.</p>
+<h1 id="lessons">Lessons</h1>
+<h2 id="prevent-on-click-on-parent-when-clicking-button-inside-divhttpsstackoverflowcomquestions45700632prevent-on-click-on-parent-when-clicking-button-inside-div"><a href="https://stackoverflow.com/questions/45700632/prevent-on-click-on-parent-when-clicking-button-inside-div">Prevent on click on parent when clicking button inside div</a></h2>
+<p><a href="https://vuejs.org/v2/guide/events.html#Event-Modifiers">Event modifier</a>, <code>@click.stop</code> is placed on child element, in order for parent element click not to fire.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">v-for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tab in tabs&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span> <span style="color:#a6e22e">:id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tab.name&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentTab = tab.name&#34;</span>&gt;
+					{{ tab.name }}
+					&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">v-if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tab.subtabs != null&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sub-menu&#34;</span>&gt;
+						&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">v-for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;subtab in tab.subtabs&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submenu-item&#34;</span> <span style="color:#a6e22e">:id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;subtab.name&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">stop</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentTab = subtab.name&#34;</span>&gt;
+							{{ subtab.name }}
+						&lt;/<span style="color:#f92672">ul</span>&gt;
+					&lt;/<span style="color:#f92672">ul</span>&gt;
+				&lt;/<span style="color:#f92672">li</span>&gt;
+</code></pre></div><h2 id="timeout-in-vue-js-componenthttpsstackoverflowcomquestions37465289how-to-set-timeout-in-a-vuejs-method"><a href="https://stackoverflow.com/questions/37465289/how-to-set-timeout-in-a-vuejs-method">Timeout in Vue js component</a></h2>
+<p>Add a <code>bind()</code> call to your function declaration:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> () { <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">fetchHole</span>() }.<span style="color:#a6e22e">bind</span>(<span style="color:#66d9ef">this</span>), <span style="color:#ae81ff">1000</span>)
+</code></pre></div><p>So that your Vue component's this is accessible within the function.</p>
+<h2 id="environmental-variables">Environmental Variables</h2>
+<p><a href="https://cli.vuejs.org/guide/mode-and-env.html">https://cli.vuejs.org/guide/mode-and-env.html</a></p>
+<p><a href="https://medium.com/js-dojo/how-to-use-environment-variables-in-vue-js-273eba0102b0">https://medium.com/js-dojo/how-to-use-environment-variables-in-vue-js-273eba0102b0</a></p>
+<p>Make sure you name the environmental variables starting with <code>VUE_APP_</code> in order for it to work.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/developers-journal/js/clipboard.min.js?1587922709"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1587922709"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1587922709"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1587922709"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1587922709"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1587922709"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1587922709"></script>
+    <script src="/developers-journal/js/learn.js?1587922709"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1587922709"></script>
+
+    <link href="/developers-journal/mermaid/mermaid.css?1587922709" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1587922709"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

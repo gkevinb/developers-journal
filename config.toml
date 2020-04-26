@@ -1,7 +1,7 @@
 baseURL = "https://gaborkevinbarta.com/developers-journal/"
 publishDir = "docs"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "A Developer's Journal"
 
 theme = "hugo-theme-learn"
 
@@ -12,3 +12,9 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
 # Change default color scheme with a variant one. Can be "red", "blue", "green".
 themeVariant = "green"
+
+# Hide Next and Previous page buttons normally displayed full height beside content
+disableNextPrev = true
+
+# Provide a list of custom css files to load relative from the `static/` folder in the site root.
+custom_css = ["css/custom.css"]

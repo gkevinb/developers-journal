@@ -2,6 +2,6 @@
 title: "A Developer's Journal"
 ---
 
-# Homepage
+# A Developer's Journal
 
-Whats up bro
+Welcome to my Developer's Journal, where I keep a journal of the knowledge I gained through my software development career.
