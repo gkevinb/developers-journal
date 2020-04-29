@@ -29,10 +29,10 @@ panther.replace("path/", "", 1) # Prints: panther.xml
 
 What `strip` is really good at is removing leading and trailing whitespaces, when no arguments are given and removing  sets of characters, but just be careful it does as you intend it to work.
 
-So the lesson here is to always read the official documentation to know exactly how a given method works.
+So the lesson here is to always read the official documentation to know exactly how a given method works and don't assume you know how a method works just from the name.
 
 
-## Automating mouse
+## Automation
 
 https://automatetheboringstuff.com/chapter18/
 
