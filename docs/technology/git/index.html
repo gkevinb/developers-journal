@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>Categories :: A Developer&#39;s Journal</title>
+    <title>Git :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1589400669" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/categories/">
+  <body class="" data-url="/developers-journal/technology/git/">
     <nav id="sidebar" class="">
 
 
@@ -145,7 +145,7 @@
   
     
     <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
-        
+        parent
         
         
         ">
@@ -174,8 +174,8 @@
   
     
     <li data-nav-id="/developers-journal/technology/git/" title="Git" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/technology/git/">
@@ -330,7 +330,13 @@
             
           
           
-            <a href='/developers-journal/'>A Developer's Journal</a> > Categories
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/technology/'>Technology</a> > Git
+          
+        
           
         
           
@@ -341,7 +347,13 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#stash">Stash</a></li>
+    <li><a href="#multiple-git-remotes">Multiple Git Remotes</a></li>
+    <li><a href="#untrack-files-added-to-git-based-on-gitignore">Untrack files added to git based on gitignore</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -357,7 +369,7 @@
           
             <h1>
               
-              Categories
+              Git
             </h1>
           
 
@@ -365,11 +377,27 @@
 
 
 
+	<h1 id="git">Git</h1>
+<p>Industry standard version control.</p>
+<h2 id="stash">Stash</h2>
+<p>Stash is a good way to save changes before committing them if for example you want to change branches or merge something new into the branch you are working on. Think of <code>git stash</code> as a separate storage place to temporarily store your changes.</p>
+<p>Store changes in stash</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git stash
+</code></pre></div><p>Retreive changes from stash</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git stash pop
+</code></pre></div><p>List changes in stash</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git stash list
+</code></pre></div><p>Show the most recent stash</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git stash show -p
+</code></pre></div><p>Stash single file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git stash -- filename.txt
+</code></pre></div><h2 id="multiple-git-remotes">Multiple Git Remotes</h2>
+<p><a href="http://caseyscarborough.com/blog/2013/08/25/pushing-to-multiple-remotes-using-git/">http://caseyscarborough.com/blog/2013/08/25/pushing-to-multiple-remotes-using-git/</a></p>
+<h2 id="untrack-files-added-to-git-based-on-gitignore">Untrack files added to git based on gitignore</h2>
+<p><a href="http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/">http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/</a></p>
 
 
-<ul>
-	
-</ul>
+
 
 
 <footer class=" footline" >
@@ -444,6 +472,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -458,6 +487,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -474,6 +504,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 

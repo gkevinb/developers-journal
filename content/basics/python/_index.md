@@ -36,10 +36,62 @@ So the lesson here is to always read the official documentation to know exactly 
 
 https://automatetheboringstuff.com/chapter18/
 
-
-
 ## Anti Patterns
 
 https://docs.quantifiedcode.com/python-anti-patterns/
 
+## Virtual Environment (venv)
 
+### System Installation
+
+This is the installed version of Python on your computer. That is sourced from your `/usr/local/bin` directory.
+
+Check where `pip3` is sourced from and check which version are you running.
+
+```bash
+which pip3
+pip3 --version
+```
+
+List installed packages on your system.
+
+```bash
+pip3 list
+```
+
+Create virtual environment with the name of `<venv_name>` in your current directory.
+
+```bash
+python3 -m venv <venv_name>
+```
+
+Activate that virtual environment.
+
+```bash
+source <venv_name>/bin/activate
+```
+
+Print on the screen a list of installed in a specific format for import and export.
+
+```bash
+pip freeze
+```
+
+Create `requirements.txt`.
+
+```bash
+pip freeze > requirements.txt
+```
+
+Deactivate virtual environment and delete it.
+
+```bash
+deactivate
+rm -rf <venv_name>
+```
+
+Install packages into virtual environment from `requirements.txt`.
+
+```bash
+pip install -r requirements.txt
+```
