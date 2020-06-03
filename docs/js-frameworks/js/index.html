@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>Tags :: A Developer&#39;s Journal</title>
+    <title>Javascript :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591218763" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/tags/">
+  <body class="" data-url="/developers-journal/js-frameworks/js/">
     <nav id="sidebar" class="">
 
 
@@ -233,7 +233,7 @@
   
     
     <li data-nav-id="/developers-journal/js-frameworks/" title="JS Frameworks" class="dd-item 
-        
+        parent
         
         
         ">
@@ -262,8 +262,8 @@
   
     
     <li data-nav-id="/developers-journal/js-frameworks/js/" title="Javascript" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/js-frameworks/js/">
@@ -356,7 +356,13 @@
             
           
           
-            <a href='/developers-journal/'>A Developer's Journal</a> > Tags
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/js-frameworks/'>JS Frameworks</a> > Javascript
+          
+        
           
         
           
@@ -367,7 +373,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript">JavaScript</a>
+      <ul>
+        <li><a href="#operations">Operations</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -383,7 +397,7 @@
           
             <h1>
               
-              Tags
+              Javascript
             </h1>
           
 
@@ -391,11 +405,24 @@
 
 
 
+	<h2 id="javascript">JavaScript</h2>
+<h3 id="operations">Operations</h3>
+<h4 id="spread-operator">Spread operator</h4>
+<p>Spread operator is used to unpack an array an give the elements as parameters to a method. It is useful for things such as giving an array to the <code>Math.max</code> method to determine the element with the maximum value in the array.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getSecondLargest</span>(<span style="color:#a6e22e">nums</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">uniq</span> <span style="color:#f92672">=</span> [...<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>(<span style="color:#a6e22e">nums</span>)]
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">index</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">uniq</span>.<span style="color:#a6e22e">indexOf</span>(Math.<span style="color:#a6e22e">max</span>(...<span style="color:#a6e22e">uniq</span>))
+    <span style="color:#a6e22e">uniq</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">index</span>, <span style="color:#ae81ff">1</span>)
+    <span style="color:#66d9ef">return</span> Math.<span style="color:#a6e22e">max</span>(...<span style="color:#a6e22e">uniq</span>)
+}
+</code></pre></div><blockquote>
+<p><a href="https://www.hackerrank.com/challenges/js10-arrays/problem">https://www.hackerrank.com/challenges/js10-arrays/problem</a></p>
+</blockquote>
+<h4 id="apply-function">Apply function</h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply</a></p>
 
 
-<ul>
-	
-</ul>
+
 
 
 <footer class=" footline" >
@@ -520,6 +547,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -534,6 +562,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -550,6 +579,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 

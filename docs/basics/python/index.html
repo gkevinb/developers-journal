@@ -12,21 +12,21 @@
     <title>Python :: A Developer&#39;s Journal</title>
 
     
-    <link href="/developers-journal/css/nucleus.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/fontawesome-all.min.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/hybrid.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/featherlight.min.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/perfect-scrollbar.min.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/auto-complete.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/theme.css?1589400669" rel="stylesheet">
-    <link href="/developers-journal/css/hugo-theme.css?1589400669" rel="stylesheet">
+    <link href="/developers-journal/css/nucleus.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1591218763" rel="stylesheet">
     
-    <link href="/developers-journal/css/theme-green.css?1589400669" rel="stylesheet">
+    <link href="/developers-journal/css/theme-green.css?1591218763" rel="stylesheet">
     
-    <link href="/developers-journal/css/custom.css?1589400669" rel="stylesheet">
+    <link href="/developers-journal/css/custom.css?1591218763" rel="stylesheet">
 
-    <script src="/developers-journal/js/jquery-3.3.1.min.js?1589400669"></script>
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1591218763"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1589400669"></script>
-<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1589400669"></script>
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1591218763"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1591218763"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
     
 </script>
-<script type="text/javascript" src="/developers-journal/js/search.js?1589400669"></script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1591218763"></script>
 
     
   </div>
@@ -261,6 +261,32 @@
  
   
     
+    <li data-nav-id="/developers-journal/js-frameworks/js/" title="Javascript" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/js/">
+          Javascript
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
     <li data-nav-id="/developers-journal/js-frameworks/vue/" title="Vue" class="dd-item 
         
         
@@ -352,6 +378,8 @@
     <li><a href="#lessons">Lessons</a>
       <ul>
         <li><a href="#strip-method">strip() Method</a></li>
+        <li><a href="#vars-method">vars() Method</a></li>
+        <li><a href="#response-and-jsonify">Response and Jsonify</a></li>
       </ul>
     </li>
     <li><a href="#automation">Automation</a></li>
@@ -397,6 +425,12 @@
 panther<span style="color:#f92672">.</span>lstrip(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">path/</span><span style="color:#e6db74">&#34;</span>) <span style="color:#75715e"># Prints: nther.xml</span>
 
 panther<span style="color:#f92672">.</span>replace(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">path/</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">1</span>) <span style="color:#75715e"># Prints: panther.xml</span>
+</code></pre></div><h3 id="vars-method">vars() Method</h3>
+<p>Return the <code>__dict__</code> attribute of an <code>Object</code>. Useful for turning the attributes of an instance into a dictionary. Note, it disregards class attributes.</p>
+<h3 id="response-and-jsonify">Response and Jsonify</h3>
+<p><code>jsonify()</code> returns a <code>Response</code> object, but already populate with the correct mimetype and etc.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Response(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{ </span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">: </span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">abc</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74"> }</span><span style="color:#e6db74">&#34;</span>, status<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>, mimetype<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">application/json</span><span style="color:#e6db74">&#39;</span>)
+jsonify()
 </code></pre></div><h4 id="usage">Usage</h4>
 <p>What <code>strip</code> is really good at is removing leading and trailing whitespaces, when no arguments are given and removing  sets of characters, but just be careful it does as you intend it to work.</p>
 <p>So the lesson here is to always read the official documentation to know exactly how a given method works and don't assume you know how a method works just from the name.</p>
@@ -580,6 +614,22 @@ rm -rf &lt;venv_name&gt;
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -598,19 +648,19 @@ rm -rf &lt;venv_name&gt;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/developers-journal/js/clipboard.min.js?1589400669"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.min.js?1589400669"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1589400669"></script>
-    <script src="/developers-journal/js/jquery.sticky.js?1589400669"></script>
-    <script src="/developers-journal/js/featherlight.min.js?1589400669"></script>
-    <script src="/developers-journal/js/highlight.pack.js?1589400669"></script>
+    <script src="/developers-journal/js/clipboard.min.js?1591218763"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1591218763"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1591218763"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1591218763"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1591218763"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1591218763"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1589400669"></script>
-    <script src="/developers-journal/js/learn.js?1589400669"></script>
-    <script src="/developers-journal/js/hugo-learn.js?1589400669"></script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1591218763"></script>
+    <script src="/developers-journal/js/learn.js?1591218763"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1591218763"></script>
 
-    <link href="/developers-journal/mermaid/mermaid.css?1589400669" rel="stylesheet" />
-    <script src="/developers-journal/mermaid/mermaid.js?1589400669"></script>
+    <link href="/developers-journal/mermaid/mermaid.css?1591218763" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1591218763"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

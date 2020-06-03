@@ -25,6 +25,22 @@ panther.lstrip("path/") # Prints: nther.xml
 panther.replace("path/", "", 1) # Prints: panther.xml
 ```
 
+
+### vars() Method
+
+Return the `__dict__` attribute of an `Object`. Useful for turning the attributes of an instance into a dictionary. Note, it disregards class attributes.
+
+### Response and Jsonify
+
+`jsonify()` returns a `Response` object, but already populate with the correct mimetype and etc.
+
+```python
+Response("{ 'a': 'abc' }", status=200, mimetype='application/json')
+jsonify()
+```
+
+
+
 #### Usage
 
 What `strip` is really good at is removing leading and trailing whitespaces, when no arguments are given and removing  sets of characters, but just be careful it does as you intend it to work.
@@ -95,3 +111,4 @@ Install packages into virtual environment from `requirements.txt`.
 ```bash
 pip install -r requirements.txt
 ```
+
