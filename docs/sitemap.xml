@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/python/</loc>
+    <lastmod>2020-06-06T13:09:55+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gaborkevinbarta.com/developers-journal/basics/</loc>
     <lastmod>2020-04-26T13:41:39+02:00</lastmod>
   </url>
@@ -14,6 +19,12 @@
   
   <url>
     <loc>https://gaborkevinbarta.com/developers-journal/js-frameworks/</loc>
+    <lastmod>2020-04-06T13:09:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/</loc>
+    <lastmod>2020-06-06T13:09:55+02:00</lastmod>
   </url>
   
   <url>
@@ -39,10 +50,6 @@
   <url>
     <loc>https://gaborkevinbarta.com/developers-journal/js-frameworks/vue/</loc>
     <lastmod>2020-04-26T17:49:23+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/</loc>
   </url>
   
   <url>

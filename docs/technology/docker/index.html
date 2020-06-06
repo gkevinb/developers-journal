@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.62.0" />
+    <meta name="generator" content="Hugo 0.72.0" />
     <meta name="description" content="">
 
 
@@ -12,21 +12,21 @@
     <title>Docker :: A Developer&#39;s Journal</title>
 
     
-    <link href="/developers-journal/css/nucleus.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/fontawesome-all.min.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/hybrid.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/featherlight.min.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/perfect-scrollbar.min.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/auto-complete.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/theme.css?1591218763" rel="stylesheet">
-    <link href="/developers-journal/css/hugo-theme.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/nucleus.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1591447016" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1591447016" rel="stylesheet">
     
-    <link href="/developers-journal/css/theme-green.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/theme-green.css?1591447016" rel="stylesheet">
     
-    <link href="/developers-journal/css/custom.css?1591218763" rel="stylesheet">
+    <link href="/developers-journal/css/custom.css?1591447016" rel="stylesheet">
 
-    <script src="/developers-journal/js/jquery-3.3.1.min.js?1591218763"></script>
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1591447016"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1591218763"></script>
-<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1591218763"></script>
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1591447016"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1591447016"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
     
 </script>
-<script type="text/javascript" src="/developers-journal/js/search.js?1591218763"></script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1591447016"></script>
 
     
   </div>
@@ -73,6 +73,30 @@
     <ul class="topics">
 
         
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/">
+          Python <i class='fab fa-python'></i> 
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
           
           
 
@@ -317,6 +341,25 @@
 
     
     
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://gaborkevinbarta.com/"><i class='fas fa-globe'></i> Portfolio Website</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/gkevinb/developers-journal"><i class='fab fa-github'></i> Github Repository</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://themes.gohugo.io/theme/hugo-theme-learn/en"><i class='fas fa-book'></i> Hugo Learn Theme</a>
+              </li>
+          
+        </ul>
+      </section>
+    
 
     
     <section id="footer">
@@ -430,28 +473,28 @@
 </span></code></pre></div><p>You can run services like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run 
 </code></pre></div><p>These usually has several arguments like port numbers, which can become tedious that is why it is better to use a <code>docker-compose.yml</code> file, like below. <code>docker-compose</code> is a yaml file and spins up all the containers we need.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">version: <span style="color:#e6db74">&#39;3&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#66d9ef">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
 
-services:
+<span style="color:#66d9ef">services</span>:
 	<span style="color:#75715e"># you name the services</span>
-    product-service:
+    <span style="color:#66d9ef">product-service</span>:
     	<span style="color:#75715e"># Directory where the dockerfile is</span>
-        build: ./product
+        <span style="color:#66d9ef">build</span>: ./product
         <span style="color:#75715e"># sourcedirectory:/directoryonhost</span>
-        volumes:
+        <span style="color:#66d9ef">volumes</span>:
             - ./product:/usr/src/app
         <span style="color:#75715e"># localhostport:containerport</span>
-        ports:
+        <span style="color:#66d9ef">ports</span>:
             - <span style="color:#ae81ff">5001</span>:<span style="color:#ae81ff">80</span>
 
-    website:
+    <span style="color:#66d9ef">website</span>:
     	<span style="color:#75715e"># gets from dockerhub</span>
-        image: php:apache
-        volumes:
+        <span style="color:#66d9ef">image</span>: php:apache
+        <span style="color:#66d9ef">volumes</span>:
             - ./website:/var/www/html
-        ports:
+        <span style="color:#66d9ef">ports</span>:
             - <span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">80</span>
-        depends_on:
+        <span style="color:#66d9ef">depends_on</span>:
             - product-service
 
 </code></pre></div><p>Run docker-compose file by running this command <code>docker-compose up</code>. You can stop the services with <code>CTRL + C</code>. The containers can be started up by using <code>docker-compose up -d</code> This will allow you to still navigate in the terminal and you can stop it by <code>docker-compose stop</code>.</p>
@@ -473,14 +516,14 @@ services:
 <p>Medium article](<a href="https://medium.com/myriatek/using-docker-to-run-a-simple-nginx-server-75a48d74500b">https://medium.com/myriatek/using-docker-to-run-a-simple-nginx-server-75a48d74500b</a>)</p>
 <h3 id="dockerfile">dockerfile</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> nginx:alpine</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir /www<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/index.html /www/index.html<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/css /www/css<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/js /www/js<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/img /www/img<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> nginx.conf /etc/nginx/nginx.conf<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>The first line defines our base image. The second line copies the content of the current directory into a particular location inside the container.</p>
 <h3 id="nginxconf">nginx.conf</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#66d9ef">events</span> {}
@@ -500,12 +543,12 @@ services:
 }
 
 </code></pre></div><h3 id="docker-composeyaml">docker-compose.yaml</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">version: <span style="color:#e6db74">&#39;3.7&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">version</span>: <span style="color:#e6db74">&#39;3.7&#39;</span>
 
-services:
-    web-service:
-        build: ./
-        ports:
+<span style="color:#66d9ef">services</span>:
+    <span style="color:#66d9ef">web-service</span>:
+        <span style="color:#66d9ef">build</span>: ./
+        <span style="color:#66d9ef">ports</span>:
             - <span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">80</span>
 
 </code></pre></div>
@@ -550,6 +593,22 @@ services:
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -703,19 +762,19 @@ services:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/developers-journal/js/clipboard.min.js?1591218763"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.min.js?1591218763"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1591218763"></script>
-    <script src="/developers-journal/js/jquery.sticky.js?1591218763"></script>
-    <script src="/developers-journal/js/featherlight.min.js?1591218763"></script>
-    <script src="/developers-journal/js/highlight.pack.js?1591218763"></script>
+    <script src="/developers-journal/js/clipboard.min.js?1591447016"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1591447016"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1591447016"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1591447016"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1591447016"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1591447016"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1591218763"></script>
-    <script src="/developers-journal/js/learn.js?1591218763"></script>
-    <script src="/developers-journal/js/hugo-learn.js?1591218763"></script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1591447016"></script>
+    <script src="/developers-journal/js/learn.js?1591447016"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1591447016"></script>
 
-    <link href="/developers-journal/mermaid/mermaid.css?1591218763" rel="stylesheet" />
-    <script src="/developers-journal/mermaid/mermaid.js?1591218763"></script>
+    <link href="/developers-journal/mermaid/mermaid.css?1591447016" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1591447016"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
