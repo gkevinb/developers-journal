@@ -6,8 +6,18 @@ chapter = true
 post = " <i class='fab fa-python'></i> "
 +++
 
-### Chapter X
 
-# Some Chapter title
+# Python
 
-Lorem Ipsum.
+[Lessons](lessons/)
+
+[Virtual Environment](venv/)
+
+### Automation
+
+https://automatetheboringstuff.com/chapter18/
+
+### Anti Patterns
+
+https://docs.quantifiedcode.com/python-anti-patterns/
+

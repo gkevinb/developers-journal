@@ -13,3 +13,7 @@ https://github.com/matcornic/hugo-theme-learn
 ### Compose
 
 https://themes.gohugo.io/compose/
+
+## Hugo Shortcodes
+
+https://gohugo.io/content-management/shortcodes/
