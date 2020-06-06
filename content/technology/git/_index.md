@@ -3,7 +3,6 @@ title = "Git"
 date = 2020-05-13T17:49:23+02:00
 +++
 
-# Git
 
 Industry standard version control.
 
