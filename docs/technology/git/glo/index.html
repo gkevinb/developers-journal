@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>A Developer&#39;s Journal :: A Developer&#39;s Journal</title>
+    <title>Glo Boards :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/">
+  <body class="" data-url="/developers-journal/technology/git/glo/">
     <nav id="sidebar" class="">
 
 
@@ -497,7 +497,7 @@
   
     
     <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
-        
+        parent
         
         
         ">
@@ -552,7 +552,7 @@
   
     
     <li data-nav-id="/developers-journal/technology/git/" title="Git" class="dd-item 
-        
+        parent
         
         
         ">
@@ -581,8 +581,8 @@
   
     
     <li data-nav-id="/developers-journal/technology/git/glo/" title="Glo Boards" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/technology/git/glo/">
@@ -768,24 +768,104 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/technology/'>Technology</a> > <a href='/developers-journal/technology/git/'>Git</a> > Glo Boards
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#workflow">Workflow</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Glo Boards
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="a-developers-journal">A Developer&rsquo;s Journal</h1>
-<p>Welcome to my Developer&rsquo;s Journal, where I keep a journal of the knowledge I gained through my software development career.</p>
+
+	<p>The <a href="https://www.gitkraken.com/">GitKraken</a> client also has a feature called Glo Boards. It is similar to Trello however it has better features that make it more desirable for developers. Here is an <a href="https://blog.axosoft.com/gitkraken-glo-boards-vs-trello/">article</a> explaining the advantages of Glo Boards over Trello. Here are a few.</p>
+<ul>
+<li>First of all, it visually looks much cooler.</li>
+<li>Built in integration with Github issues.</li>
+<li>Much better search functionality</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>You can add a synced board to one of your Github repos. Which means that all cards created on that board will become issues in your Github repo. This basically connects and syncs the two entities so you can track and organize your issues.</p>
+<h2 id="workflow">Workflow</h2>
+<ol>
+<li>Create cards in board to refer to issues and development.</li>
+<li>Create commit that fixes issue related to card and use specific keywords in commit message to refer to fixing issues, explained <a href="https://help.github.com/articles/closing-issues-using-keywords/">here</a>. So use keywords like <code>Fix #12</code>, <code>Close #10</code>, or <code>Resolve #11</code> to close issues. Note, make sure the issue number e.g. <code>#10</code> has one of the keyword in front of it. Don&rsquo;t do this: <code>Fix #10, #12</code> , because only <code>#10</code> will be registered.</li>
+<li>When the development branch is merged to the master branch, that is when the issues will be resolved on Github.</li>
+</ol>
+
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -1054,6 +1134,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1068,6 +1149,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1085,6 +1169,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1099,6 +1184,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1118,6 +1204,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1218,4 +1307,3 @@
 
   </body>
 </html>
-

@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.72.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
+
+    <title>Gulp :: A Developer&#39;s Journal</title>
+
+    
+    <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1591468029" rel="stylesheet">
+    
+    <link href="/developers-journal/css/theme-green.css?1591468029" rel="stylesheet">
+    
+    <link href="/developers-journal/css/custom.css?1591468029" rel="stylesheet">
+
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1591468029"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/developers-journal/automation/gulp/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/developers-journal/">
+    <img src="/developers-journal/images/custom_book_logo.svg" width="160px">
+    <div id="website-title">
+        <a href="/developers-journal/">A Developer's Journal</a>
+    </div>
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1591468029"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1591468029"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
+    
+</script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1591468029"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/" title="Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/">
+          Database
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/sql/" title="SQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/sql/">
+          SQL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/" title="Styling" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/">
+          Styling
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/flexbox/" title="Flexbox" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/flexbox/">
+          Flexbox
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/scss/" title="SCSS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/scss/">
+          SCSS
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/css/" title="CSS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/css/">
+          CSS
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/bootstrap/" title="Bootstrap" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/bootstrap/">
+          Bootstrap
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/automation/" title="Automation" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/developers-journal/automation/">
+          Automation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/automation/gulp/" title="Gulp" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/developers-journal/automation/gulp/">
+          Gulp
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/" title="Scripting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/">
+          Scripting
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/bash/" title="Bash" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/bash/">
+          Bash
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/">
+          Python <i class='fab fa-python'></i> 
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/lessons/" title="Lessons" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/lessons/">
+          Lessons
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/venv/" title="Virtual Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/venv/">
+          Virtual Environment
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/">
+          Technology
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/nginx/" title="Nginx" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/nginx/">
+          Nginx
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/git/" title="Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/git/">
+          Git
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/git/glo/" title="Glo Boards" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/git/glo/">
+          Glo Boards
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/docker/" title="Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/" title="JS Frameworks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/">
+          JS Frameworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/js/" title="Javascript" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/js/">
+          Javascript
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/vue/" title="Vue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/vue/">
+          Vue
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://gaborkevinbarta.com/"><i class='fas fa-globe'></i> Portfolio Website</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/gkevinb/developers-journal"><i class='fab fa-github'></i> Github Repository</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://themes.gohugo.io/theme/hugo-theme-learn/en"><i class='fas fa-book'></i> Hugo Learn Theme</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/automation/'>Automation</a> > Gulp
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#common-tasks">Common Tasks</a></li>
+    <li><a href="#how-gulp-works">How Gulp Works</a></li>
+    <li><a href="#types-of-gulp-functions">Types of Gulp functions</a></li>
+    <li><a href="#misc">Misc</a></li>
+    <li><a href="#instruction-on-how-to-setup-project">Instruction on how to setup project</a>
+      <ul>
+        <li><a href="#create-folders">Create folders:</a></li>
+        <li><a href="#running-gulp-tasks">Running gulp tasks:</a></li>
+        <li><a href="#gulpfilejs">gulpfile.js</a></li>
+      </ul>
+    </li>
+    <li><a href="#gulp-tasks">Gulp Tasks</a>
+      <ul>
+        <li><a href="#default-gulp-task">Default Gulp Task</a></li>
+        <li><a href="#simple-message">Simple Message</a></li>
+        <li><a href="#copying-files">Copying Files</a></li>
+        <li><a href="#sass-to-minified-css">Sass to minified CSS</a></li>
+        <li><a href="#image-optimizaton">Image Optimizaton</a></li>
+        <li><a href="#uglify-javascript">Uglify Javascript</a></li>
+        <li><a href="#minify-javascript">Minify Javascript</a></li>
+        <li><a href="#run-all-tasks-by-default">Run all tasks by default</a></li>
+        <li><a href="#concat-and-minify-javascript-files">Concat and Minify JavaScript files</a></li>
+        <li><a href="#gulp-watch">Gulp Watch</a></li>
+        <li><a href="#browser-sync">Browser Sync</a></li>
+        <li><a href="#babel">Babel</a></li>
+      </ul>
+    </li>
+    <li><a href="#example-1-gulpfilejs">Example 1 gulpfile.js</a></li>
+    <li><a href="#example-2-gulpfilejs">Example 2 gulpfile.js</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Gulp
+            </h1>
+          
+
+        
+
+
+
+	<p><strong>BIG PROJECTS USE NPM SCRIPTS AND BUILT-IN CLI COMMANDS INSTEAD, PERHAPS USE FOR SMALL PROJECTS ONLY</strong></p>
+<p>Used to automate workflow of web development.
+&ldquo;Swiss Army Knife of Web Development&rdquo; Quote by Bucky from TheNewBoston.</p>
+<ul>
+<li>Tool for building JavaScript applications.</li>
+<li>Open source JavaScript toolkit &amp; task runner.</li>
+<li>Used for time consuming &amp; repetetive tasks.</li>
+</ul>
+<h2 id="common-tasks">Common Tasks</h2>
+<ul>
+<li>Compile SASS to CSS</li>
+<li>Minifaction of scripts and styles</li>
+<li>Concatenation</li>
+<li>Cache busing</li>
+<li>Testing, linting, &amp; optimization</li>
+<li>Development server</li>
+</ul>
+<h2 id="how-gulp-works">How Gulp Works</h2>
+<p><img src="pipeline.png" alt="Gulp Pipeline|34,20%"></p>
+<p>The plugin takes in files from folders modifies them and then writes the files to destination folder. Pipelines <code>pipe()</code> operator. Plugins can be created and google for popular plugins.</p>
+<h2 id="types-of-gulp-functions">Types of Gulp functions</h2>
+<ul>
+<li><code>gulp.task</code> - Define tasks</li>
+<li><code>gulp.src</code> - Point to files to use</li>
+<li><code>gulp.dest</code> - Points to folder to output</li>
+<li><code>gulp.watch</code> - Watch files and folders for changes</li>
+</ul>
+<h2 id="misc">Misc</h2>
+<p><code>--save-dev</code> means it will save dependency in our <code>package.json</code> file.</p>
+<h2 id="instruction-on-how-to-setup-project">Instruction on how to setup project</h2>
+<p>Run <code>npm rm gulp -g</code> to remove any old version of gulp.</p>
+<p>Run <code>npm install gulp-cli -g</code> to add gulp as global command interface.</p>
+<p>Terminal command line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ npm init
+Initialize project, creates package.json
+
+$ npm install gulp --save-dev
+Install gulp and creates node_modules folder with bunch of dependecies.
+Possibly look up why so many dependencies are made .in node_modules, cuz it did not happen to Bucky .in tutorial.
+
+$ npm install gulp-sass --save-dev
+Install sass precompiler
+</code></pre></div><h3 id="create-folders">Create folders:</h3>
+<ul>
+<li>app - for source code</li>
+<li>dist - generated automatically</li>
+</ul>
+<h3 id="running-gulp-tasks">Running gulp tasks:</h3>
+<p>gulp &lt;task_name&gt;</p>
+<h3 id="gulpfilejs">gulpfile.js</h3>
+<p>Create <code>gulpfile.js</code> file in project directory. An example <code>gulpfile.js</code> file is shown below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>);
+
+<span style="color:#75715e">/* Template:
+</span><span style="color:#75715e">gulp.task(&#39;task_name&#39;, function(){
+</span><span style="color:#75715e">    // do something..
+</span><span style="color:#75715e">});
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">/*
+</span><span style="color:#75715e">    -- TOP LEVEL FUNCTIONS --
+</span><span style="color:#75715e">    gulp.task - Define tasks
+</span><span style="color:#75715e">    gulp.src - Point to files to use
+</span><span style="color:#75715e">    gulp.dest - Points to folder to output
+</span><span style="color:#75715e">    gulp.watch - Watch files and folders for changes
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">*/</span>
+<span style="color:#75715e">// Pipe is chain something together
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*
+</span><span style="color:#75715e">Returns scss file pipe it through sass and
+</span><span style="color:#75715e">*/</span>
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;app/scss/styles.scss&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;app/css&#39;</span>))
+});
+
+</code></pre></div><h2 id="gulp-tasks">Gulp Tasks</h2>
+<h3 id="default-gulp-task">Default Gulp Task</h3>
+<p>The default task means when running just <code>gulp</code> in command line, this is the task that will be executed</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/*
+</span><span style="color:#75715e">Default task
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">async</span> <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Hello Gulp!&#39;</span>);
+});
+</code></pre></div><h3 id="simple-message">Simple Message</h3>
+<p>Gulp task to echo to command line.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/*
+</span><span style="color:#75715e">Need to make function async
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;message&#39;</span>, <span style="color:#a6e22e">async</span> <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Hello Gulp!&#39;</span>);
+});
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Need done argument because it assumes the task is synchronous
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;message2&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">done</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Gulp is runninng....&#39;</span>);
+    <span style="color:#a6e22e">done</span>();
+});
+</code></pre></div><p>The reason for adding async is because since Gulp Verions 4.0 it is required. Here is a <a href="https://stackoverflow.com/questions/36897877/gulp-error-the-following-tasks-did-not-complete-did-you-forget-to-signal-async/36899424">Stackoverflow post</a> explaining why.</p>
+<h3 id="copying-files">Copying Files</h3>
+<p>Copying a certain type of file to a directory. This example all <code>HTML</code> files in <code>src</code> directory will be copied to <code>dist</code> directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Copy ALL HTML files
+</span><span style="color:#75715e">// dist folder created automatically
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copyHtml&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/*.html&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist&#39;</span>))
+});
+
+</code></pre></div><h3 id="sass-to-minified-css">Sass to minified CSS</h3>
+<p>Run <code>npm install gulp-clean-css --save-dev</code> in command line to install clean-css plugin.</p>
+<p>Run <code>npm install gulp-sass -—save-dev</code> in command line to install Sass to CSS compiler plugin.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cleanCSS</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-clean-css&#39;</span>);
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/main.scss&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>())
+    		.<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">cleanCSS</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;src/css&#39;</span>))
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>()); <span style="color:#75715e">// Also refreshes browser
+</span><span style="color:#75715e"></span>})
+</code></pre></div><h3 id="image-optimizaton">Image Optimizaton</h3>
+<p>Run <code>$ npm install gulp-imagemin --save-dev</code> in command line to install gulp plugin. Then <code>require</code> it in our gulp file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>)
+
+<span style="color:#75715e">// Image optimization
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>, () =&gt;
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;img/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">imagemin</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/images&#39;</span>))
+);
+</code></pre></div><h3 id="uglify-javascript">Uglify Javascript</h3>
+<p>Run <code>$ npm install gulp-uglify --save-dev</code></p>
+<p><strong>Note:</strong> This does not work with ES6 and TypeScript standards, only plain JavaScript.</p>
+<p><strong>I am personally not using this one.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">uglify</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-uglify&#39;</span>)
+
+<span style="color:#75715e">// Javascript minifying
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;minify&#39;</span>, () =&gt;
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;js/*.js&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">uglify</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist&#39;</span>))
+);
+</code></pre></div><h3 id="minify-javascript">Minify Javascript</h3>
+<p>Run <code>$ npm install gulp-minify --save-dev</code></p>
+<p>Minifies javascript files.</p>
+<h4 id="default-configuration">Default configuration:</h4>
+<p><strong>src:</strong> <code>main.js</code> -&gt; <strong>dest:</strong> <code>main.min-js</code>, <code>main.js</code>  — Basically source file is copied as well and a new minified is made.</p>
+<h4 id="my-configuration-the-one-below">My configuration (the one below):</h4>
+<p><strong>src:</strong> <code>main.js</code> -&gt; <strong>dest:</strong> <code>main.js</code>  — Source file isn&rsquo;t copied and destination is called the same as source file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">minify</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-minify&#39;</span>)
+
+<span style="color:#75715e">// Javascript minifying
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;scripts&#39;</span>, () =&gt; {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/js/*.js&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">minify</span>({
+            <span style="color:#a6e22e">ext</span><span style="color:#f92672">:</span>{
+                <span style="color:#a6e22e">min</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;.js&#39;</span> <span style="color:#75715e">// Destination files will be called the same as source files
+</span><span style="color:#75715e"></span>            },
+            <span style="color:#a6e22e">noSource</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#75715e">// Source files are not published
+</span><span style="color:#75715e"></span>        }))
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;js&#39;</span>))
+});
+</code></pre></div><h3 id="run-all-tasks-by-default">Run all tasks by default</h3>
+<p>Give the default tasks and array of tasks to execute. <code>gulp.series</code> makes the tasks run in series, one after another.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;message&#39;</span>, <span style="color:#e6db74">&#39;copyHtml&#39;</span>, <span style="color:#e6db74">&#39;imagemin&#39;</span>));
+</code></pre></div><h3 id="concat-and-minify-javascript-files">Concat and Minify JavaScript files</h3>
+<p>Run <code>$ npm install gulp-concat --save-dev</code></p>
+<p>Merge all JavaScript files into one and then minify it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">concat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-concat&#39;</span>);
+
+<span style="color:#75715e">// Combine and minify Javascript files
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;scripts&#39;</span>, () =&gt;
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;js/*.js&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">concat</span>(<span style="color:#e6db74">&#39;main.js&#39;</span>))
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">uglify</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist&#39;</span>))
+);
+</code></pre></div><h3 id="gulp-watch">Gulp Watch</h3>
+<p>Watch specific files for changes and if changes occur run some tasks. After setting up watch task, run <code>gulp watch</code>. This will watch the files for changes and apply the tasks when changes occur. <code>Ctrl + C</code> to exit watch.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;watch&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#75715e">// Watch all javascript files and if changes occure run scripts tasks
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/js/*.js&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;scripts&#39;</span>));
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/images/*&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;imagemin&#39;</span>);
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/scss/*.scss&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
+	<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/*.html&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;copyHtml&#39;</span>));
+});
+</code></pre></div><h3 id="browser-sync">Browser Sync</h3>
+<p>Run <code>$ npm install browser-sync --save-dev</code></p>
+<p>Run <code>gulp browser-sync</code> and server starts up on localhost:3000. <code>Ctrl + C</code> to stop server.</p>
+<p><strong>Note:</strong> Look more into browser sync for auto reload, etc.</p>
+<p><a href="https://browsersync.io/docs/gulp">Browsersync.io</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browserSync</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;browser-sync&#39;</span>).<span style="color:#a6e22e">create</span>();
+
+<span style="color:#75715e">// Static server
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;browser-sync&#39;</span>, <span style="color:#66d9ef">function</span>() {
+    <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">init</span>({
+        <span style="color:#a6e22e">server</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">baseDir</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;./&#34;</span>
+        }
+    });
+});
+</code></pre></div><h3 id="babel">Babel</h3>
+<p>Run <code>$ npm install babel-core --save-dev</code></p>
+<p>Run <code>$ npm install gulp-babel --save-dev</code></p>
+<p>Run <code>npm install --save-dev @babel/core @babel/preset-env</code></p>
+<p>Run <code>npm install --save-dev babel-preset-es2015</code></p>
+<p>Babel is an Javascript compiler that can compile ES6 standard code (modules, etc) into ES6 standard code.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">babel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-babel&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">uglify</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-uglify&#39;</span>);
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;scripts&#39;</span>, () =&gt; {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/**/*.js&#39;</span>)
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">babel</span>({
+      <span style="color:#a6e22e">presets</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;es2015&#39;</span>]
+    }))
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">uglify</span>())
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist&#39;</span>))
+});
+</code></pre></div><h2 id="example-1-gulpfilejs">Example 1 gulpfile.js</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-sass&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cleanCSS</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-clean-css&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">minify</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-minify&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">inject</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-inject&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browserSync</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;browser-sync&#39;</span>).<span style="color:#a6e22e">create</span>();
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">del</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;del&#39;</span>);
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Need done argument because it assumes the task is synchronous
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;message&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">done</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Gulp is runninng....&#39;</span>);
+    <span style="color:#a6e22e">done</span>();
+});
+
+<span style="color:#75715e">// Copy ALL HTML files
+</span><span style="color:#75715e">// dest folder created automatically
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copy-html&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/*.html&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./&#39;</span>))
+});
+
+<span style="color:#75715e">// Copy ALL js files
+</span><span style="color:#75715e">// dest folder created automatically
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copy-js&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/js/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;js&#39;</span>))
+});
+
+<span style="color:#75715e">// Copy ALL css files
+</span><span style="color:#75715e">// dest folder created automatically
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copy-css&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/css/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;css&#39;</span>))
+});
+
+<span style="color:#75715e">// Copy ALL css files
+</span><span style="color:#75715e">// dest folder created automatically
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copy-files&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/files/**/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;files&#39;</span>))
+});
+
+<span style="color:#75715e">// Image optimization
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;image-min&#39;</span>, () =&gt;
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">imagemin</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;img&#39;</span>))
+);
+
+<span style="color:#75715e">// Javascript minifying
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;scripts&#39;</span>, () =&gt; {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/js/*.js&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">minify</span>({
+            <span style="color:#a6e22e">ext</span><span style="color:#f92672">:</span>{
+                <span style="color:#a6e22e">min</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;.js&#39;</span>
+            },
+            <span style="color:#a6e22e">noSource</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+        }))
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;js&#39;</span>))
+});
+
+<span style="color:#75715e">// Pipe is chain something together
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*
+</span><span style="color:#75715e">Returns SCSS file pipe it through sass and
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/scss/main.scss&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">sass</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">cleanCSS</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;src/css&#39;</span>))
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">stream</span>());
+});
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Inject CSS into HTML
+</span><span style="color:#75715e">Later also inject Javascript
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;inject-index&#39;</span>, <span style="color:#66d9ef">function</span> () {
+    <span style="color:#75715e">// var target = gulp.src(&#39;./src/index.html&#39;);
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// // It&#39;s not necessary to read the files (will speed up things), we&#39;re only after their paths:
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// var sources = gulp.src([&#39;./src/css/*.css&#39;], {read: false}, {relative: true} );
+</span><span style="color:#75715e"></span>
+    <span style="color:#75715e">// return target.pipe(inject(sources))
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//     .pipe(gulp.dest(&#39;./src&#39;));
+</span><span style="color:#75715e"></span>
+    <span style="color:#75715e">// Pipe relative path
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/*.html&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">inject</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;./src/css/*.css&#39;</span>, {<span style="color:#a6e22e">read</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>}), {<span style="color:#a6e22e">relative</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>}))
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./src&#39;</span>));
+});
+
+<span style="color:#75715e">// Static server
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;serve&#39;</span>, <span style="color:#66d9ef">function</span>() {
+    <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">init</span>({
+        <span style="color:#a6e22e">server</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">baseDir</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;./src/&#34;</span>
+        }
+    });
+    
+    <span style="color:#75715e">// Make broswer sync on change in SASS and CSS
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#34;src/scss/*.scss&#34;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
+    <span style="color:#75715e">// gulp.watch(&#34;src/*.html&#34;, gulp.series(&#39;inject-index&#39;));
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#34;src/*.html&#34;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;change&#39;</span>, <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">reload</span>);
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#34;src/js/*.js&#34;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;change&#39;</span>, <span style="color:#a6e22e">browserSync</span>.<span style="color:#a6e22e">reload</span>);
+});
+
+<span style="color:#75715e">// Watch can be called here separately, but it is called when gulp browser sync is started
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;watch&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#75715e">// Watch all javascript files and if changes occure run scripts tasks
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">watch</span>(<span style="color:#e6db74">&#39;src/scss/*&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;sass&#39;</span>));
+	<span style="color:#75715e">//gulp.watch(&#39;src/*.html&#39;, gulp.series(&#39;copy-html&#39;));
+</span><span style="color:#75715e"></span>});
+
+<span style="color:#75715e">/* Copy all files in dist folder to project folder */</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copy-dist&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;dist/**/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./&#39;</span>))
+});
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#66d9ef">function</span>(){
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">del</span>([<span style="color:#e6db74">&#39;js&#39;</span>, <span style="color:#e6db74">&#39;css&#39;</span>, <span style="color:#e6db74">&#39;img&#39;</span>, <span style="color:#e6db74">&#39;files&#39;</span>, <span style="color:#e6db74">&#39;index.html&#39;</span>, <span style="color:#e6db74">&#39;favicon.ico&#39;</span>], {<span style="color:#a6e22e">force</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>});
+});
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;deploy&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#e6db74">&#39;copy-dist&#39;</span>));
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;default&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;image-min&#39;</span>, <span style="color:#e6db74">&#39;sass&#39;</span>, <span style="color:#e6db74">&#39;scripts&#39;</span>, <span style="color:#e6db74">&#39;inject-index&#39;</span>, <span style="color:#e6db74">&#39;copy-html&#39;</span>, <span style="color:#e6db74">&#39;copy-css&#39;</span>, <span style="color:#e6db74">&#39;copy-files&#39;</span>));
+
+</code></pre></div><h2 id="example-2-gulpfilejs">Example 2 gulpfile.js</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">gulp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">imagemin</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-imagemin&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">del</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;del&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">exec</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;child_process&#39;</span>).<span style="color:#a6e22e">exec</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">jsonminify</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;gulp-jsonminify&#39;</span>);
+ 
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Need done argument because it assumes the task is synchronous
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;message&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">done</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Gulp is running....&#39;</span>);
+    <span style="color:#a6e22e">done</span>();
+});
+
+<span style="color:#75715e">/* Run `npm run build` command inside gulp */</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;build&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">cb</span>) {
+    <span style="color:#a6e22e">exec</span>(<span style="color:#e6db74">&#39;npm run build&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">stdout</span>, <span style="color:#a6e22e">stderr</span>) {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">stdout</span>);
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">stderr</span>);
+        <span style="color:#a6e22e">cb</span>(<span style="color:#a6e22e">err</span>);
+    });
+});
+
+<span style="color:#75715e">/* Minify JSON files */</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;minify-json&#39;</span>, <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>([<span style="color:#e6db74">&#39;dist/database/*.json&#39;</span>])
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">jsonminify</span>())
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;dist/database/&#39;</span>));
+});
+
+<span style="color:#75715e">// Copy ALL files
+</span><span style="color:#75715e">// dest folder created automatically
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copy-files&#39;</span>, <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/files/**/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;files&#39;</span>))
+});
+
+<span style="color:#75715e">// Image optimization
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;image-min&#39;</span>, () =&gt;
+    <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;src/img/*&#39;</span>)
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">imagemin</span>())
+    .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;img&#39;</span>))
+);
+
+<span style="color:#75715e">/* Copy all files in dist folder to project folder */</span>
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;copy-dist&#39;</span>, <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">src</span>(<span style="color:#e6db74">&#39;dist/**/*&#39;</span>)
+        .<span style="color:#a6e22e">pipe</span>(<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">dest</span>(<span style="color:#e6db74">&#39;./&#39;</span>))
+});
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">del</span>([<span style="color:#e6db74">&#39;js&#39;</span>, <span style="color:#e6db74">&#39;css&#39;</span>, <span style="color:#e6db74">&#39;img&#39;</span>, <span style="color:#e6db74">&#39;files&#39;</span>, <span style="color:#e6db74">&#39;database&#39;</span>, <span style="color:#e6db74">&#39;index.html&#39;</span>, <span style="color:#e6db74">&#39;favicon.ico&#39;</span>], {
+        <span style="color:#a6e22e">force</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+    });
+});
+
+<span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">task</span>(<span style="color:#e6db74">&#39;deploy&#39;</span>, <span style="color:#a6e22e">gulp</span>.<span style="color:#a6e22e">series</span>(<span style="color:#e6db74">&#39;build&#39;</span>, <span style="color:#e6db74">&#39;minify-json&#39;</span>, <span style="color:#e6db74">&#39;clean&#39;</span>, <span style="color:#e6db74">&#39;copy-dist&#39;</span>));
+</code></pre></div>
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/developers-journal/js/clipboard.min.js?1591468029"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1591468029"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1591468029"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1591468029"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1591468029"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1591468029"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1591468029"></script>
+    <script src="/developers-journal/js/learn.js?1591468029"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1591468029"></script>
+
+    <link href="/developers-journal/mermaid/mermaid.css?1591468029" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1591468029"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

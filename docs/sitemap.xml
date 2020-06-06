@@ -3,13 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/python/</loc>
-    <lastmod>2020-06-06T13:09:55+02:00</lastmod>
+    <loc>https://gaborkevinbarta.com/developers-journal/database/</loc>
+    <lastmod>2020-06-06T20:08:29+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/basics/</loc>
-    <lastmod>2020-04-26T13:41:39+02:00</lastmod>
+    <loc>https://gaborkevinbarta.com/developers-journal/styling/</loc>
+    <lastmod>2020-06-06T19:44:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/automation/</loc>
+    <lastmod>2020-06-06T19:24:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/scripting/</loc>
+    <lastmod>2020-06-06T19:08:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/python/</loc>
+    <lastmod>2020-06-06T13:09:55+02:00</lastmod>
   </url>
   
   <url>
@@ -24,7 +39,62 @@
   
   <url>
     <loc>https://gaborkevinbarta.com/developers-journal/</loc>
-    <lastmod>2020-06-06T13:09:55+02:00</lastmod>
+    <lastmod>2020-06-06T20:08:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/database/sql/</loc>
+    <lastmod>2020-06-06T20:08:43+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/styling/flexbox/</loc>
+    <lastmod>2020-06-06T20:00:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/styling/scss/</loc>
+    <lastmod>2020-06-06T20:00:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/styling/css/</loc>
+    <lastmod>2020-06-06T20:00:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/styling/bootstrap/</loc>
+    <lastmod>2020-06-06T19:45:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/automation/gulp/</loc>
+    <lastmod>2020-06-06T19:24:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/technology/git/glo/</loc>
+    <lastmod>2020-06-06T19:11:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/scripting/bash/</loc>
+    <lastmod>2020-06-06T19:09:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/technology/nginx/</loc>
+    <lastmod>2020-06-06T19:06:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/python/lessons/</loc>
+    <lastmod>2020-06-06T18:57:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/python/venv/</loc>
+    <lastmod>2020-06-06T18:47:11+02:00</lastmod>
   </url>
   
   <url>
@@ -35,11 +105,6 @@
   <url>
     <loc>https://gaborkevinbarta.com/developers-journal/technology/git/</loc>
     <lastmod>2020-05-13T17:49:23+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/basics/python/</loc>
-    <lastmod>2020-04-28T17:09:23+02:00</lastmod>
   </url>
   
   <url>

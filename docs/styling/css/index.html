@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.72.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
+
+    <title>CSS :: A Developer&#39;s Journal</title>
+
+    
+    <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1591468029" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1591468029" rel="stylesheet">
+    
+    <link href="/developers-journal/css/theme-green.css?1591468029" rel="stylesheet">
+    
+    <link href="/developers-journal/css/custom.css?1591468029" rel="stylesheet">
+
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1591468029"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/developers-journal/styling/css/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/developers-journal/">
+    <img src="/developers-journal/images/custom_book_logo.svg" width="160px">
+    <div id="website-title">
+        <a href="/developers-journal/">A Developer's Journal</a>
+    </div>
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1591468029"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1591468029"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
+    
+</script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1591468029"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/" title="Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/">
+          Database
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/sql/" title="SQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/sql/">
+          SQL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/" title="Styling" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/developers-journal/styling/">
+          Styling
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/flexbox/" title="Flexbox" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/flexbox/">
+          Flexbox
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/scss/" title="SCSS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/scss/">
+          SCSS
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/css/" title="CSS" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/developers-journal/styling/css/">
+          CSS
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/bootstrap/" title="Bootstrap" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/bootstrap/">
+          Bootstrap
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/automation/" title="Automation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/automation/">
+          Automation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/automation/gulp/" title="Gulp" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/automation/gulp/">
+          Gulp
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/" title="Scripting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/">
+          Scripting
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/bash/" title="Bash" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/bash/">
+          Bash
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/">
+          Python <i class='fab fa-python'></i> 
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/lessons/" title="Lessons" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/lessons/">
+          Lessons
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/venv/" title="Virtual Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/venv/">
+          Virtual Environment
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/">
+          Technology
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/nginx/" title="Nginx" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/nginx/">
+          Nginx
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/git/" title="Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/git/">
+          Git
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/git/glo/" title="Glo Boards" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/git/glo/">
+          Glo Boards
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/docker/" title="Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/" title="JS Frameworks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/">
+          JS Frameworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/js/" title="Javascript" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/js/">
+          Javascript
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/js-frameworks/vue/" title="Vue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/js-frameworks/vue/">
+          Vue
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://gaborkevinbarta.com/"><i class='fas fa-globe'></i> Portfolio Website</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/gkevinb/developers-journal"><i class='fab fa-github'></i> Github Repository</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://themes.gohugo.io/theme/hugo-theme-learn/en"><i class='fas fa-book'></i> Hugo Learn Theme</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/styling/'>Styling</a> > CSS
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#conventions">Conventions</a>
+      <ul>
+        <li><a href="#naming">Naming</a></li>
+        <li><a href="#bem-block-element-modifier">BEM (Block-Element-Modifier)</a></li>
+      </ul>
+    </li>
+    <li><a href="#javascript-connection-with-dom">JavaScript connection with DOM</a></li>
+    <li><a href="#css-selectors">CSS Selectors</a></li>
+    <li><a href="#flexbox">Flexbox</a></li>
+    <li><a href="#css-grid">CSS Grid</a>
+      <ul>
+        <li><a href="#basics">Basics</a></li>
+        <li><a href="#template-areas">Template Areas</a></li>
+        <li><a href="#autofit-minmax">Autofit Minmax</a></li>
+      </ul>
+    </li>
+    <li><a href="#child-div-should-match-parent-div-size">Child div should match parent div size</a></li>
+    <li><a href="#keyframes">Keyframes</a></li>
+    <li><a href="#clipping">Clipping</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#pure-css-dropdown-menuhttpswwww3schoolscomcssreftryitaspfilenametrycss_sel_hover_dropdown"><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover_dropdown">Pure CSS Dropdown Menu</a></a></li>
+    <li><a href="#multiple-background-imageshttpswwww3schoolscomcsscss3_backgroundsasp"><a href="https://www.w3schools.com/css/css3_backgrounds.asp">Multiple Background Images</a></a></li>
+    <li><a href="#gradient-nav-burger">Gradient Nav-Burger</a></li>
+    <li><a href="#make-sure-height-matches-content-height">Make sure height matches content height</a></li>
+    <li><a href="#toggle-switch">Toggle Switch</a></li>
+    <li><a href="#checkbox-with-fontawesome">Checkbox with Fontawesome</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              CSS
+            </h1>
+          
+
+        
+
+
+
+	<hr>
+<p>[TOC]</p>
+<hr>
+<h2 id="conventions">Conventions</h2>
+<h3 id="naming">Naming</h3>
+<p>Use hypen, not camelCase.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">red-box</span> {
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">red</span>;
+}
+</code></pre></div><h3 id="bem-block-element-modifier">BEM (Block-Element-Modifier)</h3>
+<h4 id="block">Block</h4>
+<p>Block of design, like a stickman</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">stick-man</span> {
+
+}
+</code></pre></div><h4 id="element">Element</h4>
+<p>An element in the block, part of the block, for example the head, arms, feet of stickman.
+Denoted with: __ (double underscore)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">stick-man__head</span> {
+}
+.<span style="color:#a6e22e">stick-man__arms</span> {
+}
+.<span style="color:#a6e22e">stick-man__feet</span> {
+}
+</code></pre></div><h4 id="modifier">Modifier</h4>
+<p>Modifying the block or element with a specific design, like red or blue stickman.
+Denoted with: &ndash; (double hyphen)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">stick-man--blue</span> {
+}
+.<span style="color:#a6e22e">stick-man--red</span> {
+}
+</code></pre></div><h5 id="or">Or</h5>
+<p>Stickman with small or big head</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">stick-man__head--small</span> {
+}
+.<span style="color:#a6e22e">stick-man__head--big</span> {
+}
+</code></pre></div><h2 id="javascript-connection-with-dom">JavaScript connection with DOM</h2>
+<p>If CSS has relationship with javascript, add js-<!-- raw HTML omitted --> to class</p>
+<p><code>class=&quot;site-navigation js-site-navigation&quot;</code></p>
+<p>Source:
+<a href="https://medium.freecodecamp.org/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849">CSS Naming Conventions that Will Save You Hours of Debugging</a></p>
+<hr>
+<h2 id="css-selectors">CSS Selectors</h2>
+<p><a href="https://www.w3schools.com/cssref/css_selectors.asp">Reference</a></p>
+<table>
+<thead>
+<tr>
+<th>Selector</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>element1</em> <em>element2</em></td>
+<td>div p</td>
+<td>Selects all <!-- raw HTML omitted --> elements inside <!-- raw HTML omitted --> elements</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="flexbox">Flexbox</h2>
+<p><a href="https://philipwalton.github.io/solved-by-flexbox/">https://philipwalton.github.io/solved-by-flexbox/</a></p>
+<h2 id="css-grid">CSS Grid</h2>
+<p>Source:
+<a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS tricks</a></p>
+<h3 id="basics">Basics</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span>{
+	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">grid</span>;
+	<span style="color:#66d9ef">grid-template-columns</span>: <span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>fr); <span style="color:#75715e">/*Creates columns, 5 equal columns*/</span>
+	<span style="color:#75715e">/*grid-template-rows: 100px auto 200px 100px;*/</span>
+	<span style="color:#66d9ef">grid-template-rows</span>: <span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1</span>fr); <span style="color:#75715e">/*Creates rows, 5 equal columns*/</span>
+    <span style="color:#66d9ef">grid-template</span>: <span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>) <span style="color:#f92672">/</span> <span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>fr); <span style="color:#75715e">/*Shorthand Notations columns x rows*/</span>
+	<span style="color:#66d9ef">grid-gap</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/*Gap between grids*/</span>
+}
+#header{
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">red</span>;
+	<span style="color:#66d9ef">grid-column</span>: <span style="color:#ae81ff">3</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">5</span>;
+	<span style="color:#66d9ef">grid-row</span>: <span style="color:#ae81ff">2</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">3</span>;
+}
+#navbar{
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">blue</span>;
+	<span style="color:#66d9ef">grid-column</span>: <span style="color:#ae81ff">2</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">-1</span>; <span style="color:#75715e">/* Starting  Grid line, ending grid line, (-1 means to the end)*/</span>
+	<span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+	<span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+}
+#menu{
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+	<span style="color:#66d9ef">grid-column</span>: <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+}
+#content{
+	<span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">orange</span>;
+	<span style="color:#66d9ef">grid-column</span>: <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+}
+
+.<span style="color:#a6e22e">horizontal</span> {
+    <span style="color:#66d9ef">grid-column</span>: <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> span <span style="color:#ae81ff">2</span>; <span style="color:#75715e">/*span 2 columns*/</span>
+}
+</code></pre></div><h3 id="template-areas">Template Areas</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">grid</span>;
+    <span style="color:#66d9ef">grid-gap</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">grid-template-columns</span>: <span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">1</span>fr);
+    <span style="color:#66d9ef">grid-template-rows</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span> <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">grid-template-areas</span>: 
+        <span style="color:#e6db74">&#34;m h h h h h h h h . . .&#34;</span>
+        <span style="color:#e6db74">&#34;m c c c c c c c c c c c&#34;</span>
+        <span style="color:#e6db74">&#34;f f f f f f f f f f f f&#34;</span>;
+    <span style="color:#75715e">/* Create mini representation of layout with letters*/</span>
+}
+
+.<span style="color:#a6e22e">header</span> {
+    <span style="color:#66d9ef">grid-area</span>: h;
+  <span style="color:#75715e">/* Connects this div with template layout  */</span>
+}
+
+.<span style="color:#a6e22e">menu</span> {
+    <span style="color:#66d9ef">grid-area</span>: m;
+}
+
+.<span style="color:#a6e22e">content</span> {
+    <span style="color:#66d9ef">grid-area</span>: c;
+}
+
+.<span style="color:#a6e22e">footer</span> {
+    <span style="color:#66d9ef">grid-area</span>: f;
+}
+</code></pre></div><h3 id="autofit-minmax">Autofit Minmax</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">grid</span>;
+    <span style="color:#66d9ef">grid-gap</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">grid-template-columns</span>: <span style="color:#a6e22e">repeat</span>(<span style="color:#66d9ef">auto</span><span style="color:#f92672">-</span>fit, <span style="color:#a6e22e">minmax</span>(<span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>, <span style="color:#ae81ff">1</span>fr));
+    <span style="color:#66d9ef">grid-template-rows</span>: <span style="color:#a6e22e">repeat</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>);
+    <span style="color:#66d9ef">grid-auto-rows</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/*Creates rows implicitly*/</span>
+}
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">Auto-fit makes sure that the colums fit the page with minimum of 100px for each colums
+</span><span style="color:#75715e">if not then 1 fraction
+</span><span style="color:#75715e"> /
+</span><span style="color:#75715e"> \
+</span><span style="color:#75715e">*/</span>
+</code></pre></div><hr>
+<h2 id="child-div-should-match-parent-div-size">Child div should match parent div size</h2>
+<p>How to make a child DIV the same height as its parent DIV
+This one is strictly for designer geeks! Every time I come across this problem I have to scour the internet to find an answer. Having found it once again, I am now inserting it into my blog to ensure that I don’t lose it again!</p>
+<p>If you want to make a child DIV box appear to be 100% of the height of its parent (without having to fill it with content), here is the CSS code that will achieve the desired result:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">parent</span> {
+	<span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+}
+
+.<span style="color:#a6e22e">child</span> {
+	<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+	<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+	<span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+}
+</code></pre></div><p><a href="https://tinstardesign.wordpress.com/2012/09/21/how-to-make-a-child-div-the-same-height-as-its-parent-div/">How to make a child DIV the same height as its parent DIV | Tinstar Design Studio Blog</a></p>
+<h2 id="keyframes">Keyframes</h2>
+<p>Keyframes are used to specify the behavior of the animations.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">falling</span> {
+    <span style="color:#f92672">from</span> { <span style="color:#f92672">background-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100px</span> <span style="color:#f92672">100px</span>; }
+    <span style="color:#f92672">to</span> { <span style="color:#f92672">background-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0px</span> <span style="color:#f92672">0px</span>; }
+}
+
+<span style="color:#66d9ef">@keyframes</span> <span style="color:#f92672">winning</span> {
+    <span style="color:#f92672">0</span><span style="color:#960050;background-color:#1e0010">%</span>   { <span style="color:#f92672">background-position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">center</span> <span style="color:#f92672">5px</span>; }
+    <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span>  { <span style="color:#f92672">background-position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">center</span> <span style="color:#f92672">-5px</span>; }
+    <span style="color:#f92672">100</span><span style="color:#960050;background-color:#1e0010">%</span>  { <span style="color:#f92672">background-position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">center</span> <span style="color:#f92672">5px</span>; }
+}
+
+<span style="color:#a6e22e">.tile</span>{
+    <span style="color:#75715e">/* Robot winning animation */</span>
+    <span style="color:#f92672">animation-name</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">winning</span>;
+    <span style="color:#f92672">animation-duration</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">1</span><span style="color:#a6e22e">.0s</span>;
+    <span style="color:#f92672">animation-iteration-count</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">infinite</span>;
+}
+</code></pre></div><h2 id="clipping">Clipping</h2>
+<p>Clipping tool for clipping off parts of a <code>div</code>.</p>
+<p><a href="https://bennettfeely.com/clippy/">https://bennettfeely.com/clippy/</a></p>
+<h1 id="snippets">Snippets</h1>
+<h2 id="pure-css-dropdown-menuhttpswwww3schoolscomcssreftryitaspfilenametrycss_sel_hover_dropdown"><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover_dropdown">Pure CSS Dropdown Menu</a></h2>
+<p>Make sure Dropdown links are inside a list item as a new unordered list.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span>&gt;
+  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Useless Link&lt;/<span style="color:#f92672">a</span>&gt;
+  &lt;<span style="color:#f92672">ul</span>&gt;
+    &lt;<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Dropdown Link&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;<span style="color:#f92672">ul</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Link 1&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Link 2&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Link 3&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;/<span style="color:#f92672">ul</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><h2 id="multiple-background-imageshttpswwww3schoolscomcsscss3_backgroundsasp"><a href="https://www.w3schools.com/css/css3_backgrounds.asp">Multiple Background Images</a></h2>
+<p>The first image will be on top while the second image will be behind it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">#example1 {
+  <span style="color:#66d9ef">background-image</span>: url(<span style="color:#e6db74">img_flwr.gif</span>), url(<span style="color:#e6db74">paper.gif</span>);
+  <span style="color:#66d9ef">background-position</span>: <span style="color:#66d9ef">right</span> <span style="color:#66d9ef">bottom</span>, <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">top</span>;
+  <span style="color:#66d9ef">background-repeat</span>: <span style="color:#66d9ef">no-repeat</span>, <span style="color:#66d9ef">repeat</span>;
+}
+</code></pre></div><h2 id="gradient-nav-burger">Gradient Nav-Burger</h2>
+<p><a href="https://alligator.io/css/gradient-borders-pure-css/">Inspiration🐊</a></p>
+<p><img src="gradient_nav_burger.png" alt="image"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">$nav_burger_size<span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+$nav_burger_color<span style="color:#f92672">:</span> <span style="color:#a6e22e">linear-gradient</span>(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">#d48590</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">%</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">#ecac81</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>);
+
+<span style="color:#a6e22e">.nav-burger</span> {
+  <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_size</span>;
+  <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_size</span> <span style="color:#f92672">*</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.6</span>;
+  
+  <span style="color:#f92672">box-sizing</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">content-box</span>; <span style="color:#75715e">/* Make sure this is default */</span>
+
+  <span style="color:#f92672">border-top</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_size</span> <span style="color:#f92672">*</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.2</span> <span style="color:#f92672">solid</span>;
+  <span style="color:#f92672">border-bottom</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_size</span> <span style="color:#f92672">*</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.2</span> <span style="color:#f92672">solid</span>;
+
+  <span style="color:#f92672">border-image-source</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_color</span>;
+  <span style="color:#f92672">border-image-slice</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">1</span>;
+
+  <span style="color:#a6e22e">.nav-burger-meat</span> {
+    <span style="color:#f92672">margin-top</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_size</span> <span style="color:#f92672">*</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.2</span>;
+    <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_size</span> <span style="color:#f92672">*</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.2</span>;
+    <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">nav_burger_color</span>;
+  }
+}
+
+</code></pre></div><h2 id="make-sure-height-matches-content-height">Make sure height matches content height</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* Makes sure height matches content height */</span>
+<span style="color:#f92672">display</span><span style="color:#f92672">:</span> <span style="color:#f92672">block</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">overflow</span><span style="color:#f92672">:</span> <span style="color:#f92672">auto</span><span style="color:#f92672">;</span>
+</code></pre></div><p><a href="https://www.cssmatic.com/">CSS-Matic</a></p>
+<h2 id="toggle-switch">Toggle Switch</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;toggle-switch&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">$circle_radius<span style="color:#f92672">:</span> <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+
+<span style="color:#a6e22e">.toggle-switch</span> {
+  <span style="color:#f92672">position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">relative</span>;
+  <span style="color:#f92672">-webkit-appearance</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">none</span>;
+  <span style="color:#f92672">outline</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">none</span>;
+  <span style="color:#f92672">top</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">3px</span>; <span style="color:#75715e">/* Lower switch to align it with text */</span>
+  <span style="color:#f92672">margin-right</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">8px</span>; <span style="color:#75715e">/* Put space between switch and text */</span>
+  <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">42px</span>;
+  <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">16px</span>;
+  <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">mediumgrey</span>;
+  <span style="color:#f92672">border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">50px</span>;
+}
+<span style="color:#75715e">/* Circle part of the toggle switch */</span>
+<span style="color:#a6e22e">.toggle-switch</span><span style="color:#a6e22e">:after</span> {
+  <span style="color:#f92672">content</span><span style="color:#a6e22e">:</span> <span style="color:#e6db74">&#34;&#34;</span>;
+  <span style="color:#f92672">position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">absolute</span>;
+  <span style="color:#f92672">top</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">-3px</span>;
+  <span style="color:#f92672">left</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0px</span>;
+  <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">circle_radius</span>;
+  <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">circle_radius</span>;
+  <span style="color:#f92672">border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">50</span><span style="color:#960050;background-color:#1e0010">%</span>;
+  <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">lightgrey</span>;
+  <span style="color:#f92672">box-shadow</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0px</span> <span style="color:#f92672">2px</span> <span style="color:#f92672">4px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span> <span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span> <span style="color:#f92672">,</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.4</span><span style="color:#f92672">)</span>;
+  <span style="color:#f92672">transition</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.4s</span> <span style="color:#f92672">ease-in-out</span>;
+  <span style="color:#f92672">-webkit-transition</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.4s</span> <span style="color:#f92672">ease-in-out</span>;
+}
+
+<span style="color:#75715e">/* Color of switch when checked */</span>
+<span style="color:#a6e22e">.toggle-switch</span><span style="color:#a6e22e">:checked</span> {
+  <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">mediumgrey</span>;
+}
+<span style="color:#75715e">/* Position of switch when checked */</span>
+<span style="color:#a6e22e">.toggle-switch</span><span style="color:#a6e22e">:checked:after</span> {
+  <span style="color:#f92672">left</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">20px</span>;
+  <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">blue</span>;
+}
+</code></pre></div><p><img src="./toggle_switch.png" alt="Toggle Switch"></p>
+<h2 id="checkbox-with-fontawesome">Checkbox with Fontawesome</h2>
+<p><a href="https://codingwithspike.wordpress.com/2014/11/16/fancy-css-checkboxes-with-fontawesome/">https://codingwithspike.wordpress.com/2014/11/16/fancy-css-checkboxes-with-fontawesome/</a></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/developers-journal/js/clipboard.min.js?1591468029"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1591468029"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1591468029"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1591468029"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1591468029"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1591468029"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1591468029"></script>
+    <script src="/developers-journal/js/learn.js?1591468029"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1591468029"></script>
+
+    <link href="/developers-journal/mermaid/mermaid.css?1591468029" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1591468029"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

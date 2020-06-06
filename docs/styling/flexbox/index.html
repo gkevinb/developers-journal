@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>A Developer&#39;s Journal :: A Developer&#39;s Journal</title>
+    <title>Flexbox :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/">
+  <body class="" data-url="/developers-journal/styling/flexbox/">
     <nav id="sidebar" class="">
 
 
@@ -145,7 +145,7 @@
   
     
     <li data-nav-id="/developers-journal/styling/" title="Styling" class="dd-item 
-        
+        parent
         
         
         ">
@@ -174,8 +174,8 @@
   
     
     <li data-nav-id="/developers-journal/styling/flexbox/" title="Flexbox" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/styling/flexbox/">
@@ -768,24 +768,147 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/styling/'>Styling</a> > Flexbox
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#flex-direction">Flex-direction</a></li>
+    <li><a href="#flex">Flex</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#align-content">Align-content</a></li>
+    <li><a href="#examples">Examples</a>
+      <ul>
+        <li><a href="#center-div-inside-div-using-flex">Center <code>div</code> inside <code>div</code> using <code>flex</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Flexbox
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="a-developers-journal">A Developer&rsquo;s Journal</h1>
-<p>Welcome to my Developer&rsquo;s Journal, where I keep a journal of the knowledge I gained through my software development career.</p>
+
+	<p>Flexbox defaults to aligning element horizontally.</p>
+<p>Basic structure is container with elements inside them.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">row</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">space</span><span style="color:#f92672">-</span>evenly;
+  <span style="color:#75715e">/* Other values: flex-start flex-end center space-around
+</span><span style="color:#75715e">	space-between space-evenly */</span>
+}
+</code></pre></div><p><code>flex-direction</code> : can be <code>row</code> horizontal or <code>column</code> vertical.</p>
+<h2 id="flex-direction">Flex-direction</h2>
+<p>The main axis is defined by the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction"><code>flex-direction</code></a> property, and the cross axis runs perpendicular to it.</p>
+<p><code>justify-content</code> : layout of elements along the main axis.</p>
+<p><code>align-items</code> : layout of elements along the cross axis.</p>
+<p><code>align-self</code> : used in elements to overwride <code>align-items</code> in parent.</p>
+<p><code>flex-wrap</code> : wether or not elements wrap to new column or row.</p>
+<h2 id="flex">Flex</h2>
+<p><code>flex</code> is shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>.</p>
+<p><code>flex-grow</code> : Relative to other elements how fast the element grows after passing the <code>flex-basis</code> size.</p>
+<p><code>flex-shrink</code> :  Relative to other elements how fast the element shrinks after passing the <code>flex-basis</code> size.</p>
+<p><code>flex-basis</code> : The base size of the element.</p>
+<h2 id="order">Order</h2>
+<p><code>order</code> : default value is <code>0</code>, the order of the elements on the main axis. Value of <code>-1</code> sets the element forward, while a value of <code>1</code> sets the element backward.</p>
+<h2 id="align-content">Align-content</h2>
+<p><code>align-content</code></p>
+<h2 id="examples">Examples</h2>
+<p>Move all elements to the right, except the first one, which should be on the right. Using <code>auto</code> for <code>margin-right</code> and <code>margin-left</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ffcc5c</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">flex</span><span style="color:#f92672">-</span><span style="color:#66d9ef">end</span>;
+}
+
+.<span style="color:#a6e22e">home</span> {
+  <span style="color:#66d9ef">margin-right</span>: <span style="color:#66d9ef">auto</span>;
+}
+</code></pre></div><p><code>flex</code> property makes element grow and shrink on resize.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ffcc5c</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+}
+
+.<span style="color:#a6e22e">home</span> {
+  <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
+}
+
+.<span style="color:#a6e22e">logout</span> {
+  <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
+}
+</code></pre></div><h3 id="center-div-inside-div-using-flex">Center <code>div</code> inside <code>div</code> using <code>flex</code></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
+	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>; <span style="color:#75715e">/* vertical alignment */</span>
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>; <span style="color:#75715e">/* horizontal alignment */</span>
+}
+</code></pre></div>
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -854,6 +977,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -868,6 +992,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -884,6 +1009,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1218,4 +1346,3 @@
 
   </body>
 </html>
-

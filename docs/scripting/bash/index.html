@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>A Developer&#39;s Journal :: A Developer&#39;s Journal</title>
+    <title>Bash :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/">
+  <body class="" data-url="/developers-journal/scripting/bash/">
     <nav id="sidebar" class="">
 
 
@@ -347,7 +347,7 @@
   
     
     <li data-nav-id="/developers-journal/scripting/" title="Scripting" class="dd-item 
-        
+        parent
         
         
         ">
@@ -376,8 +376,8 @@
   
     
     <li data-nav-id="/developers-journal/scripting/bash/" title="Bash" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/scripting/bash/">
@@ -768,24 +768,135 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/scripting/'>Scripting</a> > Bash
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#bash-commands">Bash Commands</a>
+      <ul>
+        <li><a href="#grep">Grep</a></li>
+      </ul>
+    </li>
+    <li><a href="#bash-snippets">Bash Snippets</a>
+      <ul>
+        <li><a href="#for-loop">For loop</a></li>
+        <li><a href="#if-else-statement">If-Else statement</a></li>
+        <li><a href="#bash-commands-1">Bash commands</a></li>
+      </ul>
+    </li>
+    <li><a href="#links">Links</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Bash
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="a-developers-journal">A Developer&rsquo;s Journal</h1>
-<p>Welcome to my Developer&rsquo;s Journal, where I keep a journal of the knowledge I gained through my software development career.</p>
+
+	<h2 id="bash-commands">Bash Commands</h2>
+<ul>
+<li><code>atom .</code> : Open current directory in Atom</li>
+<li><code>code .</code> : Open current directory in Visual Studio Code</li>
+<li><code>code &lt;directory&gt;</code> : Open directory in Visual Studio Code</li>
+<li><code>open &lt;directory&gt;</code> : Open directory in Finder</li>
+<li><code>node (.*).js</code> : Run javascript file in bash</li>
+</ul>
+<p><a href="https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/">https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/</a></p>
+<ul>
+<li><code>tail -f &lt;log-file&gt;</code></li>
+</ul>
+<h3 id="grep">Grep</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat file.txt | grep <span style="color:#e6db74">&#34;title&#34;</span>
+</code></pre></div><h2 id="bash-snippets">Bash Snippets</h2>
+<h3 id="for-loop">For loop</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">for</span> x in dog elephant fish; <span style="color:#66d9ef">do</span>
+	echo $x
+<span style="color:#66d9ef">done</span>
+</code></pre></div><h3 id="if-else-statement">If-Else statement</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $1 <span style="color:#f92672">=</span> hotdog <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+	echo <span style="color:#e6db74">&#34;You typed hotdog&#34;</span>
+<span style="color:#66d9ef">else</span>
+	echo You did NOT type Hotdog
+	echo it was <span style="color:#e6db74">&#39;&#34;&#39;</span>$1<span style="color:#e6db74">&#39;&#34;&#39;</span>
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><h3 id="bash-commands-1">Bash commands</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>#
+<span style="color:#75715e"># This program is going to be awesome</span>
+
+echo <span style="color:#e6db74">&#34;Progam is starting...&#34;</span>
+ls -la
+</code></pre></div><h2 id="links">Links</h2>
+<p><a href="https://www.taniarascia.com/how-to-create-and-use-bash-scripts/">Bash Tutorial</a></p>
+<p><a href="https://devhints.io/bash">Cheatsheet</a></p>
+
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -970,6 +1081,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -984,6 +1096,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1003,6 +1116,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1218,4 +1334,3 @@
 
   </body>
 </html>
-

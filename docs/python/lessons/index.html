@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>A Developer&#39;s Journal :: A Developer&#39;s Journal</title>
+    <title>Lessons :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/">
+  <body class="" data-url="/developers-journal/python/lessons/">
     <nav id="sidebar" class="">
 
 
@@ -409,7 +409,7 @@
   
     
     <li data-nav-id="/developers-journal/python/" title="Python" class="dd-item 
-        
+        parent
         
         
         ">
@@ -438,8 +438,8 @@
   
     
     <li data-nav-id="/developers-journal/python/lessons/" title="Lessons" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/python/lessons/">
@@ -768,24 +768,109 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/python/'>Python</a> > Lessons
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#strip-method">strip() Method</a>
+      <ul>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#usage">Usage</a></li>
+      </ul>
+    </li>
+    <li><a href="#vars-method">vars() Method</a></li>
+    <li><a href="#response-and-jsonify">Response and Jsonify</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Lessons
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="a-developers-journal">A Developer&rsquo;s Journal</h1>
-<p>Welcome to my Developer&rsquo;s Journal, where I keep a journal of the knowledge I gained through my software development career.</p>
+
+	<h2 id="strip-method">strip() Method</h2>
+<p>The <code>strip</code> method and its cousins, <code>lstrip</code> and <code>rstrip</code> can cause bugs if used without knowing how exactly it works. One can assume that it strips a sequence of character from a string, and <code>lstrip</code> and <code>rstrip</code> strips the leading and trailling character sequence, respectively. However this is not how it works, these <code>strip</code> methods take a set of character, meaning it will check each character separately and remove them from the string.</p>
+<h3 id="example">Example</h3>
+<p>For example, you might want to remove the <code>path/</code> substring from the string <code>path/panther.xml</code>. If you decide to use <code>lstrip</code> it will cause unintended consequences, since it will remove the set of characters <code>p</code>, <code>a</code>, <code>t</code>, <code>h</code>, and <code>/</code> from the string if they are the leading characters. Since the <code>p</code> and <code>a</code> characters of the <code>panther.xml</code> substring fall into the set of characters to strip, it will remove those as well, and you will be left with the string <code>nther</code>.</p>
+<p>In a scenario like this, I would suggest to use the <code>replace</code> method, and replace the <code>path/</code> substring with an empty string. You should also set the <code>count</code> argument to <code>1</code> to make sure only the first occurence is replaced, to safeguard from any other unintented consequences.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">panther <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;path/panther.xml&#34;</span>
+
+panther<span style="color:#f92672">.</span>lstrip(<span style="color:#e6db74">&#34;path/&#34;</span>) <span style="color:#75715e"># Prints: nther.xml</span>
+
+panther<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;path/&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#ae81ff">1</span>) <span style="color:#75715e"># Prints: panther.xml</span>
+</code></pre></div><h3 id="usage">Usage</h3>
+<p>What <code>strip</code> is really good at is removing leading and trailing whitespaces, when no arguments are given and removing  sets of characters, but just be careful it does as you intend it to work.</p>
+<p>So the lesson here is to always read the official documentation to know exactly how a given method works and don&rsquo;t assume you know how a method works just from the name.</p>
+<h2 id="vars-method">vars() Method</h2>
+<p>Return the <code>__dict__</code> attribute of an <code>Object</code>. Useful for turning the attributes of an instance into a dictionary. Note, it disregards class attributes.</p>
+<h2 id="response-and-jsonify">Response and Jsonify</h2>
+<p><code>jsonify()</code> returns a <code>Response</code> object, but already populate with the correct mimetype and etc.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Response(<span style="color:#e6db74">&#34;{ &#39;a&#39;: &#39;abc&#39; }&#34;</span>, status<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>, mimetype<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;application/json&#39;</span>)
+jsonify()
+</code></pre></div>
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -1004,6 +1089,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1018,6 +1104,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1034,6 +1121,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1218,4 +1308,3 @@
 
   </body>
 </html>
-

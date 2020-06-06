@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>A Developer&#39;s Journal :: A Developer&#39;s Journal</title>
+    <title>Nginx :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/">
+  <body class="" data-url="/developers-journal/technology/nginx/">
     <nav id="sidebar" class="">
 
 
@@ -497,7 +497,7 @@
   
     
     <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
-        
+        parent
         
         
         ">
@@ -526,8 +526,8 @@
   
     
     <li data-nav-id="/developers-journal/technology/nginx/" title="Nginx" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/technology/nginx/">
@@ -768,24 +768,102 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/technology/'>Technology</a> > Nginx
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#nginxconf">nginx.conf</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Nginx
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="a-developers-journal">A Developer&rsquo;s Journal</h1>
-<p>Welcome to my Developer&rsquo;s Journal, where I keep a journal of the knowledge I gained through my software development career.</p>
+
+	<p>Nginx is a high performance simple HTTP server, which can also be used as a reverse proxy, load balancer, etc. Similar to Apache web server, however NGINX is much faster and more lightweight.</p>
+<p><a href="https://mycodesmells.com/post/serving-static-files-with-nginx">Serving static files with NGINX using Docker Tutorial 1</a></p>
+<p><a href="https://www.linkedin.com/pulse/serve-static-files-from-docker-via-nginx-basic-example-arun-kumar/">Serving static files with NGINX using Docker Tutorial 2</a></p>
+<h2 id="nginxconf">nginx.conf</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#66d9ef">events</span> {}
+
+<span style="color:#66d9ef">http</span> {
+    <span style="color:#f92672">server</span> {
+        <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
+
+        <span style="color:#f92672">root</span> <span style="color:#e6db74">/www</span>;
+        <span style="color:#f92672">index</span> <span style="color:#e6db74">index.html</span>;
+
+        <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
+            <span style="color:#f92672">include</span>  <span style="color:#e6db74">/etc/nginx/mime.types</span>;
+            <span style="color:#f92672">try_files</span> $uri $uri/ <span style="color:#e6db74">/index.html</span>;
+        }
+    }
+}
+</code></pre></div>
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -1054,6 +1132,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1068,6 +1147,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1084,6 +1164,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1218,4 +1301,3 @@
 
   </body>
 </html>
-

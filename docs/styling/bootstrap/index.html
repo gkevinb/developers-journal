@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>Categories :: A Developer&#39;s Journal</title>
+    <title>Bootstrap :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/categories/">
+  <body class="" data-url="/developers-journal/styling/bootstrap/">
     <nav id="sidebar" class="">
 
 
@@ -145,7 +145,7 @@
   
     
     <li data-nav-id="/developers-journal/styling/" title="Styling" class="dd-item 
-        
+        parent
         
         
         ">
@@ -252,8 +252,8 @@
   
     
     <li data-nav-id="/developers-journal/styling/bootstrap/" title="Bootstrap" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/styling/bootstrap/">
@@ -791,7 +791,13 @@
             
           
           
-            <a href='/developers-journal/'>A Developer's Journal</a> > Categories
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/styling/'>Styling</a> > Bootstrap
+          
+        
           
         
           
@@ -802,7 +808,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#cdn">CDN</a></li>
+    <li><a href="#npm-install">npm install</a></li>
+    <li><a href="#grid-system">Grid System</a></li>
+    <li><a href="#size-abbreviations">Size abbreviations</a></li>
+    <li><a href="#navigation-bar">Navigation Bar</a></li>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -818,7 +833,7 @@
           
             <h1>
               
-              Categories
+              Bootstrap
             </h1>
           
 
@@ -826,11 +841,130 @@
 
 
 
+	<p>Mobile-first development responsive framework.</p>
+<h2 id="cdn">CDN</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&#34;</span>&gt;
 
+<span style="color:#75715e">&lt;!-- jQuery library --&gt;</span>
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 
+<span style="color:#75715e">&lt;!-- Popper JS --&gt;</span>
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+
+<span style="color:#75715e">&lt;!-- Latest compiled JavaScript --&gt;</span>
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><h2 id="npm-install">npm install</h2>
+<p>Run <code>npm install bootstrap --save-dev</code> to be able to use SCSS mixins.</p>
+<h2 id="grid-system">Grid System</h2>
+<p>Default is based on 12 columns, so the numbers in each row add up to 12, if it needs to be in one row.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;margin-top:30px;&#34;</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-6 col-md-3&#34;</span>&gt;column&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-6 col-md-3&#34;</span>&gt;column&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-6 col-md-3&#34;</span>&gt;column&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-6 col-md-3&#34;</span>&gt;column&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p><code>col</code> are columns in a <code>row</code></p>
+<h2 id="size-abbreviations">Size abbreviations</h2>
 <ul>
-	
+<li><code>col</code> - extra small screens (mobile phones)</li>
+<li><code>col-sm</code> - small screens</li>
+<li><code>col-md</code> - medium screens (tablets)</li>
+<li><code>col-lg</code> - large screens (laptops)</li>
 </ul>
+<h2 id="navigation-bar">Navigation Bar</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">// navbar-light color scheme, bg-light is background light 
+// navbar-expand-lg when large screen itt expands and doesn&#39;t collapse
+// fixed top keeps navbar on top when scrolling
+&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar navbar-light bg-light navbar-expand-lg fixed-top&#34;</span>&gt;
+  // navbar-brand the logo on website
+	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-brand&#34;</span>&gt;My Website&lt;/<span style="color:#f92672">a</span>&gt;
+  // name the button the navbar-toggler to make it collapse
+  // then identify what to collapse with data-target
+  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-toggler&#34;</span> <span style="color:#a6e22e">data-toggle</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;collapse&#34;</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#navbarCollapse&#34;</span>&gt;
+    // the three line icon
+		&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-toggler-icon&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+  &lt;/<span style="color:#f92672">button</span>&gt;
+  // Makes this part collapse in mobile
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;collapse navbar-collapse&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbarCollapse&#34;</span>&gt;
+    // ml-auto, margin left auto
+  	&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-nav ml-auto&#34;</span>&gt;
+    	&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+      	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span>&gt;Homepage&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+      	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+      	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span>&gt;About Me&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+      	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span>&gt;Contact&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+	&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">nav</span>&gt;
+</code></pre></div><h2 id="example">Example</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!doctype html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        <span style="color:#75715e">&lt;!-- Required meta tags --&gt;</span>
+        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1, shrink-to-fit=no&#34;</span>&gt;
+        <span style="color:#75715e">&lt;!-- Bootstrap CSS --&gt;</span>
+        &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Hello, world!&lt;/<span style="color:#f92672">title</span>&gt;
+        &lt;<span style="color:#f92672">style</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>&gt;
+            .<span style="color:#a6e22e">row</span> <span style="color:#f92672">div</span> {
+                <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">silver</span>;
+            }
+        &lt;/<span style="color:#f92672">style</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar navbar-light bg-light navbar-expand-lg&#34;</span>&gt;
+            &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-brand&#34;</span>&gt;My Website&lt;/<span style="color:#f92672">a</span>&gt;
+            &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-toggler&#34;</span> <span style="color:#a6e22e">data-toggle</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;collapse&#34;</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#navbarCollapse&#34;</span>&gt;
+                &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-toggler-icon&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
+            &lt;/<span style="color:#f92672">button</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;collapse navbar-collapse&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbarCollapse&#34;</span>&gt;
+                &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-nav ml-auto&#34;</span>&gt;
+                    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+                        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> &gt;Homepage&lt;/<span style="color:#f92672">a</span>&gt;
+                    &lt;/<span style="color:#f92672">li</span>&gt;
+                    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+                        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;Blog&lt;/<span style="color:#f92672">a</span>&gt;
+                    &lt;/<span style="color:#f92672">li</span>&gt;
+                    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+                        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> &gt;About Me&lt;/<span style="color:#f92672">a</span>&gt;
+                    &lt;/<span style="color:#f92672">li</span>&gt;
+                    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item&#34;</span>&gt;
+                        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> &gt;Contact&lt;/<span style="color:#f92672">a</span>&gt;
+                    &lt;/<span style="color:#f92672">li</span>&gt;
+                &lt;/<span style="color:#f92672">ul</span>&gt;
+            &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/<span style="color:#f92672">nav</span>&gt;
+
+        <span style="color:#75715e">&lt;!-- &lt;div class=&#34;container&#34;&gt;
+</span><span style="color:#75715e">            &lt;div class=&#34;row&#34;&gt;
+</span><span style="color:#75715e">                &lt;div class=&#34;col-6 col-sm-3 col-md-2 bg-dark&#34;&gt;column&lt;/div&gt;
+</span><span style="color:#75715e">                &lt;div class=&#34;col-6 col-sm-3 col-md-2&#34;&gt;column&lt;/div&gt;
+</span><span style="color:#75715e">                &lt;div class=&#34;col-6 col-sm-3 col-md-2&#34;&gt;column&lt;/div&gt;
+</span><span style="color:#75715e">                &lt;div class=&#34;col-6 col-sm-3 col-md-2&#34;&gt;column&lt;/div&gt;
+</span><span style="color:#75715e">            &lt;/div&gt;
+</span><span style="color:#75715e">        &lt;/div&gt; --&gt;</span>
+
+        <span style="color:#75715e">&lt;!-- Optional JavaScript --&gt;</span>
+        <span style="color:#75715e">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
+        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.2.1.slim.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div>
+
+
 
 
 <footer class=" footline" >
@@ -905,6 +1039,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -919,6 +1054,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -968,6 +1106,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -986,6 +1125,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 

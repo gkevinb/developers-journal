@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>A Developer&#39;s Journal :: A Developer&#39;s Journal</title>
+    <title>SCSS :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591468029" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/">
+  <body class="" data-url="/developers-journal/styling/scss/">
     <nav id="sidebar" class="">
 
 
@@ -145,7 +145,7 @@
   
     
     <li data-nav-id="/developers-journal/styling/" title="Styling" class="dd-item 
-        
+        parent
         
         
         ">
@@ -200,8 +200,8 @@
   
     
     <li data-nav-id="/developers-journal/styling/scss/" title="SCSS" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/styling/scss/">
@@ -768,24 +768,255 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/styling/'>Styling</a> > SCSS
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#partials">Partials</a></li>
+    <li><a href="#inheritance-and-extend">Inheritance and @extend</a></li>
+    <li><a href="#mixins">Mixins</a></li>
+    <li><a href="#examples">Examples</a>
+      <ul>
+        <li><a href="#inheritance">Inheritance</a></li>
+        <li><a href="#nesting">Nesting</a></li>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#operators-and-inheritance">Operators and Inheritance</a></li>
+        <li><a href="#mixin">Mixin</a></li>
+        <li><a href="#for-loop">For Loop</a></li>
+      </ul>
+    </li>
+    <li><a href="#snippets">Snippets</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              SCSS
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="a-developers-journal">A Developer&rsquo;s Journal</h1>
-<p>Welcome to my Developer&rsquo;s Journal, where I keep a journal of the knowledge I gained through my software development career.</p>
+
+	<hr>
+<p>[TOC]</p>
+<hr>
+<p>SCSS is stricter more popular better, than SASS.</p>
+<h2 id="partials">Partials</h2>
+<p>Partial SCSS files to link into main SCSS file, naming convention: (Use underscore infront of name)
+_partial.scss
+_partial2.scss</p>
+<p>When importing files use:
+@import &ldquo;partial&rdquo;;
+No, underscore, no file extension</p>
+<h2 id="inheritance-and-extend">Inheritance and @extend</h2>
+<p>Works just like in any other programming language.</p>
+<h2 id="mixins">Mixins</h2>
+<p>They are like functions in CSS, pretty cool if you ask me :D</p>
+<p><a href="https://sass-guidelin.es/">Sass Guidelines</a></p>
+<h2 id="examples">Examples</h2>
+<h3 id="inheritance">Inheritance</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#a6e22e">.panel</span>{
+    <span style="color:#f92672">border</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">3px</span> <span style="color:#f92672">solid</span> <span style="color:#f92672">dodgerblue</span>;
+    <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">lightgreen</span>;
+    <span style="color:#f92672">margin</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">10px</span>;
+}
+<span style="color:#a6e22e">.little_panel</span>{
+    <span style="color:#66d9ef">@extend</span> <span style="color:#a6e22e">.panel</span>;
+    <span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">12px</span>;
+    <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">5px</span>;
+}
+<span style="color:#a6e22e">.big_panel</span>{
+    <span style="color:#66d9ef">@extend</span> <span style="color:#a6e22e">.panel</span>;
+    <span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">32px</span>;
+    <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">20px</span>;
+}
+</code></pre></div><h3 id="nesting">Nesting</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#f92672">nav</span>{
+    <span style="color:#f92672">ul</span>{
+        <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg_color</span>;
+        <span style="color:#f92672">margin</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0</span>;
+        <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0</span>;
+        <span style="color:#f92672">list-style</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">none</span>;
+    }
+    <span style="color:#f92672">li</span>{
+        <span style="color:#f92672">display</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">inline-block</span>;
+    }
+    <span style="color:#f92672">a</span>{
+        <span style="color:#f92672">color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">text_color</span>;
+        <span style="color:#f92672">display</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">inline-block</span>;
+        <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">10px</span> <span style="color:#f92672">16px</span>;
+        <span style="color:#f92672">text-decoration</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">none</span>;
+    }
+    <span style="color:#f92672">a</span><span style="color:#a6e22e">:hover</span>{
+        <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">hover_color</span>;
+    }
+}
+</code></pre></div><h3 id="variables">Variables</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">$primary-color<span style="color:#f92672">:</span> green;
+$bg_color<span style="color:#f92672">:</span> <span style="color:#ae81ff">#2c3e50</span>;
+$hover_color<span style="color:#f92672">:</span> <span style="color:#ae81ff">#160bc0</span>;
+$text_color<span style="color:#f92672">:</span> white;
+</code></pre></div><h3 id="operators-and-inheritance">Operators and Inheritance</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">$button_background<span style="color:#f92672">:</span> <span style="color:#ae81ff">#16A085</span>;
+$button_color<span style="color:#f92672">:</span> <span style="color:#ae81ff">#FFFFFF</span>;
+$button_padding<span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;
+
+<span style="color:#a6e22e">.button</span>{
+    <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">button_background</span>;
+    <span style="color:#f92672">border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">8px</span>;
+    <span style="color:#f92672">color</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">button_color</span>;
+    <span style="color:#f92672">display</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">inline-block</span>;
+    <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">button_padding</span>;
+    <span style="color:#f92672">text-decoration</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">none</span>;
+
+}
+
+<span style="color:#a6e22e">.jumbo_button</span>{
+    <span style="color:#66d9ef">@extend</span> <span style="color:#a6e22e">.button</span>;
+    <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">button_padding</span> <span style="color:#f92672">+</span> <span style="color:#f92672">30</span>;
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">    Don&#39;t need units on 30, but its okay to write 30px as well
+</span><span style="color:#75715e">    */</span>
+}
+
+<span style="color:#a6e22e">.light_button</span>{
+    <span style="color:#66d9ef">@extend</span> <span style="color:#a6e22e">.button</span>;
+    <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">button_background</span> <span style="color:#f92672">*</span> <span style="color:#f92672">1</span><span style="color:#a6e22e">.5</span>;
+    <span style="color:#75715e">/*
+</span><span style="color:#75715e">    Multplying color &gt; 1, lightens it
+</span><span style="color:#75715e">    &lt; 1, darkens it
+</span><span style="color:#75715e">    */</span>
+}
+</code></pre></div><h3 id="mixin">Mixin</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> borderRadius</span>($radius){
+    <span style="color:#f92672">-webkit-border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">radius</span>;
+    <span style="color:#f92672">-moz-border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">radius</span>;
+    <span style="color:#f92672">-ms-border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">radius</span>;
+    <span style="color:#f92672">border-radius</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">radius</span>;
+}
+<span style="color:#a6e22e">.panel</span>{
+    <span style="color:#f92672">border</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">3px</span> <span style="color:#f92672">solid</span> <span style="color:#f92672">dodgerblue</span>;
+    <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">lightgreen</span>;
+    <span style="color:#f92672">margin</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">10px</span>;
+}
+<span style="color:#a6e22e">.little_panel</span>{
+    <span style="color:#75715e">// Extend used for inheritance
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">@extend</span> <span style="color:#a6e22e">.panel</span>;
+    <span style="color:#75715e">// Include used as a method or function
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> borderRadius</span>(<span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>);
+    <span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">12px</span>;
+    <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">5px</span>;
+}
+<span style="color:#a6e22e">.big_panel</span>{
+    <span style="color:#66d9ef">@extend</span> <span style="color:#a6e22e">.panel</span>;
+    <span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> borderRadius</span>(<span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>);
+    <span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">32px</span>;
+    <span style="color:#f92672">padding</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">20px</span>;
+}
+</code></pre></div><h3 id="for-loop">For Loop</h3>
+<p><code>#{$i}</code> is how you place the variable.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#66d9ef">@for</span> $i <span style="color:#f92672">from</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">through</span> <span style="color:#ae81ff">24</span> {
+    #dec<span style="color:#e6db74">#{</span>$i<span style="color:#e6db74">}</span>--date {
+        <span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> datePositioning</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">visible</span>);
+        <span style="color:#f92672">grid-area</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">d</span>#{<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">i</span>};
+    }
+
+    #dec<span style="color:#e6db74">#{</span>$i<span style="color:#e6db74">}</span>--content {
+        <span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> datePositioning</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">hidden</span>);
+        <span style="color:#66d9ef">@include</span><span style="color:#a6e22e"> dateBackgroundImage</span>(<span style="color:#e6db74">&#34;../img/</span><span style="color:#e6db74">#{</span>$i<span style="color:#e6db74">}</span><span style="color:#e6db74">.png&#34;</span>);
+        <span style="color:#f92672">grid-area</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">d</span>#{<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">i</span>};
+    }
+}
+
+<span style="color:#75715e">// Produces this 24 times, 1...24
+</span><span style="color:#75715e"></span>
+#dec1--date {
+  <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100</span><span style="color:#960050;background-color:#1e0010">%</span>;
+  <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100</span><span style="color:#960050;background-color:#1e0010">%</span>;
+  <span style="color:#f92672">position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">absolute</span>;
+  <span style="color:#f92672">z-index</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">2</span>;
+  <span style="color:#f92672">visibility</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">visible</span>;
+  <span style="color:#f92672">grid-area</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">d1</span>; }
+
+#dec1--content {
+  <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100</span><span style="color:#960050;background-color:#1e0010">%</span>;
+  <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">100</span><span style="color:#960050;background-color:#1e0010">%</span>;
+  <span style="color:#f92672">position</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">absolute</span>;
+  <span style="color:#f92672">z-index</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">1</span>;
+  <span style="color:#f92672">visibility</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">hidden</span>;
+  <span style="color:#f92672">background-image</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;../img/1.png&#34;</span><span style="color:#f92672">)</span>;
+  <span style="color:#f92672">background-repeat</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">no-repeat</span>;
+  <span style="color:#f92672">background-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">112px</span> <span style="color:#f92672">112px</span>;
+  <span style="color:#f92672">grid-area</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">d1</span>; }
+  #dec1--content<span style="color:#a6e22e">:hover</span> {
+    <span style="color:#f92672">opacity</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">0</span><span style="color:#a6e22e">.3</span>; }
+</code></pre></div><h2 id="snippets">Snippets</h2>
+<p>When passing in name of image into a mixin. Similar to for loop when passing in argument and then using it in a string.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#66d9ef">@mixin</span><span style="color:#a6e22e"> bgimage</span>($name) {
+  $url<span style="color:#f92672">:</span><span style="color:#e6db74">&#34;../images/</span><span style="color:#e6db74">#{</span>$name<span style="color:#e6db74">}</span><span style="color:#e6db74">.png&#34;</span>;
+  <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">url</span><span style="color:#f92672">)</span>;
+}
+</code></pre></div>
+
+
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -854,6 +1085,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -868,6 +1100,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -885,6 +1120,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -900,6 +1136,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1218,4 +1457,3 @@
 
   </body>
 </html>
-
