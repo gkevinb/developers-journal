@@ -335,9 +335,9 @@ $nav_burger_color: linear-gradient(180deg, #d48590 0%, #ecac81 100%);
 ## Make sure height matches content height
 
 ```css
-	/* Makes sure height matches content height */
-	display: block;
-  overflow: auto;
+/* Makes sure height matches content height */
+display: block;
+overflow: auto;
 ```
 
 
