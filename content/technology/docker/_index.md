@@ -1,8 +1,7 @@
----
-title: "Docker"
-date: 2020-04-26T17:49:23+02:00
-# draft: true
----
++++
+title = "Docker"
+date = 2020-04-26T17:49:23+02:00
++++
 
 ## Docker
 

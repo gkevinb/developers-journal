@@ -1,8 +1,7 @@
----
-title: "Javascript"
-date: 2020-06-02T17:49:23+02:00
-# draft: true
----
++++
+title = "Javascript"
+date = 2020-06-02T17:49:23+02:00
++++
 
 ## JavaScript
 

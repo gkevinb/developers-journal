@@ -1,6 +1,6 @@
----
-title: "A Developer's Journal"
----
++++
+title = "A Developer's Journal"
++++
 
 # A Developer's Journal
 

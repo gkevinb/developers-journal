@@ -1,8 +1,7 @@
----
-title: "Python"
-date: 2020-04-28T17:09:23+02:00
-# draft: true
----
++++
+title = "Python"
+date = 2020-04-28T17:09:23+02:00
++++
 
 
 ## Lessons
