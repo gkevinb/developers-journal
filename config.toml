@@ -2,6 +2,7 @@ baseURL = "https://gaborkevinbarta.com/developers-journal/"
 publishDir = "docs"
 languageCode = "en-us"
 title = "A Developer's Journal"
+googleAnalytics = "UA-141910422-1"
 
 theme = "hugo-theme-learn"
 

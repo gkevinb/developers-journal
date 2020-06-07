@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
 
-    <title>Docker :: A Developer&#39;s Journal</title>
+    <title>Interesting :: A Developer&#39;s Journal</title>
 
     
     <link href="/developers-journal/css/nucleus.css?1591552136" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/developers-journal/technology/docker/">
+  <body class="" data-url="/developers-journal/almanac/interesting/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/developers-journal/almanac/" title="Almanac" class="dd-item 
-        
+        parent
         
         
         ">
@@ -138,8 +138,8 @@
   
     
     <li data-nav-id="/developers-journal/almanac/interesting/" title="Interesting" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/developers-journal/almanac/interesting/">
@@ -751,7 +751,7 @@
   
     
     <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
-        parent
+        
         
         
         ">
@@ -780,8 +780,8 @@
   
     
     <li data-nav-id="/developers-journal/technology/docker/" title="Docker" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/developers-journal/technology/docker/">
@@ -961,7 +961,7 @@
             
           
           
-            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/technology/'>Technology</a> > Docker
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/almanac/'>Almanac</a> > Interesting
           
         
           
@@ -976,16 +976,10 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#tutorial">Tutorial</a></li>
-    <li><a href="#commands">Commands</a></li>
-    <li><a href="#deploy-static-website-as-container">Deploy Static website as container</a>
-      <ul>
-        <li><a href="#dockerfile">dockerfile</a></li>
-        <li><a href="#nginxconf">nginx.conf</a></li>
-        <li><a href="#docker-composeyaml">docker-compose.yaml</a></li>
-      </ul>
-    </li>
+    <li><a href="#gamblers-fallacy">Gambler&rsquo;s Fallacy</a></li>
+    <li><a href="#pigeon-hole-principle">Pigeon hole principle</a></li>
+    <li><a href="#infinite-monkey-theorem">Infinite monkey theorem</a></li>
+    <li><a href="#software-archaeology">Software Archaeology</a></li>
   </ul>
 </nav>
     </div>
@@ -1003,7 +997,7 @@
           
             <h1>
               
-              Docker
+              Interesting
             </h1>
           
 
@@ -1011,105 +1005,39 @@
 
 
 
-	<h2 id="introduction">Introduction</h2>
-<p>Environments are not the same. For example you develop on a Macbook and server is Ubuntu server. Docker runs on containers. Docker file builds a docker image, which contains all project code,installments of needed programs, complete application wrapped in an image, which is designed to sit on top of a container.</p>
-<p><a href="https://www.youtube.com/watch?v=Qw9zlE3t8Ko&amp;t=623s">Video Source</a></p>
-<p><a href="https://tecadmin.net/tutorial/docker/docker-tutorials/">Solid written tutorial</a></p>
-<h2 id="tutorial">Tutorial</h2>
-<p>Create file called <code>Dockerfile</code></p>
-<p>Take a look at <code>workspace/tutorial</code> project.</p>
-<ul>
-<li><code>FROM</code> will take from the Python image for <a href="https://hub.docker.com">DockerHub</a>.</li>
-<li><code>COPY</code> current directory</li>
-<li><code>RUN</code> python specific stuff in requirements.txt</li>
-<li><code>CMD</code> Commands to run, first the python command and then any python files</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3-onbuild</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /usr/src/app<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install -r requirements.txt<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;python&#34;</span>, <span style="color:#e6db74">&#34;api.py&#34;</span>]<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>You can run services like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run 
-</code></pre></div><p>These usually has several arguments like port numbers, which can become tedious that is why it is better to use a <code>docker-compose.yml</code> file, like below. <code>docker-compose</code> is a yaml file and spins up all the containers we need.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#66d9ef">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+	<h2 id="gamblers-fallacy">Gambler&rsquo;s Fallacy</h2>
+<blockquote>
+<p>The false assumption that past independent events have an effect on future outcomes.</p>
+</blockquote>
+<p>Gambler&rsquo;s tend to make a false assumption that if you have been on a losing streak for a while, then the chances of winning will increase since you have not won in a while. There is a false sense of balancing in one&rsquo;s mind. That the losing streaks and winning streaks will eventually balance out.</p>
+<p><strong>Sources</strong></p>
+<p><a href="https://psychologenie.com/gamblers-fallacy-definition-examples">https://psychologenie.com/gamblers-fallacy-definition-examples</a></p>
+<h2 id="pigeon-hole-principle">Pigeon hole principle</h2>
+<blockquote>
+<p>The pigeonhole principle states that if n items are put into m containers, with n &gt; m, then at least one container must contain more than one item.</p>
+</blockquote>
+<p><strong>Sources</strong></p>
+<p><a href="https://medium.com/cantors-paradise/the-pigeonhole-principle-e4c637940619">https://medium.com/cantors-paradise/the-pigeonhole-principle-e4c637940619</a></p>
+<h2 id="infinite-monkey-theorem">Infinite monkey theorem</h2>
+<blockquote>
+<p>The infinite monkey theorem states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type any given text, such as the complete works of William Shakespeare.</p>
+</blockquote>
+<p><strong>Sources</strong></p>
+<p><a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem">https://en.wikipedia.org/wiki/Infinite_monkey_theorem</a></p>
+<h2 id="software-archaeology">Software Archaeology</h2>
+<p>Software archaelogy is the study of old legacy code, usually with little to no documentation.</p>
+<blockquote>
+<p>Everything that is there is there for a reason, and there are 3 possible reasons:</p>
+<ol>
+<li>It used to need to be there but no longer does</li>
+<li>It never needed to be there and the person that wrote the code had no clue</li>
+<li>It STILL needs to be there and YOU have no clue</li>
+</ol>
+<p>The corollary to this &ldquo;law&rdquo; is that, until you know which was the reason, you should NOT modify the code (or data).</p>
+</blockquote>
+<p><strong>Sources</strong></p>
+<p><a href="https://en.wikipedia.org/wiki/Software_archaeology">https://en.wikipedia.org/wiki/Software_archaeology</a></p>
 
-<span style="color:#66d9ef">services</span>:
-	<span style="color:#75715e"># you name the services</span>
-    <span style="color:#66d9ef">product-service</span>:
-    	<span style="color:#75715e"># Directory where the dockerfile is</span>
-        <span style="color:#66d9ef">build</span>: ./product
-        <span style="color:#75715e"># sourcedirectory:/directoryonhost</span>
-        <span style="color:#66d9ef">volumes</span>:
-            - ./product:/usr/src/app
-        <span style="color:#75715e"># localhostport:containerport</span>
-        <span style="color:#66d9ef">ports</span>:
-            - <span style="color:#ae81ff">5001</span>:<span style="color:#ae81ff">80</span>
-
-    <span style="color:#66d9ef">website</span>:
-    	<span style="color:#75715e"># gets from dockerhub</span>
-        <span style="color:#66d9ef">image</span>: php:apache
-        <span style="color:#66d9ef">volumes</span>:
-            - ./website:/var/www/html
-        <span style="color:#66d9ef">ports</span>:
-            - <span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">80</span>
-        <span style="color:#66d9ef">depends_on</span>:
-            - product-service
-
-</code></pre></div><p>Run docker-compose file by running this command <code>docker-compose up</code>. You can stop the services with <code>CTRL + C</code>. The containers can be started up by using <code>docker-compose up -d</code> This will allow you to still navigate in the terminal and you can stop it by <code>docker-compose stop</code>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>docker ps -a</code> : List containers with name, ID, etc</li>
-<li><code>docker stop d31a3b925d89</code> :  Stop container with ID</li>
-<li><code>docker system prune</code> : Remove stopped containers and dangling images</li>
-<li><code>docker images</code> : List images with repository, image ID, etc</li>
-<li><code>docker rmi e91727a11cd7</code> : Remove image with image ID</li>
-<li><code>docker build -t webserver-image:v1 .</code> :  Build image with name: web server-image version: v1</li>
-<li><code>docker run -d -p 5000:80 webserver-image:v1</code>  : Run image in container port 5000 locally and port 80 on container</li>
-<li><code>docker-compose up</code> : Build image and run in container based on configuration in docker-compose.yaml file</li>
-<li><code>docker-compose up --build</code> : To do a fresh build of images. Needed to update files.</li>
-<li><code>docker-compose up -d</code> : Create containers and <code>-d</code> to launch in daemon mood (still navigate cmd)</li>
-<li><code>docker-compose stop</code> : Stop all containers</li>
-</ul>
-<h2 id="deploy-static-website-as-container">Deploy Static website as container</h2>
-<p>Medium article](<a href="https://medium.com/myriatek/using-docker-to-run-a-simple-nginx-server-75a48d74500b">https://medium.com/myriatek/using-docker-to-run-a-simple-nginx-server-75a48d74500b</a>)</p>
-<h3 id="dockerfile">dockerfile</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> nginx:alpine</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mkdir /www<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/index.html /www/index.html<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/css /www/css<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/js /www/js<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> dist/img /www/img<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> nginx.conf /etc/nginx/nginx.conf<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>The first line defines our base image. The second line copies the content of the current directory into a particular location inside the container.</p>
-<h3 id="nginxconf">nginx.conf</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nginx" data-lang="nginx"><span style="color:#66d9ef">events</span> {}
-
-<span style="color:#66d9ef">http</span> {
-    <span style="color:#f92672">server</span> {
-        <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
-
-        <span style="color:#f92672">root</span> <span style="color:#e6db74">/www</span>;
-        <span style="color:#f92672">index</span> <span style="color:#e6db74">index.html</span>;
-
-        <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
-            <span style="color:#f92672">include</span>  <span style="color:#e6db74">/etc/nginx/mime.types</span>;
-            <span style="color:#f92672">try_files</span> $uri $uri/ <span style="color:#e6db74">/index.html</span>;
-        }
-    }
-}
-
-</code></pre></div><h3 id="docker-composeyaml">docker-compose.yaml</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">version</span>: <span style="color:#e6db74">&#39;3.7&#39;</span>
-
-<span style="color:#66d9ef">services</span>:
-    <span style="color:#66d9ef">web-service</span>:
-        <span style="color:#66d9ef">build</span>: ./
-        <span style="color:#66d9ef">ports</span>:
-            - <span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">80</span>
-
-</code></pre></div>
 
 
 
@@ -1149,8 +1077,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1166,6 +1092,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1183,21 +1112,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1215,6 +1129,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -1225,24 +1142,6 @@
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
                     
                         
             
@@ -1277,72 +1176,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1460,6 +1293,106 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1534,7 +1467,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1549,7 +1481,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -1566,9 +1497,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 

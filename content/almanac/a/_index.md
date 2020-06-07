@@ -1,16 +1,13 @@
 +++
 title = "A"
 date = 2020-06-07T16:38:00+02:00
-weight = 1
+weight = 100
 +++
 
 # Almanac
 
 - API - Application Programming Interface
 - REST
-- DRY - Don't repeat yourself
-- WET - Write everything twice
-- SOLID
 - Dependency Injection
 - Schrodinger's Backup
 - Heisenbug
@@ -23,10 +20,6 @@ weight = 1
 - Collapsing margins
 - Continous Integration
 - DevOps
-- KISS - Keep it simple stupid
-- Single Responsibility
-- Separation of Concerns
-- YAGNI - You aren't gonna need it
 - Clean code
 - Refactor
 - Proxy
@@ -54,7 +47,6 @@ weight = 1
 - Scripting
 - Bash
 - Terminal
-- Inversion of Control
 - Functional Programming
 - Aritifical Intelligence (AI)
 - Machine Learning (ML)
@@ -68,9 +60,6 @@ weight = 1
 - Mixin
 - Load balancing
 - Auto scaling
-- Pigeon hole principle
-- Gambler's fallacy
-- Infinite monkey theorem
 - ASCII
 - Unicode
 - UTF
@@ -80,3 +69,7 @@ weight = 1
 - Database normalization
 - Greenfield project
 - Shebang
+
+
+Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+—Martin Fowler

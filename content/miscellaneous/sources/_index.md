@@ -12,9 +12,6 @@ draft = true
 
 ## Principles
 
-* [DRY (Don't Repeat Yourself)](https://deviq.com/don-t-repeat-yourself/)
-* [YAGNI (You Ain't Gonna Need It)](https://deviq.com/yagni/)
-* [SR (Single Responsibity)](https://deviq.com/single-responsibility-principle/)
 * [DI (Dependecy Injection)](https://deviq.com/dependency-injection/)
 * [Architectural Principles](https://docs.microsoft.com/en-us/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion)
 

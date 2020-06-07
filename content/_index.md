@@ -6,7 +6,7 @@ chapter = true
 
 # A Developer's Journal
 
-Welcome to my Developer's Journal, where I keep a journal of the knowledge I gained through my software development career. The purpose of this journal is to maintain a digital notebook to record programming snippets and document new programming techniques. Most of what you find in this journal are small explanations of concepts using my words, code snippets I developed, and links to external sources I found useful. Feel free to use any of the resources, however please do your own research on the subjects, as there could be better explanations and solutions than what I have found and developed.
+Welcome to my Developer's Journal, where I keep a journal of the knowledge I gained throughout career as a software developer. The purpose of this journal is to maintain a digital notebook to record programming snippets and document new programming techniques. Most of what you find in this journal are small explanations of concepts, code snippets, and links to external sources. Feel free to use any of the resources, however please do your own research on the subjects, as there could be better explanations and solutions than what I have found and developed.
 
 ### Tools
 
