@@ -1,6 +1,7 @@
 +++
 title = "Virtual Environment"
 date = 2020-06-06T18:47:11+02:00
+weight = 10
 +++
 
 Virtual environments, or **venv**, create a containerized environment of running your Python applications. You install all the Python packages you use for a specific program in one virtual environment.

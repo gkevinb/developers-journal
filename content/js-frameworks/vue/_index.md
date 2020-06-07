@@ -1,6 +1,7 @@
 +++
 title = "Vue"
 date = 2020-04-26T17:49:23+02:00
+weight = 15
 +++
 
 ## Vue.js

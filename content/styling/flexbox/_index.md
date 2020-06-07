@@ -1,6 +1,7 @@
 +++
 title = "Flexbox"
 date = 2020-06-06T20:00:24+02:00
+weight = 3
 +++
 
 Flexbox defaults to aligning element horizontally.

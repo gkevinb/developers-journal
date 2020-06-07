@@ -1,9 +1,10 @@
 +++
 title = "Docker"
 date = 2020-04-26T17:49:23+02:00
+weight = 1
 +++
 
-## Docker
+## Introduction
 
 Environments are not the same. For example you develop on a Macbook and server is Ubuntu server. Docker runs on containers. Docker file builds a docker image, which contains all project code,installments of needed programs, complete application wrapped in an image, which is designed to sit on top of a container.
 

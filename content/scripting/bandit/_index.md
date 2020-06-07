@@ -1,6 +1,7 @@
 +++
 title = "Bandit"
 date = 2020-06-06T19:15:01+02:00
+weight = 10
 draft = true
 +++
 

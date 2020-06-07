@@ -1,0 +1,82 @@
++++
+title = "A"
+date = 2020-06-07T16:38:00+02:00
+weight = 1
++++
+
+# Almanac
+
+- API - Application Programming Interface
+- REST
+- DRY - Don't repeat yourself
+- WET - Write everything twice
+- SOLID
+- Dependency Injection
+- Schrodinger's Backup
+- Heisenbug
+- Magic Number
+- Cargo cult programming
+- Inheritance
+- Object-oriented programming
+- CLI - Command Line Interface
+- Package manager
+- Collapsing margins
+- Continous Integration
+- DevOps
+- KISS - Keep it simple stupid
+- Single Responsibility
+- Separation of Concerns
+- YAGNI - You aren't gonna need it
+- Clean code
+- Refactor
+- Proxy
+- Cloud
+- HTTP
+- CRUD - Create, Read, Update, Delete
+- ACID
+- Boilerplate
+- MVC - Model, View, Controller
+- Version Control
+- Build Automation
+- CMS - Content Management System
+- Unit Testing
+- Gateway
+- Factory
+- Service
+- Mocking
+- Method
+- Function
+- Class
+- Interface
+- Agile
+- Scrum
+- Unix
+- Scripting
+- Bash
+- Terminal
+- Inversion of Control
+- Functional Programming
+- Aritifical Intelligence (AI)
+- Machine Learning (ML)
+- SQL Injection
+- Cross-site Scripting
+- Web crawler
+- SEO - Search Engine Optimization
+- IDE - Integrated Development Environment
+- OS - Operating System
+- Composition
+- Mixin
+- Load balancing
+- Auto scaling
+- Pigeon hole principle
+- Gambler's fallacy
+- Infinite monkey theorem
+- ASCII
+- Unicode
+- UTF
+- Pure function
+- Design Stamina Hypothesis
+- Postmortem documentation
+- Database normalization
+- Greenfield project
+- Shebang

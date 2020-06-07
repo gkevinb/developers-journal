@@ -1,6 +1,7 @@
 +++
 title = "Lessons"
 date = 2020-06-06T18:57:10+02:00
+weight = 5
 +++
 
 

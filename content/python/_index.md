@@ -13,11 +13,9 @@ post = " <i class='fab fa-python'></i> "
 
 [Virtual Environment](venv/)
 
-### Automation
+### External Sources
 
-https://automatetheboringstuff.com/chapter18/
+[Automation](https://automatetheboringstuff.com/chapter18/)
 
-### Anti Patterns
-
-https://docs.quantifiedcode.com/python-anti-patterns/
+[Anti Patterns](https://docs.quantifiedcode.com/python-anti-patterns/)
 

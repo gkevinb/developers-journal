@@ -1,6 +1,7 @@
 +++
 title = "Bash"
 date = 2020-06-06T19:09:02+02:00
+weight = 5
 +++
 
 ## Bash Commands

@@ -1,8 +1,8 @@
 +++
 title = "Bootstrap"
 date = 2020-06-06T19:45:40+02:00
+weight = 4
 +++
-
 
 Mobile-first development responsive framework.
 

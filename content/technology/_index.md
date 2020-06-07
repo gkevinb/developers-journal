@@ -9,3 +9,6 @@ chapter = true
 
 [Docker](docker/)
 
+[Git](git/)
+
+[NGINX](nginx/)

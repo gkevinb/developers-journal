@@ -8,4 +8,10 @@ chapter = true
 
 # Styling
 
-CSS, SASS, Bootstrap
+[CSS](css/)
+
+[SCSS](scss/)
+
+[Flexbox](flexbox/)
+
+[Bootstrap](bootstrap/)
