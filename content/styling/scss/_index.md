@@ -4,10 +4,6 @@ date = 2020-06-06T20:00:16+02:00
 weight = 2
 +++
 
-
-[TOC]
-
-
 SCSS is stricter more popular better, than SASS.
 
 

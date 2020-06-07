@@ -4,8 +4,6 @@ date = 2020-06-06T19:24:56+02:00
 weight = 5
 +++
 
-**BIG PROJECTS USE NPM SCRIPTS AND BUILT-IN CLI COMMANDS INSTEAD, PERHAPS USE FOR SMALL PROJECTS ONLY**
-
 Used to automate workflow of web development.
 "Swiss Army Knife of Web Development" Quote by Bucky from TheNewBoston.
 

@@ -5,9 +5,6 @@ weight = 1
 +++
 
 
-[TOC]
-
-
 ## Conventions
 
 ### Naming
