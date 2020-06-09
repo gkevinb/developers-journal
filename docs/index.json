@@ -4,7 +4,7 @@
 	"title": "Almanac",
 	"tags": [],
 	"description": "",
-	"content": "Almanac The almanac is a collection of commonly used phrases in computer science that I have collected in order to organize them in readable and maintainable way.\n Software Principles\nA\nS\n"
+	"content": "Almanac The almanac is a collection of commonly used phrases in computer science that I have collected in order to organize them in readable and maintainable way.\n Software Principles\nInteresting\nTodo\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/styling/css/",
@@ -130,7 +130,7 @@
 	"title": "Python",
 	"tags": [],
 	"description": "",
-	"content": "Python Lessons\nVirtual Environment\nExternal Sources Automation\nAnti Patterns\n"
+	"content": "Python Lessons\nTesting\nVirtual Environment\nExternal Sources Automation\nAnti Patterns\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/technology/",
@@ -138,6 +138,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Technology Docker\nGit\nNGINX\n"
+},
+{
+	"uri": "https://gaborkevinbarta.com/developers-journal/python/testing/",
+	"title": "Testing",
+	"tags": [],
+	"description": "",
+	"content": "Mocking Mock is useful when mocking the parameter passed into a specific class during the instantiation of the class. Then you can mock attributes of that parameter, which will be called instead of an actual parameter being passed to the contructor.\nIn the example below, the gateway is mocked and dummy data is given as the return value for the get_something method of the gateway. In this case, only the get_upper_something is unit tested, while the dependecies are mocked out.\nfrom unittest.mock import Mock class Service(): def __init__(self, gateway): self.gateway = gateway def get_upper_something(self): return gateway.get_something() def test_get_upper_something(): gateway = Mock() gateway.get_something.return_value = [1, 2] service = Service(gateway) service.get_upper_something() assert result == [1, 2] "
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/interesting/",
@@ -175,18 +182,11 @@
 	"content": "Interpolation using Javascript https://pugjs.org/language/attributes.html\nhttps://pugjs.org/language/interpolation.html\nInjecting data from JSON https://tusharghate.com/rendering-pug-templates-with-multiple-data-files\n"
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/a/",
-	"title": "A",
+	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/todo/",
+	"title": "Todo",
 	"tags": [],
 	"description": "",
-	"content": "Almanac  API - Application Programming Interface REST Dependency Injection Schrodinger\u0026rsquo;s Backup Heisenbug Magic Number Cargo cult programming Inheritance Object-oriented programming CLI - Command Line Interface Package manager Collapsing margins Continous Integration DevOps Clean code Refactor Proxy Cloud HTTP CRUD - Create, Read, Update, Delete ACID Boilerplate MVC - Model, View, Controller Version Control Build Automation CMS - Content Management System Unit Testing Gateway Factory Service Mocking Method Function Class Interface Agile Scrum Unix Scripting Bash Terminal Functional Programming Aritifical Intelligence (AI) Machine Learning (ML) SQL Injection Cross-site Scripting Web crawler SEO - Search Engine Optimization IDE - Integrated Development Environment OS - Operating System Composition Mixin Load balancing Auto scaling ASCII Unicode UTF Pure function Design Stamina Hypothesis Postmortem documentation Database normalization Greenfield project Shebang  Any fool can write code that a computer can understand. Good programmers write code that humans can understand. —Martin Fowler\n"
-},
-{
-	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/s/",
-	"title": "S",
-	"tags": [],
-	"description": "",
-	"content": ""
+	"content": " API - Application Programming Interface REST Dependency Injection Schrodinger\u0026rsquo;s Backup Heisenbug Magic Number Cargo cult programming Inheritance Object-oriented programming CLI - Command Line Interface Package manager Collapsing margins Continous Integration DevOps Clean code Refactor Proxy Cloud HTTP CRUD - Create, Read, Update, Delete ACID Boilerplate MVC - Model, View, Controller Version Control Build Automation CMS - Content Management System Unit Testing Gateway Factory Service Mocking Method Function Class Interface Agile Scrum Unix Scripting Bash Terminal Functional Programming Aritifical Intelligence (AI) Machine Learning (ML) SQL Injection Cross-site Scripting Web crawler SEO - Search Engine Optimization IDE - Integrated Development Environment OS - Operating System Composition Mixin Load balancing Auto scaling ASCII Unicode UTF Pure function Design Stamina Hypothesis Postmortem documentation Database normalization Greenfield project Shebang  Any fool can write code that a computer can understand. Good programmers write code that humans can understand. —Martin Fowler\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/",

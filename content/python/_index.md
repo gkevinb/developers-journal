@@ -11,6 +11,8 @@ post = " <i class='fab fa-python'></i> "
 
 [Lessons](lessons/)
 
+[Testing](testing/)
+
 [Virtual Environment](venv/)
 
 ### External Sources

@@ -1,10 +1,9 @@
 +++
-title = "A"
+title = "Todo"
 date = 2020-06-07T16:38:00+02:00
 weight = 100
 +++
 
-# Almanac
 
 - API - Application Programming Interface
 - REST

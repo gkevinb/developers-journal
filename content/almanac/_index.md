@@ -14,6 +14,6 @@ The almanac is a collection of commonly used phrases in computer science that I 
 
 [Software Principles](principles/)
 
-[A](a/)
+[Interesting](interesting/)
 
-[S](s/)
+[Todo](todo/)
