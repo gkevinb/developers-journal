@@ -152,7 +152,7 @@ $button_padding: 5px;
 
 ### For Loop
 
-`#{$i}` is how you place the variable.
+`#{$i}` is how you place the variable in a string format, if you need the variable to be evaulated as a number simply use `$1`.
 
 ```scss
 @for $i from 1 through 24 {
