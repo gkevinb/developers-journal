@@ -135,6 +135,7 @@ services:
         build: ./
         ports:
             - 5000:80
+      	volumes: ['./server/src:/app'] # To auto-reload new code from server/src to Docker app
 
 ```
 
