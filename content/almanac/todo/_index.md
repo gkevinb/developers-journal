@@ -68,6 +68,10 @@ weight = 100
 - Database normalization
 - Greenfield project
 - Shebang
+- Sentinal value
+- Elephant in Cairo
+- Canary deployment
+- [Cicada principle](https://lea.verou.me/2020/07/the-cicada-principle-revisited-with-css-variables/)
 
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
