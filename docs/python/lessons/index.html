@@ -12,21 +12,21 @@
     <title>Lessons :: A Developer&#39;s Journal</title>
 
     
-    <link href="/developers-journal/css/nucleus.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/fontawesome-all.min.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/hybrid.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/featherlight.min.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/perfect-scrollbar.min.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/auto-complete.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/theme.css?1592069125" rel="stylesheet">
-    <link href="/developers-journal/css/hugo-theme.css?1592069125" rel="stylesheet">
+    <link href="/developers-journal/css/nucleus.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1596297449" rel="stylesheet">
     
-    <link href="/developers-journal/css/theme-green.css?1592069125" rel="stylesheet">
+    <link href="/developers-journal/css/theme-green.css?1596297449" rel="stylesheet">
     
-    <link href="/developers-journal/css/custom.css?1592069125" rel="stylesheet">
+    <link href="/developers-journal/css/custom.css?1596297449" rel="stylesheet">
 
-    <script src="/developers-journal/js/jquery-3.3.1.min.js?1592069125"></script>
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1596297449"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -65,14 +65,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1592069125"></script>
-<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1592069125"></script>
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1596297449"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1596297449"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
     
 </script>
-<script type="text/javascript" src="/developers-journal/js/search.js?1592069125"></script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1596297449"></script>
 
     
   </div>
@@ -984,6 +984,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#zen-of-python">Zen of Python</a></li>
     <li><a href="#strip-method">strip() Method</a>
       <ul>
         <li><a href="#example">Example</a></li>
@@ -1017,7 +1018,11 @@
 
 
 
-	<h2 id="strip-method">strip() Method</h2>
+	<h2 id="zen-of-python">Zen of Python</h2>
+<p>In any Python interpreter run the following command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> this
+</code></pre></div><p>These Python principles to follow when coding in Python.</p>
+<h2 id="strip-method">strip() Method</h2>
 <p>The <code>strip</code> method and its cousins, <code>lstrip</code> and <code>rstrip</code> can cause bugs if used without knowing how exactly it works. One can assume that it strips a sequence of character from a string, and <code>lstrip</code> and <code>rstrip</code> strips the leading and trailling character sequence, respectively. However this is not how it works, these <code>strip</code> methods take a set of character, meaning it will check each character separately and remove them from the string.</p>
 <h3 id="example">Example</h3>
 <p>For example, you might want to remove the <code>path/</code> substring from the string <code>path/panther.xml</code>. If you decide to use <code>lstrip</code> it will cause unintended consequences, since it will remove the set of characters <code>p</code>, <code>a</code>, <code>t</code>, <code>h</code>, and <code>/</code> from the string if they are the leading characters. Since the <code>p</code> and <code>a</code> characters of the <code>panther.xml</code> substring fall into the set of characters to strip, it will remove those as well, and you will be left with the string <code>nther</code>.</p>
@@ -1560,19 +1565,19 @@ jsonify()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/developers-journal/js/clipboard.min.js?1592069125"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.min.js?1592069125"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1592069125"></script>
-    <script src="/developers-journal/js/jquery.sticky.js?1592069125"></script>
-    <script src="/developers-journal/js/featherlight.min.js?1592069125"></script>
-    <script src="/developers-journal/js/highlight.pack.js?1592069125"></script>
+    <script src="/developers-journal/js/clipboard.min.js?1596297449"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1596297449"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1596297449"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1596297449"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1596297449"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1596297449"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1592069125"></script>
-    <script src="/developers-journal/js/learn.js?1592069125"></script>
-    <script src="/developers-journal/js/hugo-learn.js?1592069125"></script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1596297449"></script>
+    <script src="/developers-journal/js/learn.js?1596297449"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1596297449"></script>
 
-    <link href="/developers-journal/mermaid/mermaid.css?1592069125" rel="stylesheet" />
-    <script src="/developers-journal/mermaid/mermaid.js?1592069125"></script>
+    <link href="/developers-journal/mermaid/mermaid.css?1596297449" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1596297449"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

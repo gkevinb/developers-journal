@@ -17,10 +17,18 @@ Store changes in stash
 git stash
 ```
 
-Retreive changes from stash
+Retreive latest changes from stash
 
 ```bash
 git stash pop
+```
+
+Retreive specific changes from stash
+
+```bash
+git stash pop stash@{index_number}
+
+git stash pop stash@{1}
 ```
 
 List changes in stash
