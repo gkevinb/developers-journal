@@ -74,6 +74,7 @@ weight = 100
 - [Cicada principle](https://lea.verou.me/2020/07/the-cicada-principle-revisited-with-css-variables/)
 - Metasyntactic variable
 - Tennis Racket Theorem
+- Obfuscation
 
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
