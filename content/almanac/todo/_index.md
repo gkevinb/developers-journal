@@ -75,7 +75,12 @@ weight = 100
 - Metasyntactic variable
 - Tennis Racket Theorem
 - Obfuscation
-
+- String interpolation
+- Ternary operator
+- [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
+- Callback
+- Data store
+- Code golf
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
