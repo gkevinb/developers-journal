@@ -86,6 +86,8 @@ weight = 100
 - Template literal
 - Monty Hall problem
 - Rendezvous problem
+- JavaScript hoisting
+- [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
