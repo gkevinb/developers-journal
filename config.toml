@@ -12,7 +12,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 # Change default color scheme with a variant one. Can be "red", "blue", "green".
-themeVariant = "green"
+# themeVariant = "green"
+themeVariant = "dark"
 
 # Hide Next and Previous page buttons normally displayed full height beside content
 disableNextPrev = true

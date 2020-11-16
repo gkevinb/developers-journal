@@ -88,6 +88,9 @@ weight = 100
 - Rendezvous problem
 - JavaScript hoisting
 - [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+- Standard operating procedure
+- [Google dorking](https://medium.com/nassec-cybersecurity-writeups/exploring-google-hacking-techniques-using-google-dork-6df5d79796cf)
+- Div soup
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
