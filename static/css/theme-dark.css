@@ -1,40 +1,44 @@
 :root {
     --MAIN-PAGE-color: rgb(36, 36, 36); /* Color of the page */
+    /* --MAIN-PAGE-color: rgb(46, 46, 48); Color of the page */
 
     --MAIN-TEXT-color: #d3d3d3; /* Color of text by default */
     --MAIN-TITLES-TEXT-color: #e2e2e2; /* Color of titles h2-h3-h4-h5 */
-    --MAIN-LINK-color: #1c90f3; /* Color of links */
-    --MAIN-LINK-HOVER-color: #167ad0; /* Color of hovered links */
-    --MAIN-ANCHOR-color: #1c90f3; /* color of anchors on titles */
+    --MAIN-LINK-color: #3db958; /* Color of links */
+    --MAIN-LINK-HOVER-color: #16d06a; /* Color of hovered links */
+    --MAIN-ANCHOR-color: #1cf364; /* color of anchors on titles */
 
-    --MAIN-HR-color: #4795da; /* color of horizontal line */
+    --MAIN-HR-color: #3ebe73; /* color of horizontal line */
 
-    --CHAPTER-BOTTOM-BORDER-color: #4795da; /* Color of line under chapter titles */
+    --CHAPTER-BOTTOM-BORDER-color: #3ebe73; /* Color of line under chapter titles */
 
     --TOP-BAR-BG-color: rgb(43, 43, 43); /* Background color of top bar */
+    /* --TOP-BAR-BG-color: rgb(28, 31, 34); Background color of top bar */
 
-    --MENU-HEADER-BG-color: #1c90f3; /* Background color of menu header */
-    --MENU-HEADER-BORDER-color: #33a1ff; /*Color of menu header border */
+    --MENU-HEADER-BG-color: #21923a; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color: #276436; /*Color of menu header border */
 
-    --MENU-SEARCH-BG-color: #167ad0; /* Search field background color (by default borders + icons) */
-    --MENU-SEARCH-BOX-color: #33a1ff; /* Override search field border color */
-    --MENU-SEARCH-BOX-ICONS-color: #a1d2fd; /* Override search field icons color */
+    --MENU-SEARCH-BG-color: #157535; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color: #2e8b2b; /* Override search field border color */
+    --MENU-SEARCH-BOX-ICONS-color: #e2e2e2; /* Override search field icons color */
 
-    --MENU-SECTIONS-ACTIVE-BG-color: #20272b; /* Background color of the active section and its childs */
-    --MENU-SECTIONS-BG-color: #252c31; /* Background color of other sections */
-    --MENU-SECTIONS-LINK-color: #ccc; /* Color of links in menu */
+    --MENU-SECTIONS-ACTIVE-BG-color: rgb(28, 31, 34); /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color: #282c34; /* Background color of other sections */
+    --MENU-SECTIONS-LINK-color: rgb(165, 165, 165); /* Color of links in menu */
     --MENU-SECTIONS-LINK-HOVER-color: #e6e6e6; /* Color of links in menu, when hovered */
-    --MENU-SECTION-ACTIVE-CATEGORY-color: #777; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: rgb(255, 255, 255); /* Color of active category text */
     /* --MENU-SECTION-ACTIVE-CATEGORY-BG-color: rgb(27, 27, 27); /* Color of background for the active category (only) */
-    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: var(--MAIN-PAGE-color);
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: var(--MAIN-PAGE-color); /* Color of background for the active category (only) */
 
-    --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
+    --MENU-VISITED-color: #33ff5f; /* Color of 'page visited' icons in menu */
     --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
 
     --CODE-PRE-EDGE-color: #282c34; /* Color of pre element extended edge (same color as code background color) */
 
-    --CODE-PHRASE-BG-color: #949bab;
-    --CODE-PHRASE-TEXT-color: #e7e7e7;
+    /* --CODE-PHRASE-BG-color: #; */
+
+    --CODE-PHRASE-BG-color: #3d464e; /* 3d464e */
+    --CODE-PHRASE-TEXT-color: #bebebe;
 
     --CLIPBOARD-ICON-HOVER-color: #656C72;
 
@@ -178,13 +182,20 @@ code {
     color: var(--CODE-PHRASE-TEXT-color);
 }
 
+/* Clipboard for code phrases */
 .copy-to-clipboard {
     background-color: var(--CODE-PHRASE-BG-color);
 }
-
 .copy-to-clipboard:hover {
     background-color: var(--CLIPBOARD-ICON-HOVER-color);
 }
+
+/* Clipboard for code snippets */
+pre .copy-to-clipboard {
+    background-color: var(--CODE-PHRASE-BG-color);
+}
+
+
 
 /* Table of Contents */
 .progress {
