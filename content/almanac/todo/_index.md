@@ -91,6 +91,10 @@ weight = 100
 - Standard operating procedure
 - [Google dorking](https://medium.com/nassec-cybersecurity-writeups/exploring-google-hacking-techniques-using-google-dork-6df5d79796cf)
 - Div soup
+- Static site generator
+- Principle of least privilege (PoLP)
+- Cruft
+- Dead code elimination
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
