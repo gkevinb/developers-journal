@@ -51,4 +51,4 @@ A class or module should only be responsible for one thing. Do not overstuff a c
 https://deviq.com/single-responsibility-principle/
 
 
-## Inversion of Control
+<!-- ## Inversion of Control -->

@@ -49,6 +49,8 @@
 
     --TOC-BG-color: rgba(73, 73, 73, 0.97); /* Background color of table of contents */
     --TOC-BORDER-color: rgb(124, 124, 124); /* Color of table of contents border */
+
+    --BLOCKQUOTE-BORDER-color: rgb(82, 202, 102); /* Color of blockquote left border */
 }
 
 /* Page */
@@ -196,7 +198,6 @@ pre .copy-to-clipboard {
 }
 
 
-
 /* Table of Contents */
 .progress {
     background-color: var(--TOC-BG-color);
@@ -209,4 +210,9 @@ pre .copy-to-clipboard {
 }
 .autocomplete-suggestion {
     color: var(--SEARCH-BOX-TEXT-color);
+}
+
+/* Blockquote */
+blockquote {
+    border-left-color: rgb(82, 202, 102);
 }
