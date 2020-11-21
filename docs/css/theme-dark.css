@@ -1,0 +1,218 @@
+:root {
+    --MAIN-PAGE-color: rgb(36, 36, 36); /* Color of the page */
+    /* --MAIN-PAGE-color: rgb(46, 46, 48); Color of the page */
+
+    --MAIN-TEXT-color: #d3d3d3; /* Color of text by default */
+    --MAIN-TITLES-TEXT-color: #e2e2e2; /* Color of titles h2-h3-h4-h5 */
+    --MAIN-LINK-color: #3db958; /* Color of links */
+    --MAIN-LINK-HOVER-color: #16d06a; /* Color of hovered links */
+    --MAIN-ANCHOR-color: #1cf364; /* color of anchors on titles */
+
+    --MAIN-HR-color: #3ebe73; /* color of horizontal line */
+
+    --CHAPTER-BOTTOM-BORDER-color: #3ebe73; /* Color of line under chapter titles */
+
+    --TOP-BAR-BG-color: rgb(43, 43, 43); /* Background color of top bar */
+    /* --TOP-BAR-BG-color: rgb(28, 31, 34); Background color of top bar */
+
+    --MENU-HEADER-BG-color: #21923a; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color: #276436; /*Color of menu header border */
+
+    --MENU-SEARCH-BG-color: #157535; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color: #2e8b2b; /* Override search field border color */
+    --MENU-SEARCH-BOX-ICONS-color: #e2e2e2; /* Override search field icons color */
+
+    --MENU-SECTIONS-ACTIVE-BG-color: rgb(28, 31, 34); /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color: #282c34; /* Background color of other sections */
+    --MENU-SECTIONS-LINK-color: rgb(165, 165, 165); /* Color of links in menu */
+    --MENU-SECTIONS-LINK-HOVER-color: #e6e6e6; /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: rgb(255, 255, 255); /* Color of active category text */
+    /* --MENU-SECTION-ACTIVE-CATEGORY-BG-color: rgb(27, 27, 27); /* Color of background for the active category (only) */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: var(--MAIN-PAGE-color); /* Color of background for the active category (only) */
+
+    --MENU-VISITED-color: #33ff5f; /* Color of 'page visited' icons in menu */
+    --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
+
+    --CODE-PRE-EDGE-color: #282c34; /* Color of pre element extended edge (same color as code background color) */
+
+    /* --CODE-PHRASE-BG-color: #; */
+
+    --CODE-PHRASE-BG-color: #3d464e; /* 3d464e */
+    --CODE-PHRASE-TEXT-color: #bebebe;
+
+    --CLIPBOARD-ICON-HOVER-color: #656C72;
+
+    --HIGHLIGHT-SEARCH-color: rgb(154, 216, 119); /* Color of highlighted searched word on page */
+
+    --SEARCH-BOX-BG-color: rgb(42, 42, 43); /* Background color of search box */
+    --SEARCH-BOX-TEXT-color: rgb(146, 146, 146); /* Color of text in search box */
+
+    --TOC-BG-color: rgba(73, 73, 73, 0.97); /* Background color of table of contents */
+    --TOC-BORDER-color: rgb(124, 124, 124); /* Color of table of contents border */
+
+    --BLOCKQUOTE-BORDER-color: rgb(82, 202, 102); /* Color of blockquote left border */
+}
+
+/* Page */
+body {
+    color: var(--MAIN-TEXT-color) !important;
+    background-color: var(--MAIN-PAGE-color);
+}
+
+textarea:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+select[multiple="multiple"]:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+/* Top navigation bar with breadcrumbs */
+#top-bar {
+    background-color: var(--TOP-BAR-BG-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--MAIN-TITLES-TEXT-color) !important;
+}
+
+/* Custom for Chapter title bottom border line */
+#chapter h1 {
+    border-color: var(--CHAPTER-BOTTOM-BORDER-color);
+}
+
+hr {
+    border-color: var(--MAIN-HR-color);
+}
+
+a {
+    color: var(--MAIN-LINK-color);
+}
+
+.anchor {
+    color: var(--MAIN-ANCHOR-color);
+}
+
+a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+
+#sidebar ul li.visited > a .read-icon {
+    color: var(--MENU-VISITED-color);
+}
+
+#body a.highlight:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    background-color: var(--MAIN-LINK-HOVER-color);
+}
+#sidebar {
+    background-color: var(--MENU-SECTIONS-BG-color);
+}
+#sidebar #header-wrapper {
+    background: var(--MENU-HEADER-BG-color);
+    color: var(--MENU-SEARCH-BOX-color);
+    border-color: var(--MENU-HEADER-BORDER-color);
+}
+#sidebar .searchbox {
+    border-color: var(--MENU-SEARCH-BOX-color);
+    background: var(--MENU-SEARCH-BG-color);
+}
+#sidebar ul.topics > li.parent,
+#sidebar ul.topics > li.active {
+    background: var(--MENU-SECTIONS-ACTIVE-BG-color);
+}
+#sidebar .searchbox * {
+    color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar a {
+    color: var(--MENU-SECTIONS-LINK-color);
+}
+
+#sidebar a:hover {
+    color: var(--MENU-SECTIONS-LINK-HOVER-color);
+}
+
+#sidebar ul li.active > a {
+    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
+}
+
+#sidebar hr {
+    border-color: var(--MENU-SECTION-HR-color);
+}
+
+/* Code snippets container */
+#body-inner pre {
+    background-color: var(--CODE-PRE-EDGE-color) !important;
+    border-radius: 8px;
+    /* border: 1px rgb(98, 100, 107) solid; */
+}
+
+/* Highlighted searched words */
+mark {
+    background-color: var(--HIGHLIGHT-SEARCH-color);
+}
+
+/* Code phrases ex: `ls` */
+code {
+    background-color: var(--CODE-PHRASE-BG-color);
+    border: 2px var(--CODE-PHRASE-BG-color) solid;
+    color: var(--CODE-PHRASE-TEXT-color);
+}
+
+/* Clipboard for code phrases */
+.copy-to-clipboard {
+    background-color: var(--CODE-PHRASE-BG-color);
+}
+.copy-to-clipboard:hover {
+    background-color: var(--CLIPBOARD-ICON-HOVER-color);
+}
+
+/* Clipboard for code snippets */
+pre .copy-to-clipboard {
+    background-color: var(--CODE-PHRASE-BG-color);
+}
+
+
+/* Table of Contents */
+.progress {
+    background-color: var(--TOC-BG-color);
+    border: 1px var(--TOC-BORDER-color) solid;
+}
+
+/* Search box */
+.autocomplete-suggestions {
+    background-color: var(--SEARCH-BOX-BG-color);
+}
+.autocomplete-suggestion {
+    color: var(--SEARCH-BOX-TEXT-color);
+}
+
+/* Blockquote */
+blockquote {
+    border-left-color: rgb(82, 202, 102);
+}

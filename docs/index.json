@@ -1,10 +1,10 @@
 [
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/",
-	"title": "Almanac",
+	"uri": "https://gaborkevinbarta.com/developers-journal/glossary/",
+	"title": "Glossary",
 	"tags": [],
 	"description": "",
-	"content": "Almanac The almanac is a collection of commonly used phrases in computer science that I have collected in order to organize them in readable and maintainable way.\n Software Principles\nInteresting\nTodo\n"
+	"content": "Glossary The glossary is a collection of commonly used phrases in computer science that I have collected in order to organize them in readable and maintainable way.\n Software Principles\nInteresting\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/styling/css/",
@@ -42,13 +42,6 @@
 	"content": "Industry standard version control.\nStash Stash is a good way to save changes before committing them if for example you want to change branches or merge something new into the branch you are working on. Think of git stash as a separate storage place to temporarily store your changes.\nStore changes in stash\ngit stash Retreive latest changes from stash\ngit stash pop Retreive specific changes from stash\ngit stash pop stash@{index_number} git stash pop stash@{1} List changes in stash\ngit stash list Show the most recent stash\ngit stash show -p Stash single file\ngit stash -- filename.txt Multiple Git Remotes http://caseyscarborough.com/blog/2013/08/25/pushing-to-multiple-remotes-using-git/\nUntrack files added to git based on gitignore http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/\n"
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/database/",
-	"title": "Database",
-	"tags": [],
-	"description": "",
-	"content": "Database SQL\n"
-},
-{
 	"uri": "https://gaborkevinbarta.com/developers-journal/styling/flexbox/",
 	"title": "Flexbox",
 	"tags": [],
@@ -63,11 +56,11 @@
 	"content": "Nginx is a high performance simple HTTP server, which can also be used as a reverse proxy, load balancer, etc. Similar to Apache web server, however NGINX is much faster and more lightweight.\nServing static files with NGINX using Docker Tutorial 1\nServing static files with NGINX using Docker Tutorial 2\nnginx.conf events {} http { server { listen 80; root /www; index index.html; location / { include /etc/nginx/mime.types; try_files $uri $uri/ /index.html; } } } "
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/js-frameworks/",
-	"title": "JS Frameworks",
+	"uri": "https://gaborkevinbarta.com/developers-journal/javascript/",
+	"title": "Javascript",
 	"tags": [],
 	"description": "",
-	"content": "JavaScript Frameworks Javascript\nVue\nPug\n"
+	"content": "Javascript Javascript\nVue\nPug\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/styling/bootstrap/",
@@ -84,18 +77,11 @@
 	"content": "Scripting Bash\n"
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/principles/",
+	"uri": "https://gaborkevinbarta.com/developers-journal/glossary/principles/",
 	"title": "Software Principles",
 	"tags": [],
 	"description": "",
-	"content": "DRY - Don\u0026rsquo;t repeat yourself Keep you code DRY means reducing duplicate code by using abstraction. The opposite of DRY code is WET, which means \u0026ldquo;Write everything twice\u0026rdquo;.\nSources\nhttps://deviq.com/don-t-repeat-yourself/\nYAGNI - You aren\u0026rsquo;t gonna need it Only implement things you actually need and not things you might need in the future. This helps with staying on track with completing tasks that are necessariy, instead of going down a rabbit hole trying to implement things you won\u0026rsquo;t even need.\nSources\nhttps://deviq.com/yagni/\nKISS - Keep it simple stupid Make sure the programs you create are kept as simple as possible without any unnecessary complications.\nSources\nhttps://en.wikipedia.org/wiki/KISS_principle\nSoC - Separation of Concerns Separate a program into different modules that concerns themselves of only one thing. A program which follows SoC is considered a modular program. Separate business logic from data transportation logic, etc.\nSources\nhttps://en.wikipedia.org/wiki/Separation_of_concerns\nSOLID An acronym of five principles to follow in Object-Oriented Programming to create clean and maintainable code.\nSR - Single Responsibity A class or module should only be responsible for one thing. Do not overstuff a class or module with functionality that should be placed into a separate module.\nSources\nhttps://deviq.com/single-responsibility-principle/\nInversion of Control "
-},
-{
-	"uri": "https://gaborkevinbarta.com/developers-journal/database/sql/",
-	"title": "SQL",
-	"tags": [],
-	"description": "",
-	"content": "Queries Insert into table dynamically using a loop DELIMITER $$ CREATE PROCEDURE genRecords() BEGIN DECLARE x INT DEFAULT 1; WHILE x \u0026lt; 10 DO INSERT INTO people (username, age) VALUES (\u0026#39;bob\u0026#39;, 34) SET x = x + 1; END WHILE; END; $$ DELIMITER ; call genRecords(); /* Delete procedure before modifiying it and creating a new one */ DROP PROCEDURE IF EXISTS genRecords; "
+	"content": "DRY - Don\u0026rsquo;t repeat yourself Keep you code DRY means reducing duplicate code by using abstraction. The opposite of DRY code is WET, which means \u0026ldquo;Write everything twice\u0026rdquo;.\nSources\nhttps://deviq.com/don-t-repeat-yourself/\nYAGNI - You aren\u0026rsquo;t gonna need it Only implement things you actually need and not things you might need in the future. This helps with staying on track with completing tasks that are necessariy, instead of going down a rabbit hole trying to implement things you won\u0026rsquo;t even need.\nSources\nhttps://deviq.com/yagni/\nKISS - Keep it simple stupid Make sure the programs you create are kept as simple as possible without any unnecessary complications.\nSources\nhttps://en.wikipedia.org/wiki/KISS_principle\nSoC - Separation of Concerns Separate a program into different modules that concerns themselves of only one thing. A program which follows SoC is considered a modular program. Separate business logic from data transportation logic, etc.\nSources\nhttps://en.wikipedia.org/wiki/Separation_of_concerns\nSOLID An acronym of five principles to follow in Object-Oriented Programming to create clean and maintainable code.\nSR - Single Responsibity A class or module should only be responsible for one thing. Do not overstuff a class or module with functionality that should be placed into a separate module.\nSources\nhttps://deviq.com/single-responsibility-principle/\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/styling/",
@@ -116,7 +102,7 @@
 	"title": "Bash",
 	"tags": [],
 	"description": "",
-	"content": "Bash Commands  atom . : Open current directory in Atom code . : Open current directory in Visual Studio Code code \u0026lt;directory\u0026gt; : Open directory in Visual Studio Code open \u0026lt;directory\u0026gt; : Open directory in Finder node (.*).js : Run javascript file in bash  https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/\n tail -f \u0026lt;log-file\u0026gt;  Grep cat file.txt | grep \u0026#34;title\u0026#34; Bash Snippets For loop #!/bin/sh  for x in dog elephant fish; do echo $x done If-Else statement #!/bin/sh  if [ $1 = hotdog ]; then echo \u0026#34;You typed hotdog\u0026#34; else echo You did NOT type Hotdog echo it was \u0026#39;\u0026#34;\u0026#39;$1\u0026#39;\u0026#34;\u0026#39; fi Bash commands #!/bin/sh # # This program is going to be awesome echo \u0026#34;Progam is starting...\u0026#34; ls -la Links Bash Tutorial\nCheatsheet\n"
+	"content": "Bash Commands  atom . : Open current directory in Atom code . : Open current directory in Visual Studio Code code \u0026lt;directory\u0026gt; : Open directory in Visual Studio Code open \u0026lt;directory\u0026gt; : Open directory in Finder node (.*).js : Run javascript file in bash  https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/\n tail -f \u0026lt;log-file\u0026gt;  Grep cat file.txt | grep \u0026#34;title\u0026#34; Bash Snippets For loop #!/bin/sh  for x in dog elephant fish; do echo $x done If-Else statement #!/bin/sh  if [ $1 = hotdog ]; then echo \u0026#34;You typed hotdog\u0026#34; else echo You did NOT type Hotdog echo it was \u0026#39;\u0026#34;\u0026#39;$1\u0026#39;\u0026#34;\u0026#39; fi Bash commands #!/bin/sh # # This program is going to be awesome echo \u0026#34;Progam is starting...\u0026#34; ls -la Links Bash Tutorial\nCheatsheet\nFull Handbook\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/python/lessons/",
@@ -147,7 +133,7 @@
 	"content": "Mocking Mock is useful when mocking the parameter passed into a specific class during the instantiation of the class. Then you can mock attributes of that parameter, which will be called instead of an actual parameter being passed to the contructor.\nIn the example below, the gateway is mocked and dummy data is given as the return value for the get_something method of the gateway. In this case, only the get_upper_something is unit tested, while the dependecies are mocked out.\nfrom unittest.mock import Mock class Service(): def __init__(self, gateway): self.gateway = gateway def get_upper_something(self): return gateway.get_something() def test_get_upper_something(): gateway = Mock() gateway.get_something.return_value = [1, 2] service = Service(gateway) service.get_upper_something() assert result == [1, 2] "
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/interesting/",
+	"uri": "https://gaborkevinbarta.com/developers-journal/glossary/interesting/",
 	"title": "Interesting",
 	"tags": [],
 	"description": "",
@@ -161,39 +147,32 @@
 	"content": "Virtual environments, or venv, create a containerized environment of running your Python applications. You install all the Python packages you use for a specific program in one virtual environment.\nSystem Installation When you simply run python --version in your terminal, you get the version that is installed on your computer. That is mostly likely sourced from your /usr/local/bin directory.\nCheck where pip3 is sourced from and check which version are you running.\nwhich pip3 pip3 --version List installed packages on your system.\npip3 list Create virtual environment with the name of \u0026lt;venv_name\u0026gt; in your current directory.\npython3 -m venv \u0026lt;venv_name\u0026gt; Activate that virtual environment.\nsource \u0026lt;venv_name\u0026gt;/bin/activate Print on the screen a list of installed in a specific format for import and export.\npip freeze Create requirements.txt.\npip freeze \u0026gt; requirements.txt Deactivate virtual environment and delete it.\ndeactivate rm -rf \u0026lt;venv_name\u0026gt; Install packages into virtual environment from requirements.txt.\npip install -r requirements.txt "
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/js-frameworks/js/",
+	"uri": "https://gaborkevinbarta.com/developers-journal/javascript/js/",
 	"title": "Javascript",
 	"tags": [],
 	"description": "",
 	"content": "Regular Expressions Good interactive tutorial on Regex.\nJavascript Regex\nRegex Article\nvar state = \u0026#34;2x10\u0026#34;; var pattern = /\\d+/g; var result = state.match(pattern); // result equals [\u0026#39;2\u0026#39;, \u0026#39;10\u0026#39;] Operations Spread operator Spread operator is used to unpack an array an give the elements as parameters to a method. It is useful for things such as giving an array to the Math.max method to determine the element with the maximum value in the array.\nfunction getSecondLargest(nums) { let uniq = [...new Set(nums)] let index = uniq.indexOf(Math.max(...uniq)) uniq.splice(index, 1) return Math.max(...uniq) }  https://www.hackerrank.com/challenges/js10-arrays/problem\n Fetch API https://flaviocopes.com/fetch-api/\nApply function https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply\nTemplate literals https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\nReverse string https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/\nStrings https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals\nPromises https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then\nArrow https://www.w3schools.com/js/js_arrow_function.asp\n"
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/js-frameworks/vue/",
+	"uri": "https://gaborkevinbarta.com/developers-journal/javascript/vue/",
 	"title": "Vue",
 	"tags": [],
 	"description": "",
 	"content": "Vue.js Front end javascript framework to build static and dynamic websites. Vue fundamentally changes how you think of web development.\nVue Instance The heart of the application.\nvar app = new Vue({ el: \u0026#34;#app\u0026#34;, data: { name: \u0026#39;Application\u0026#39; } }) Vue Expression Vue expressions can express all kinds of following JavaScript logic including string manipulation, tenirary operator, and built-in JavaScript functions.\n\u0026lt;h1\u0026gt;{{ product }}\u0026lt;/h1\u0026gt; {{ product + \u0026#39;!\u0026#39; }} {{ firstName + \u0026#39; \u0026#39; + lastName }} {{ clicked ? true : false }} {{ message.split(\u0026#39;\u0026#39;).reverse().join(\u0026#39;\u0026#39;) }} Best Practices\nLook at Scrimba videos as well.\nJavascript Refresher To turn on strict mode in Javascript add use strict to top of Javascript file, to omit a few warnings. Strict mode makes it easier to write \u0026ldquo;secure\u0026rdquo; JavaScript.\n\u0026#34;use strict\u0026#34; Objects are like structs in other programming languages.\nvar obj1 = { key1: \u0026#34;val1\u0026#34;, // or \u0026#34;key1\u0026#34; \tkey2: \u0026#34;val2\u0026#34; } console.log(obj1) console.log(obj1.key1) // console.log(obj1.key2) // console.log(obj1[\u0026#34;key1\u0026#34;]) // console.log(obj1[\u0026#34;key2\u0026#34;])  // Nesting objects var obj2 = { obj3: { key1: \u0026#34;val1\u0026#34;, key2: \u0026#34;val2\u0026#34; }, } // console.log(obj2) // console.log(obj2.obj3) // console.log(obj2.obj3.key1) // console.log(obj2.obj3.key2) // console.log(obj2.obj3[\u0026#34;key1\u0026#34;]) // console.log(obj2.obj3[\u0026#34;key2\u0026#34;])  Debug mode in Vue By addign keyword debug to HTML element tags, it triggers debug mode for that elements and all children elements.\n\u0026lt;body debug\u0026gt; \u0026lt;div id=\u0026#34;app\u0026#34;\u0026gt; \u0026lt;!-- different ways to render data in DOM, most simplest: {{ }} --\u0026gt; \u0026lt;p\u0026gt;{{ message }}\u0026lt;/p\u0026gt; \u0026lt;!-- v-text tag renders message as plain text --\u0026gt; \u0026lt;p v-text=\u0026#34;message\u0026#34;\u0026gt;\u0026lt;/p\u0026gt; \u0026lt;!-- v-html tag renders message as HTML --\u0026gt; \u0026lt;p v-html=\u0026#34;message_2\u0026#34;\u0026gt;\u0026lt;/p\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;script\u0026gt; var app = new Vue({ // el specifiy where in the DOM to render the app \tel: \u0026#34;#app\u0026#34;, data: { message: \u0026#34;hello world!\u0026#34;, message_2: \u0026#34;hello \u0026lt;br\u0026gt; world!\u0026#34; } }) \u0026lt;/script\u0026gt; \u0026lt;/body\u0026gt; Separation of Concern Separate data from HTML.\nVirtualization the DOM. (Virtual DOM)\nTwo-binding. Bind the user input and HTML element. Using v-model tag\nProperty is a variable attached to an object. Method is a function attached to an object.\nTemplate Serves as an invisible wrapper.\n\u0026lt;template\u0026gt; \u0026lt;/template\u0026gt; Directive v-model Two-way binding\nTwo way data bindings on form input and elements. Keeps DOM and Vue app in sync.\nv-bind One-way binding\nShort version :\nAttribute binding, binds attribute with expression in virtual DOM.\n:alt=\u0026quot;description\u0026quot; :href=\u0026quot;url\u0026quot; :class=\u0026quot;isActive\u0026quot; v-show Just makes element display hidden, instead of not rendering it as with v-if and v-else\nMakes for better performance.\nv-show='true' Element is visible v-show='false' Element is hidden v-on Event Handling, such as click, hover mouse over, etc.\nShort version: @\n@mouseover @click @submit @keyup.enter Conditional Rendering \u0026lt;span v-if=\u0026quot;seen \u0026gt; 100\u0026quot;\u0026gt;ABC\u0026lt;/span\u0026gt; \u0026lt;span v-if-else=\u0026quot;seen \u0026lt; 10 \u0026amp;\u0026amp; seen \u0026gt; 5\u0026quot;\u0026gt;DEF\u0026lt;/span\u0026gt; \u0026lt;span v-else\u0026gt;EFG\u0026lt;/span\u0026gt; List Rendering \u0026lt;div v-for=\u0026quot;element in list\u0026quot; :key=\u0026quot;element.id\u0026quot;\u0026gt;{{ element.name }}\u0026lt;/div\u0026gt; Communicating Events Emit data from child components to parent component.\nStyling with Vue Components Most powerful feature a Vue. Makes code more reusable and markup more readable. Make a block of code a smaller block of code.\nBest practice: HTML elements without hypens, Vue components name with hyphens.\nComponent Lifecycle\n/* created(): since the processing of the options is finished you have access to reactive data properties and change them if you want. At this stage DOM has not been mounted or added yet. So you cannot do any DOM manipulation here. Typically used for data fetching */ created() { }, /* mounted(): called after the DOM has been mounted or rendered. Here you have access to the DOM elements and DOM manipulation can be performed for example get the innerHTML: */ mounted() { }, Components are like HTML functions. When a component is created, you essentially make a custom HTML tag. The props field represents property, which you set inside the component\u0026rsquo;s HTML tag. The : in :name indicates that it is a Vue attribute. So the value you give to :name is looked for in th Vue apps data field.\n\u0026lt;animal :name=\u0026#34;dog\u0026#34;\u0026gt;\u0026lt;/animal\u0026gt; \u0026lt;script\u0026gt; Vue.component(\u0026#34;animal\u0026#34;, { props: [\u0026#34;name\u0026#34;], template: \u0026#39;\u0026lt;p v-html=\u0026#34;name\u0026#34;\u0026gt;\u0026lt;/p\u0026gt;\u0026#39; }) var app = new Vue({ el: \u0026#34;#app\u0026#34;, data: { dog: \u0026#34;Doggy!\u0026#34;, cat: \u0026#34;Kitty!!\u0026#34;, bird: \u0026#34;Birdy!!!\u0026#34; } }) \u0026lt;/script\u0026gt; @click triggers when clicked on, :class chooses which class is this element belongs to, used for styling.\n\u0026lt;div id=\u0026#34;app\u0026#34; :style=\u0026#34;{ background: background() }\u0026#34;\u0026gt; \u0026lt;p v-html=\u0026#34;actice\u0026#34; @click=\u0026#34;animagus\u0026#34; :class=\u0026#34;breathe()\u0026#34;\u0026gt;\u0026lt;/p\u0026gt; \u0026lt;/div\u0026gt; Control-Flow The way we control the flow of the program through conditional statements and loops.\nLessons Prevent on click on parent when clicking button inside div Event modifier, @click.stop is placed on child element, in order for parent element click not to fire.\n\u0026lt;li v-for=\u0026#34;tab in tabs\u0026#34; class=\u0026#34;nav-item\u0026#34; :id=\u0026#34;tab.name\u0026#34; @click=\u0026#34;currentTab = tab.name\u0026#34;\u0026gt; {{ tab.name }} \u0026lt;ul v-if=\u0026#34;tab.subtabs != null\u0026#34; class=\u0026#34;sub-menu\u0026#34;\u0026gt; \u0026lt;ul v-for=\u0026#34;subtab in tab.subtabs\u0026#34; class=\u0026#34;submenu-item\u0026#34; :id=\u0026#34;subtab.name\u0026#34; @click.stop=\u0026#34;currentTab = subtab.name\u0026#34;\u0026gt; {{ subtab.name }} \u0026lt;/ul\u0026gt; \u0026lt;/ul\u0026gt; \u0026lt;/li\u0026gt; Timeout in Vue js component Add a bind() call to your function declaration:\nsetTimeout(function () { this.fetchHole() }.bind(this), 1000) So that your Vue component\u0026rsquo;s this is accessible within the function.\nEnvironmental Variables https://cli.vuejs.org/guide/mode-and-env.html\nhttps://medium.com/js-dojo/how-to-use-environment-variables-in-vue-js-273eba0102b0\nMake sure you name the environmental variables starting with VUE_APP_ in order for it to work.\n"
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/js-frameworks/pug/",
+	"uri": "https://gaborkevinbarta.com/developers-journal/javascript/pug/",
 	"title": "Pug",
 	"tags": [],
 	"description": "",
 	"content": "Interpolation using Javascript https://pugjs.org/language/attributes.html\nhttps://pugjs.org/language/interpolation.html\nInjecting data from JSON https://tusharghate.com/rendering-pug-templates-with-multiple-data-files\n"
 },
 {
-	"uri": "https://gaborkevinbarta.com/developers-journal/almanac/todo/",
-	"title": "Todo",
-	"tags": [],
-	"description": "",
-	"content": " API - Application Programming Interface REST Dependency Injection Schrodinger\u0026rsquo;s Backup Heisenbug Magic Number Cargo cult programming Inheritance Object-oriented programming CLI - Command Line Interface Package manager Collapsing margins Continous Integration DevOps Clean code Refactor Proxy Cloud HTTP CRUD - Create, Read, Update, Delete ACID Boilerplate MVC - Model, View, Controller Version Control Build Automation CMS - Content Management System Unit Testing Gateway Factory Service Mocking Method Function Class Interface Agile Scrum Unix Scripting Bash Terminal Functional Programming Aritifical Intelligence (AI) Machine Learning (ML) SQL Injection Cross-site Scripting Web crawler SEO - Search Engine Optimization IDE - Integrated Development Environment OS - Operating System Composition Mixin Load balancing Auto scaling ASCII Unicode UTF Pure function Design Stamina Hypothesis Postmortem documentation Database normalization Greenfield project Shebang Sentinal value Elephant in Cairo Canary deployment Cicada principle Metasyntactic variable  Any fool can write code that a computer can understand. Good programmers write code that humans can understand. —Martin Fowler\n"
-},
-{
 	"uri": "https://gaborkevinbarta.com/developers-journal/",
 	"title": "A Developer&#39;s Journal",
 	"tags": [],
 	"description": "",
-	"content": "A Developer\u0026rsquo;s Journal Welcome to my Developer\u0026rsquo;s Journal, where I keep a journal of the knowledge I gained throughout career as a software developer. The purpose of this journal is to maintain a digital notebook to record programming snippets and document new programming techniques. Most of what you find in this journal are small explanations of concepts, code snippets, and links to external sources. Feel free to use any of the resources, however please do your own research on the subjects, as there could be better explanations and solutions than what I have found and developed.\nTools I use Hugo as a static site generator to render the markdown files in my journal. More specifically, I chose the Hugo Learn Theme, since it is best suited for my needs of displaying my journal in a presentable and pleasant format. And for writing the pages of the journal, I use Typora, a lightweight yet stylish markdown editor. And when I make structural changes and developments to the website, I use Visual Studio Code as my go-to editor.\n"
+	"content": "A Developer\u0026rsquo;s Journal Welcome to my Developer\u0026rsquo;s Journal, where I keep a journal of the knowledge I gained throughout career as a software developer. The purpose of this journal is to maintain a digital notebook to record programming snippets and document new programming techniques. Most of what you find in this journal are small explanations of concepts, code snippets, and links to external sources. Feel free to use any of the resources, however please do your own research on the subjects, as there could be better explanations and solutions than what I have found and developed.\nTools I use Hugo as a static site generator to render the markdown files in my journal. More specifically, I chose the Hugo Learn Theme, since it is best suited for my needs of displaying my journal in a presentable and pleasant format. I also added a custom stylesheet to choose the color theme. And for writing the pages of the journal, I use Typora, a lightweight yet stylish markdown editor. And when I make structural changes and developments to the website, I use Visual Studio Code as my go-to editor.\n"
 },
 {
 	"uri": "https://gaborkevinbarta.com/developers-journal/technology/git/glo/",

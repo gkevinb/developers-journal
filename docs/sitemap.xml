@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/almanac/</loc>
+    <loc>https://gaborkevinbarta.com/developers-journal/glossary/</loc>
     <lastmod>2020-06-07T16:36:28+02:00</lastmod>
   </url>
   
@@ -33,11 +33,6 @@
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/database/</loc>
-    <lastmod>2020-06-06T20:08:29+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://gaborkevinbarta.com/developers-journal/styling/flexbox/</loc>
     <lastmod>2020-06-06T20:00:24+02:00</lastmod>
   </url>
@@ -48,7 +43,7 @@
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/js-frameworks/</loc>
+    <loc>https://gaborkevinbarta.com/developers-journal/javascript/</loc>
     <lastmod>2020-04-06T13:09:55+02:00</lastmod>
   </url>
   
@@ -63,13 +58,8 @@
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/almanac/principles/</loc>
+    <loc>https://gaborkevinbarta.com/developers-journal/glossary/principles/</loc>
     <lastmod>2020-06-07T18:39:13+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/database/sql/</loc>
-    <lastmod>2020-06-06T20:08:43+02:00</lastmod>
   </url>
   
   <url>
@@ -108,7 +98,7 @@
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/almanac/interesting/</loc>
+    <loc>https://gaborkevinbarta.com/developers-journal/glossary/interesting/</loc>
     <lastmod>2020-06-07T19:25:28+02:00</lastmod>
   </url>
   
@@ -118,23 +108,18 @@
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/js-frameworks/js/</loc>
+    <loc>https://gaborkevinbarta.com/developers-journal/javascript/js/</loc>
     <lastmod>2020-06-02T17:49:23+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/js-frameworks/vue/</loc>
+    <loc>https://gaborkevinbarta.com/developers-journal/javascript/vue/</loc>
     <lastmod>2020-04-26T17:49:23+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/js-frameworks/pug/</loc>
+    <loc>https://gaborkevinbarta.com/developers-journal/javascript/pug/</loc>
     <lastmod>2020-06-06T19:51:58+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/almanac/todo/</loc>
-    <lastmod>2020-06-07T16:38:00+02:00</lastmod>
   </url>
   
   <url>
