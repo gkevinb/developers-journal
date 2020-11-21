@@ -216,3 +216,11 @@ pre .copy-to-clipboard {
 blockquote {
     border-left-color: rgb(82, 202, 102);
 }
+
+/* Override overlayed default opacity on main content when checking menu on mobile.
+Difficult to explain, but there is a default haze effect on main content when viewing
+the menu on mobile. This disables that.
+*/
+#overlay {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
