@@ -7,7 +7,20 @@ weight = 10
 
 ## Regular Expressions
 
+
+| Description | Regular Expression |
+|---|---|
+| Any digit | `\d` |
+| Any non-digit | `\D` |
+|   |   |
+|   |   |
+|   |   |
+
+
+
 Good interactive [tutorial](https://regexone.com/) on Regex.
+
+[Regex 101 Tool](https://regex101.com/)
 
 [Javascript Regex](https://www.w3schools.com/js/js_regexp.asp)
 

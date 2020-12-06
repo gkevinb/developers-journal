@@ -96,6 +96,8 @@ draft = true
 - Principle of least privilege (PoLP)
 - Cruft
 - Dead code elimination
+- Hedonic treadmill
+- Kleene star and Kleene plus (Regular Expressions)
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
