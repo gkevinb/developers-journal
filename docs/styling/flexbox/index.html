@@ -12,21 +12,21 @@
     <title>Flexbox :: A Developer&#39;s Journal</title>
 
     
-    <link href="/developers-journal/css/nucleus.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/fontawesome-all.min.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/hybrid.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/featherlight.min.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/perfect-scrollbar.min.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/auto-complete.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/theme.css?1608318566" rel="stylesheet">
-    <link href="/developers-journal/css/hugo-theme.css?1608318566" rel="stylesheet">
+    <link href="/developers-journal/css/nucleus.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1609767085" rel="stylesheet">
     
-    <link href="/developers-journal/css/theme-dark.css?1608318566" rel="stylesheet">
+    <link href="/developers-journal/css/theme-dark.css?1609767085" rel="stylesheet">
     
-    <link href="/developers-journal/css/custom.css?1608318566" rel="stylesheet">
+    <link href="/developers-journal/css/custom.css?1609767085" rel="stylesheet">
 
-    <script src="/developers-journal/js/jquery-3.3.1.min.js?1608318566"></script>
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1609767085"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1608318566"></script>
-<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1608318566"></script>
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1609767085"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1609767085"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
     
 </script>
-<script type="text/javascript" src="/developers-journal/js/search.js?1608318566"></script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1609767085"></script>
 
     
   </div>
@@ -281,6 +281,32 @@
         ">
       <a href="/developers-journal/javascript/js/">
           Javascript
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/es6&#43;/" title="ES6&#43;" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/es6&#43;/">
+          ES6&#43;
           
       </a>
       
@@ -980,6 +1006,11 @@
         <li><a href="#center-div-inside-div-using-flex">Center <code>div</code> inside <code>div</code> using <code>flex</code></a></li>
       </ul>
     </li>
+    <li><a href="#resources">Resources</a>
+      <ul>
+        <li><a href="#learning-games">Learning Games</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -1008,10 +1039,10 @@
 	<p>Flexbox defaults to aligning element horizontally.</p>
 <p>Basic structure is container with elements inside them.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
-  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
-  <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">row</span>;
-  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">space</span><span style="color:#f92672">-</span>evenly;
-  <span style="color:#75715e">/* Other values: flex-start flex-end center space-around
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+    <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">row</span>;
+    <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">space</span><span style="color:#f92672">-</span>evenly;
+    <span style="color:#75715e">/* Other values: flex-start flex-end center space-around
 </span><span style="color:#75715e">	space-between space-evenly */</span>
 }
 </code></pre></div><p><code>flex-direction</code> : can be <code>row</code> horizontal or <code>column</code> vertical.</p>
@@ -1024,7 +1055,7 @@
 <h2 id="flex">Flex</h2>
 <p><code>flex</code> is shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>.</p>
 <p><code>flex-grow</code> : Relative to other elements how fast the element grows after passing the <code>flex-basis</code> size.</p>
-<p><code>flex-shrink</code> :  Relative to other elements how fast the element shrinks after passing the <code>flex-basis</code> size.</p>
+<p><code>flex-shrink</code> : Relative to other elements how fast the element shrinks after passing the <code>flex-basis</code> size.</p>
 <p><code>flex-basis</code> : The base size of the element.</p>
 <h2 id="order">Order</h2>
 <p><code>order</code> : default value is <code>0</code>, the order of the elements on the main axis. Value of <code>-1</code> sets the element forward, while a value of <code>1</code> sets the element backward.</p>
@@ -1033,35 +1064,41 @@
 <h2 id="examples">Examples</h2>
 <p>Move all elements to the right, except the first one, which should be on the right. Using <code>auto</code> for <code>margin-right</code> and <code>margin-left</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
-  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ffcc5c</span>;
-  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
-  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">flex</span><span style="color:#f92672">-</span><span style="color:#66d9ef">end</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ffcc5c</span>;
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+    <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">flex</span><span style="color:#f92672">-</span><span style="color:#66d9ef">end</span>;
 }
 
 .<span style="color:#a6e22e">home</span> {
-  <span style="color:#66d9ef">margin-right</span>: <span style="color:#66d9ef">auto</span>;
+    <span style="color:#66d9ef">margin-right</span>: <span style="color:#66d9ef">auto</span>;
 }
 </code></pre></div><p><code>flex</code> property makes element grow and shrink on resize.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
-  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ffcc5c</span>;
-  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#ffcc5c</span>;
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
 }
 
 .<span style="color:#a6e22e">home</span> {
-  <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
+    <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
 }
 
 .<span style="color:#a6e22e">logout</span> {
-  <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
+    <span style="color:#66d9ef">flex</span>: <span style="color:#ae81ff">1</span>;
 }
 </code></pre></div><h3 id="center-div-inside-div-using-flex">Center <code>div</code> inside <code>div</code> using <code>flex</code></h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">container</span> {
-	<span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
-  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>; <span style="color:#75715e">/* vertical alignment */</span>
-  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>; <span style="color:#75715e">/* horizontal alignment */</span>
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>; <span style="color:#75715e">/* vertical alignment */</span>
+    <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>; <span style="color:#75715e">/* horizontal alignment */</span>
 }
-</code></pre></div>
+</code></pre></div><h2 id="resources">Resources</h2>
+<h3 id="learning-games">Learning Games</h3>
+<ul>
+<li><a href="https://flexboxfroggy.com/">Flexbox Froggy</a></li>
+<li><a href="https://flexboxadventure.com/">Flexbox Adventure</a></li>
+</ul>
+
 
 
 
@@ -1197,6 +1234,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1572,19 +1625,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/developers-journal/js/clipboard.min.js?1608318566"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.min.js?1608318566"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1608318566"></script>
-    <script src="/developers-journal/js/jquery.sticky.js?1608318566"></script>
-    <script src="/developers-journal/js/featherlight.min.js?1608318566"></script>
-    <script src="/developers-journal/js/highlight.pack.js?1608318566"></script>
+    <script src="/developers-journal/js/clipboard.min.js?1609767085"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1609767085"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1609767085"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1609767085"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1609767085"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1609767085"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1608318566"></script>
-    <script src="/developers-journal/js/learn.js?1608318566"></script>
-    <script src="/developers-journal/js/hugo-learn.js?1608318566"></script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1609767085"></script>
+    <script src="/developers-journal/js/learn.js?1609767085"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1609767085"></script>
 
-    <link href="/developers-journal/mermaid/mermaid.css?1608318566" rel="stylesheet" />
-    <script src="/developers-journal/mermaid/mermaid.js?1608318566"></script>
+    <link href="/developers-journal/mermaid/mermaid.css?1609767085" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1609767085"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
