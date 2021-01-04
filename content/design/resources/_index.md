@@ -15,8 +15,6 @@ I have collected free resources that I use for designs. These are different webs
 - [Pixeden](https://www.pixeden.com/): Free and premium collection fo mockups, icons, and vectors, free ones without attribution.
 - [Free Illustrations](https://freeillustrations.xyz/): Collection of websites which offer free illustrations, some require attribution.
 
-- [SVG Wave](https://svgwave.in): Free SVG wave generator, export to SVG and PNG.
-
 ## Icons
 
 - [Font Awesome](https://fontawesome.com/): Free and Premium icons embeddable into website using HTML.
@@ -27,16 +25,34 @@ I have collected free resources that I use for designs. These are different webs
 - [Nerd Fonts](https://www.nerdfonts.com/): Free collections of embeddable icons, bit clunky to use.
 - [Flat Icon](https://www.flaticon.com/): Collection of free and premium icons, most of them need attribution.
 - [SVG Porn](https://svgporn.com/): Free brand logos in SVG format, no attribution required.
+- [Streamline Icons](https://www.streamlineicons.com/?utm_source=twitter&utm_medium=cpc&utm_campaign=Streamline%20Icons): Mostly free icons but require attribution. 
+- [Shape SO](https://shape.so/): Free and Premium library of icons and illustration.
 
+## UI Tools and Libraries
+
+- [Material UI](https://material-ui.com/): Free React components and icons to use.
+- [Story Book](https://storybook.js.org/): Open source tool for UI components.
+- [Charka UI](https://chakra-ui.com/): Library of modular React components.
 
 ## Colors
 
 - [Picular](https://picular.co/): Free color generator for inspiration.
+- [Brand Colors](http://brandcolors.net): Search for colors based on famous brands.
+
+## Shape Generator
+
+- [SVG Wave](https://svgwave.in): Free SVG wave generator, export to SVG and PNG.
+- [Neumorphism](https://neumorphism.io/): Soft UI generator with box shadow.
+
+## Editing Tools
+
+- [Remove BG](https://www.remove.bg/): Free tool to remove background from image.
 
 ## Mock-ups
 
 - [Graphic Burger](https://graphicburger.com/): Collection of template and mockups for free, without attribution.
 - [Mockup Bro](https://mockupbro.com/): Library of Mock-up templates, where you can upload your own design without attribution.
+- [Angle SH](https://angle.sh/): Free and Premium device mockups for Sketch, Figma, XD.
 
 ## Video and Audio
 
@@ -45,3 +61,10 @@ I have collected free resources that I use for designs. These are different webs
 ## Inspiration
 
 - [Behance](https://www.behance.net/): Social media platofrm for graphical design.
+- [Land Book](https://land-book.com/): Platform of landing page examples.
+- [Dribbble](https://dribbble.com/): Platform of UI designs.
+- [Visme](https://visme.co/blog/website-color-schemes/): Blog post of website color schemes.
+
+## Course and Tutorials
+
+- [Design Code](https://designcode.io/): Premium video course and free writtent tutorials.

@@ -9,6 +9,8 @@ chapter = true
 
 [Javascript](js/)
 
+[ES6+](es6+/)
+
 [Vue](vue/)
 
 [Pug](pug/)

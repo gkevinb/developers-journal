@@ -8,15 +8,15 @@ Flexbox defaults to aligning element horizontally.
 
 Basic structure is container with elements inside them.
 
-````css
+```css
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  /* Other values: flex-start flex-end center space-around
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* Other values: flex-start flex-end center space-around
 	space-between space-evenly */
 }
-````
+```
 
 `flex-direction` : can be `row` horizontal or `column` vertical.
 
@@ -38,7 +38,7 @@ The main axis is defined by the [`flex-direction`](https://developer.mozilla.org
 
 `flex-grow` : Relative to other elements how fast the element grows after passing the `flex-basis` size.
 
-`flex-shrink` :  Relative to other elements how fast the element shrinks after passing the `flex-basis` size.
+`flex-shrink` : Relative to other elements how fast the element shrinks after passing the `flex-basis` size.
 
 `flex-basis` : The base size of the element.
 
@@ -52,17 +52,17 @@ The main axis is defined by the [`flex-direction`](https://developer.mozilla.org
 
 ## Examples
 
-Move all elements to the right, except the first one, which should be on the right. Using `auto` for `margin-right` and `margin-left`. 
+Move all elements to the right, except the first one, which should be on the right. Using `auto` for `margin-right` and `margin-left`.
 
 ```css
 .container {
-  border: 5px solid #ffcc5c;
-  display: flex;
-  justify-content: flex-end;
+    border: 5px solid #ffcc5c;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .home {
-  margin-right: auto;
+    margin-right: auto;
 }
 ```
 
@@ -70,16 +70,16 @@ Move all elements to the right, except the first one, which should be on the rig
 
 ```css
 .container {
-  border: 5px solid #ffcc5c;
-  display: flex;
+    border: 5px solid #ffcc5c;
+    display: flex;
 }
 
 .home {
-  flex: 1;
+    flex: 1;
 }
 
 .logout {
-  flex: 1;
+    flex: 1;
 }
 ```
 
@@ -87,11 +87,17 @@ Move all elements to the right, except the first one, which should be on the rig
 
 ```css
 .container {
-	display: flex;
-  height: 100%;
-  align-items: center; /* vertical alignment */
-  justify-content: center; /* horizontal alignment */
+    display: flex;
+    height: 100%;
+    align-items: center; /* vertical alignment */
+    justify-content: center; /* horizontal alignment */
 }
 ```
 
 
+## Resources
+
+### Learning Games
+
+- [Flexbox Froggy](https://flexboxfroggy.com/)
+- [Flexbox Adventure](https://flexboxadventure.com/)
