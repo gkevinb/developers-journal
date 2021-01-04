@@ -12,21 +12,21 @@
     <title>Git :: A Developer&#39;s Journal</title>
 
     
-    <link href="/developers-journal/css/nucleus.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/fontawesome-all.min.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/hybrid.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/featherlight.min.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/perfect-scrollbar.min.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/auto-complete.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/theme.css?1609767085" rel="stylesheet">
-    <link href="/developers-journal/css/hugo-theme.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/nucleus.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1609779753" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1609779753" rel="stylesheet">
     
-    <link href="/developers-journal/css/theme-dark.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/theme-dark.css?1609779753" rel="stylesheet">
     
-    <link href="/developers-journal/css/custom.css?1609767085" rel="stylesheet">
+    <link href="/developers-journal/css/custom.css?1609779753" rel="stylesheet">
 
-    <script src="/developers-journal/js/jquery-3.3.1.min.js?1609767085"></script>
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1609779753"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -70,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1609767085"></script>
-<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1609767085"></script>
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1609779753"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1609779753"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
     
 </script>
-<script type="text/javascript" src="/developers-journal/js/search.js?1609767085"></script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1609779753"></script>
 
     
   </div>
@@ -998,6 +998,7 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#stash">Stash</a></li>
+    <li><a href="#add-files-to-gitignore-that-were-in-repo-before">Add files to gitignore that were in repo before</a></li>
     <li><a href="#multiple-git-remotes">Multiple Git Remotes</a></li>
     <li><a href="#untrack-files-added-to-git-based-on-gitignore">Untrack files added to git based on gitignore</a></li>
   </ul>
@@ -1042,6 +1043,11 @@ git stash pop stash@<span style="color:#f92672">{</span>1<span style="color:#f92
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git stash show -p
 </code></pre></div><p>Stash single file</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git stash -- filename.txt
+</code></pre></div><h2 id="add-files-to-gitignore-that-were-in-repo-before">Add files to gitignore that were in repo before</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm -r --cached .
+git add .
+git commit -m <span style="color:#e6db74">&#39;clear git cache&#39;</span>
+git push
 </code></pre></div><h2 id="multiple-git-remotes">Multiple Git Remotes</h2>
 <p><a href="http://caseyscarborough.com/blog/2013/08/25/pushing-to-multiple-remotes-using-git/">http://caseyscarborough.com/blog/2013/08/25/pushing-to-multiple-remotes-using-git/</a></p>
 <h2 id="untrack-files-added-to-git-based-on-gitignore">Untrack files added to git based on gitignore</h2>
@@ -1573,19 +1579,19 @@ git stash pop stash@<span style="color:#f92672">{</span>1<span style="color:#f92
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/developers-journal/js/clipboard.min.js?1609767085"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.min.js?1609767085"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1609767085"></script>
-    <script src="/developers-journal/js/jquery.sticky.js?1609767085"></script>
-    <script src="/developers-journal/js/featherlight.min.js?1609767085"></script>
-    <script src="/developers-journal/js/highlight.pack.js?1609767085"></script>
+    <script src="/developers-journal/js/clipboard.min.js?1609779753"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1609779753"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1609779753"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1609779753"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1609779753"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1609779753"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1609767085"></script>
-    <script src="/developers-journal/js/learn.js?1609767085"></script>
-    <script src="/developers-journal/js/hugo-learn.js?1609767085"></script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1609779753"></script>
+    <script src="/developers-journal/js/learn.js?1609779753"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1609779753"></script>
 
-    <link href="/developers-journal/mermaid/mermaid.css?1609767085" rel="stylesheet" />
-    <script src="/developers-journal/mermaid/mermaid.js?1609767085"></script>
+    <link href="/developers-journal/mermaid/mermaid.css?1609779753" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1609779753"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
