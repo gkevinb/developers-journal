@@ -38,11 +38,17 @@ I have collected free resources that I use for designs. These are different webs
 
 - [Picular](https://picular.co/): Free color generator for inspiration.
 - [Brand Colors](http://brandcolors.net): Search for colors based on famous brands.
+- [UI Gradients](https://uigradients.com/): Free gradients for inspiration.
 
 ## Shape Generator
 
 - [SVG Wave](https://svgwave.in): Free SVG wave generator, export to SVG and PNG.
 - [Neumorphism](https://neumorphism.io/): Soft UI generator with box shadow.
+
+## CSS Backgrounds
+
+- [Projects Verou](https://projects.verou.me/css3patterns/): Free CSS3 patterns for backgrounds.
+- [Hero Patterns](https://www.heropatterns.com/): Free CSS3 patterns made with inline SVG.
 
 ## Editing Tools
 

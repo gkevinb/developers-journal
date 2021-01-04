@@ -6,6 +6,31 @@ weight = 5
 
 ## Bash Commands
 
+### Basic Navigation
+
+#### List command (ls)
+
+Show the contents of the current directory.
+```bash
+ls
+```
+
+**Flags**
+- `-l` : long format
+- `-a` : show hidden files
+- `-t` : sort by time modified, recently modified first
+- `-R` : recursively show subdirectories
+
+**Usage**
+```bash
+ls -al
+```
+
+
+
+
+### Specific
+
 - `atom .` : Open current directory in Atom
 - `code .` : Open current directory in Visual Studio Code 
 - `code <directory>` : Open directory in Visual Studio Code
@@ -65,3 +90,4 @@ ls -la
 [Cheatsheet](https://devhints.io/bash)
 
 [Full Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/)
+

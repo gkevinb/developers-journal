@@ -49,6 +49,14 @@ Stash single file
 git stash -- filename.txt
 ```
 
+## Add files to gitignore that were in repo before
+
+```bash
+git rm -r --cached .
+git add .
+git commit -m 'clear git cache'
+git push
+```
 
 ## Multiple Git Remotes
 
