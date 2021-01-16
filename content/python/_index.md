@@ -21,3 +21,6 @@ post = " <i class='fab fa-python'></i> "
 
 [Anti Patterns](https://docs.quantifiedcode.com/python-anti-patterns/)
 
+### Blog posts
+
+[Pythonic ways](https://itsnikhil.github.io/blog/posts/is-pythonic-way-the-better-way/)
