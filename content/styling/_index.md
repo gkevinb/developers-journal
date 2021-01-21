@@ -15,3 +15,8 @@ chapter = true
 [Flexbox](flexbox/)
 
 [Bootstrap](bootstrap/)
+
+
+## Other resources
+
+https://tailwindcss.com/

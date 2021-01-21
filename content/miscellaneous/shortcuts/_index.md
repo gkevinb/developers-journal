@@ -8,27 +8,44 @@ draft = true
 
 ---
 
-**Toggle Hidden Files and Folders** : Cmd + Shift + .
+**Toggle Hidden Files and Folders** : `CMD + SHIFT + .`
 
-**Clipy Code Snippets** : Cmd + Shift + B
+## Alfred
+
+---
+
 
 
 ## Visual Studio Code
 
 ---
 
-**Select All Occurrences of Find Match** : Cmd + Shift + L (after selected something using the cursor)
+**Search files** : `CMD + P`
+
+**Open terminal** : `CMD + J`
+
+**Select current word** : `CMD + D`
+
+**Select all occurrences** : `CMD + SHIFT + L`
+
+**Rename all occurences** : `CMD + F2`
+
+**Create multiple cursor** : `OPTION + (LEFT MOUSE CLICK)`
+
+**Auto format** : `SHIFT + OPTION + F`
 
 **Start debugger** : `F5`
 
-**Stop debugger** : `Shift + F5`
+**Stop debugger** : `SHIFT + F5`
 
-**Rename all occurences** : `Ctrl + F2`
+## Oh My Zsh
 
-**Auto format** : `Shift + Option + F`
+---
+
+**Open auto suggestion search** : `CTRL + R`
 
 
-## Windows 10
+<!-- ## Windows 10
 
 ---
 
@@ -67,6 +84,6 @@ Home and End are useful to navigate to front and end of line.
 
 **Go to top of document:** Ctrl + Home
 
-**Go to end of document:** Ctrl + End
+**Go to end of document:** Ctrl + End -->
 
 

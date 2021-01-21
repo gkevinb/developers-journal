@@ -44,11 +44,13 @@ I have collected free resources that I use for designs. These are different webs
 
 - [SVG Wave](https://svgwave.in): Free SVG wave generator, export to SVG and PNG.
 - [Neumorphism](https://neumorphism.io/): Soft UI generator with box shadow.
+- [Glassmorphis](https://glassmorphism.com/): CSS generator for glassy blurred effect.
 
 ## CSS Backgrounds
 
 - [Projects Verou](https://projects.verou.me/css3patterns/): Free CSS3 patterns for backgrounds.
 - [Hero Patterns](https://www.heropatterns.com/): Free CSS3 patterns made with inline SVG.
+- [SVG Backgrounds](https://www.svgbackgrounds.com/): Free SVG backgrounds and patterns.
 
 ## Editing Tools
 
@@ -74,3 +76,5 @@ I have collected free resources that I use for designs. These are different webs
 ## Course and Tutorials
 
 - [Design Code](https://designcode.io/): Premium video course and free writtent tutorials.
+
+https://app.uxcel.com/learn

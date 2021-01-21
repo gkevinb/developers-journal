@@ -21,3 +21,5 @@ Since 2015, each year a new version of ECMAScript is released that improves the 
 [7 ES6 features](https://medium.com/the-codehub/7-javascript-es6-features-you-must-know-in-2020-fe126cd65f7b)
 
 [List of features for ES6](http://es6-features.org/)
+
+https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/

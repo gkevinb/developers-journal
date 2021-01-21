@@ -98,6 +98,12 @@ draft = true
 - Dead code elimination
 - Hedonic treadmill
 - Kleene star and Kleene plus (Regular Expressions)
+- Hashing and Salting
+- Rainbow table
+- TLS/SSL
+- [Domain sharding](https://medium.com/@jperasmus11/domain-sharding-on-the-modern-web-dc97df4f6a90)
+- A/B testing
+- Memoization
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
