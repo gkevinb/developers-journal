@@ -393,3 +393,10 @@ $circle_radius: 22px;
 ## Checkbox with Fontawesome
 
 https://codingwithspike.wordpress.com/2014/11/16/fancy-css-checkboxes-with-fontawesome/
+
+
+## Mobile navmenu overlay
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay
+
+https://codepen.io/PaulVanO/pen/XJYGNQ

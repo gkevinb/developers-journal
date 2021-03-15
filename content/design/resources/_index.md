@@ -27,6 +27,7 @@ I have collected free resources that I use for designs. These are different webs
 - [SVG Porn](https://svgporn.com/): Free brand logos in SVG format, no attribution required.
 - [Streamline Icons](https://www.streamlineicons.com/?utm_source=twitter&utm_medium=cpc&utm_campaign=Streamline%20Icons): Mostly free icons but require attribution. 
 - [Shape SO](https://shape.so/): Free and Premium library of icons and illustration.
+- [SVG Repo](https://www.svgrepo.com/): Free SVG icons, some requore attribution.
 
 ## UI Tools and Libraries
 
@@ -39,6 +40,7 @@ I have collected free resources that I use for designs. These are different webs
 - [Picular](https://picular.co/): Free color generator for inspiration.
 - [Brand Colors](http://brandcolors.net): Search for colors based on famous brands.
 - [UI Gradients](https://uigradients.com/): Free gradients for inspiration.
+- [Coolors](https://coolors.co/): Free color template generator.
 
 ## Shape Generator
 

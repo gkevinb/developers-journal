@@ -26,6 +26,24 @@ ls
 ls -al
 ```
 
+#### Disk usage (du)
+
+Show the memory used for disk
+
+```
+du
+```
+
+**Flags**
+- `-s` : total only
+- `-h` : human readible
+
+https://linuxize.com/post/how-get-size-of-file-directory-linux/
+
+**Usage**
+```bash
+du -sh
+```
 
 
 
