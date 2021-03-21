@@ -42,6 +42,8 @@ draft = true
 
 ---
 
+**Clear terminal (works also with interactive shells)** : `CTRL + L`
+
 **Open auto suggestion search** : `CTRL + R`
 
 
