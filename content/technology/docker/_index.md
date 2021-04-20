@@ -140,5 +140,8 @@ services:
 ```
 
 
+### ADD vs COPY
 
+https://phoenixnap.com/kb/docker-add-vs-copy
 
+Main difference between the two is `ADD` tries to install zipped or package files, while `COPY` just copies it right over into the container.
