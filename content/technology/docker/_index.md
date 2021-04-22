@@ -145,3 +145,16 @@ services:
 https://phoenixnap.com/kb/docker-add-vs-copy
 
 Main difference between the two is `ADD` tries to install zipped or package files, while `COPY` just copies it right over into the container.
+
+
+### Dockerize Python
+
+https://runnable.com/docker/python/dockerize-your-python-application
+
+### ENV Variables
+
+https://vsupalov.com/docker-arg-env-variable-guide/
+
+### Best Practices
+
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/

@@ -51,3 +51,12 @@ Return the `__dict__` attribute of an `Object`. Useful for turning the attribute
 Response("{ 'a': 'abc' }", status=200, mimetype='application/json')
 jsonify()
 ```
+
+
+## Python Imports
+
+https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html
+
+## Environmental variables
+
+https://www.twilio.com/blog/environment-variables-python
