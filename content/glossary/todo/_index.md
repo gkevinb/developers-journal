@@ -104,6 +104,15 @@ draft = true
 - [Domain sharding](https://medium.com/@jperasmus11/domain-sharding-on-the-modern-web-dc97df4f6a90)
 - A/B testing
 - Memoization
+- Moving Sofa Problem
+- List of unsolved math problems
+- Arithmetica book
+- Greek mathematics
+- Diophantus
+- Conjecture
+- Monte Carlo Simulation
+- Dining philosophers problem
+
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
