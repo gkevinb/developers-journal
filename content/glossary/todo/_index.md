@@ -112,6 +112,12 @@ draft = true
 - Conjecture
 - Monte Carlo Simulation
 - Dining philosophers problem
+- Markov chain
+- Christofides algorithm
+- Handshaking lemma
+- Hungarian algorithm
+- Combinatorial optimization
+- Kruskal's algorithm
 
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
