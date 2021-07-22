@@ -118,7 +118,10 @@ draft = true
 - Hungarian algorithm
 - Combinatorial optimization
 - Kruskal's algorithm
-
+- [Project management triangle](https://en.wikipedia.org/wiki/Project_management_triangle)
+- [Loop unrolling](https://en.wikipedia.org/wiki/Loop_unrolling)
+- [Duff's device](https://en.wikipedia.org/wiki/Duff%27s_device)
+- [De Morgan's laws](https://brilliant.org/wiki/de-morgans-laws/)
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
