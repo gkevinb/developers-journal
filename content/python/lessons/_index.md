@@ -53,6 +53,13 @@ jsonify()
 ```
 
 
+## Clean code and coding standards exammples
+
+https://docs.python.org/3/library/__main__.html
+
+https://llvm.org/docs/CodingStandards.html#use-early-exits-and-continue-to-simplify-code
+
+
 ## Python Imports
 
 https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html

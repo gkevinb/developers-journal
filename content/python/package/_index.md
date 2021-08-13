@@ -7,3 +7,8 @@ draft = true
 
 
 https://packaging.python.org/guides/using-manifest-in/
+
+
+https://python-jsonschema.readthedocs.io/en/stable/_modules/jsonschema/_types/?highlight=boolean#
+
+https://marshmallow.readthedocs.io/en/stable/quickstart.html#deserializing-objects-loading
