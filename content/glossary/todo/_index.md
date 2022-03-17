@@ -122,6 +122,13 @@ draft = true
 - [Loop unrolling](https://en.wikipedia.org/wiki/Loop_unrolling)
 - [Duff's device](https://en.wikipedia.org/wiki/Duff%27s_device)
 - [De Morgan's laws](https://brilliant.org/wiki/de-morgans-laws/)
+- [Cache Pollution](https://en.wikipedia.org/wiki/Cache_pollution)
+- [Cache Poisoning](https://en.wikipedia.org/wiki/Cache_poisoning)
+- [DNS Hijacking](https://en.wikipedia.org/wiki/DNS_hijacking)
+- [Arbitraty Code Execution](https://en.wikipedia.org/wiki/Arbitrary_code_execution)
+- [Metasyntactic Variable](https://en.wikipedia.org/wiki/Metasyntactic_variable)
+
+
 
 Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 —Martin Fowler
