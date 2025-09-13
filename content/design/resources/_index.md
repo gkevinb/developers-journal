@@ -35,6 +35,10 @@ I have collected free resources that I use for designs. These are different webs
 - [Story Book](https://storybook.js.org/): Open source tool for UI components.
 - [Charka UI](https://chakra-ui.com/): Library of modular React components.
 
+##  User Experience (UX)
+
+- [User Experience (UX) Design Glossary](https://www.qualtrics.com/blog/ux-design-glossary/): Glossary to better understand UX concepts. (Special thanks to Harper for sharing this resource with me.)
+
 ## Colors
 
 - [Picular](https://picular.co/): Free color generator for inspiration.

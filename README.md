@@ -4,6 +4,17 @@ My journal about my software development experiences. A collection of notes, tut
 
 https://gaborkevinbarta.com/developers-journal
 
+
+# Hugo version
+
+This project is using an older version of hugo (v0.60.1). Use this in order to build the project:
+
+On my Mac downloaded old build of hugo, added to `usr/local/bin` and use it as shown below:
+
+```
+hugo_0_60_1 version
+```
+
 ## Project Structure
 
 - `archetypes`: Templates for when new sections are created
