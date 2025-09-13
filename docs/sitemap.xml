@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/database/</loc>
+    <lastmod>2020-06-06T20:08:29+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gaborkevinbarta.com/developers-journal/styling/flexbox/</loc>
     <lastmod>2020-06-06T20:00:24+02:00</lastmod>
   </url>
@@ -58,8 +63,18 @@
   </url>
   
   <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/cpp/</loc>
+    <lastmod>2021-05-20T23:12:53+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gaborkevinbarta.com/developers-journal/glossary/principles/</loc>
     <lastmod>2020-06-07T18:39:13+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/database/sql/</loc>
+    <lastmod>2020-06-06T20:08:43+02:00</lastmod>
   </url>
   
   <url>
@@ -98,6 +113,41 @@
   </url>
   
   <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/database/mongodb/</loc>
+    <lastmod>2021-07-22T15:26:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/python/package/</loc>
+    <lastmod>2021-05-20T23:15:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/cpp/cpp/</loc>
+    <lastmod>2021-05-20T23:13:13+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/python/django/</loc>
+    <lastmod>2021-04-30T11:24:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/javascript/state-management/</loc>
+    <lastmod>2021-01-21T21:30:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/javascript/react/</loc>
+    <lastmod>2021-01-16T22:54:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/scripting/hacking/</loc>
+    <lastmod>2021-01-04T17:55:21+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gaborkevinbarta.com/developers-journal/design/resources/</loc>
     <lastmod>2020-12-18T18:54:09+01:00</lastmod>
   </url>
@@ -110,6 +160,16 @@
   <url>
     <loc>https://gaborkevinbarta.com/developers-journal/glossary/interesting/</loc>
     <lastmod>2020-06-07T19:25:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/miscellaneous/</loc>
+    <lastmod>2020-06-07T16:48:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/scripting/bandit/</loc>
+    <lastmod>2020-06-06T19:15:01+02:00</lastmod>
   </url>
   
   <url>
@@ -138,13 +198,57 @@
   </url>
   
   <url>
-    <loc>https://gaborkevinbarta.com/developers-journal/</loc>
-    <lastmod>2021-01-04T13:27:33+01:00</lastmod>
+    <loc>https://gaborkevinbarta.com/developers-journal/glossary/todo/</loc>
+    <lastmod>2020-06-07T16:38:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/technology/php/</loc>
+    <lastmod>2020-06-06T20:11:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/cs/</loc>
+    <lastmod>2020-06-06T19:54:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/miscellaneous/sources/</loc>
+    <lastmod>2020-06-07T16:50:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/miscellaneous/shortcuts/</loc>
+    <lastmod>2020-06-07T16:50:27+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/miscellaneous/markdown/</loc>
+    <lastmod>2020-06-07T16:50:11+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/miscellaneous/lessons/</loc>
+    <lastmod>2020-06-07T16:50:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/miscellaneous/index/</loc>
+    <lastmod>2020-06-07T16:49:54+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/cs/csharp/</loc>
+    <lastmod>2020-06-06T19:56:06+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://gaborkevinbarta.com/developers-journal/technology/git/glo/</loc>
     <lastmod>2020-06-06T19:11:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gaborkevinbarta.com/developers-journal/</loc>
   </url>
   
   <url>

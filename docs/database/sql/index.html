@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.72.0" />
+    <meta name="generator" content="Hugo 0.60.1" />
     <meta name="description" content="">
 
 
@@ -12,21 +12,21 @@
     <title>SQL :: A Developer&#39;s Journal</title>
 
     
-    <link href="/developers-journal/css/nucleus.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/fontawesome-all.min.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/hybrid.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/featherlight.min.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/perfect-scrollbar.min.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/auto-complete.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/theme.css?1596297449" rel="stylesheet">
-    <link href="/developers-journal/css/hugo-theme.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/nucleus.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1757762948" rel="stylesheet">
     
-    <link href="/developers-journal/css/theme-green.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/theme-dark.css?1757762948" rel="stylesheet">
     
-    <link href="/developers-journal/css/custom.css?1596297449" rel="stylesheet">
+    <link href="/developers-journal/css/custom.css?1757762948" rel="stylesheet">
 
-    <script src="/developers-journal/js/jquery-3.3.1.min.js?1596297449"></script>
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1757762948"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -43,6 +43,11 @@
 
   gtag('config', 'UA-141910422-1');
 </script>
+
+
+<link rel="stylesheet" href="/developers-journal/css/atom-one-dark.css">
+<script src="/developers-journal/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body class="" data-url="/developers-journal/database/sql/">
     <nav id="sidebar" class="">
@@ -65,14 +70,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1596297449"></script>
-<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1596297449"></script>
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1757762948"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1757762948"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
     
 </script>
-<script type="text/javascript" src="/developers-journal/js/search.js?1596297449"></script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1757762948"></script>
 
     
   </div>
@@ -90,13 +95,13 @@
  
   
     
-    <li data-nav-id="/developers-journal/almanac/" title="Almanac" class="dd-item 
+    <li data-nav-id="/developers-journal/glossary/" title="Glossary" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/almanac/">
-          Almanac
+      <a href="/developers-journal/glossary/">
+          Glossary
           
       </a>
       
@@ -119,12 +124,12 @@
  
   
     
-    <li data-nav-id="/developers-journal/almanac/principles/" title="Software Principles" class="dd-item 
+    <li data-nav-id="/developers-journal/glossary/principles/" title="Software Principles" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/almanac/principles/">
+      <a href="/developers-journal/glossary/principles/">
           Software Principles
           
       </a>
@@ -145,12 +150,12 @@
  
   
     
-    <li data-nav-id="/developers-journal/almanac/interesting/" title="Interesting" class="dd-item 
+    <li data-nav-id="/developers-journal/glossary/interesting/" title="Interesting" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/almanac/interesting/">
+      <a href="/developers-journal/glossary/interesting/">
           Interesting
           
       </a>
@@ -171,12 +176,12 @@
  
   
     
-    <li data-nav-id="/developers-journal/almanac/todo/" title="Todo" class="dd-item 
+    <li data-nav-id="/developers-journal/glossary/todo/" title="Todo" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/almanac/todo/">
+      <a href="/developers-journal/glossary/todo/">
           Todo
           
       </a>
@@ -312,6 +317,32 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/mongodb/" title="Mongo DB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/mongodb/">
+          Mongo DB
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -328,13 +359,13 @@
  
   
     
-    <li data-nav-id="/developers-journal/js-frameworks/" title="JS Frameworks" class="dd-item 
+    <li data-nav-id="/developers-journal/javascript/" title="Javascript" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/js-frameworks/">
-          JS Frameworks
+      <a href="/developers-journal/javascript/">
+          Javascript
           
       </a>
       
@@ -357,12 +388,64 @@
  
   
     
-    <li data-nav-id="/developers-journal/js-frameworks/js/" title="Javascript" class="dd-item 
+    <li data-nav-id="/developers-journal/javascript/state-management/" title="State Management" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/js-frameworks/js/">
+      <a href="/developers-journal/javascript/state-management/">
+          State Management
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/react/" title="React" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/react/">
+          React
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/js/" title="Javascript" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/js/">
           Javascript
           
       </a>
@@ -383,12 +466,38 @@
  
   
     
-    <li data-nav-id="/developers-journal/js-frameworks/vue/" title="Vue" class="dd-item 
+    <li data-nav-id="/developers-journal/javascript/es6&#43;/" title="ES6&#43;" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/js-frameworks/vue/">
+      <a href="/developers-journal/javascript/es6&#43;/">
+          ES6&#43;
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/vue/" title="Vue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/vue/">
           Vue
           
       </a>
@@ -409,12 +518,12 @@
  
   
     
-    <li data-nav-id="/developers-journal/js-frameworks/pug/" title="Pug" class="dd-item 
+    <li data-nav-id="/developers-journal/javascript/pug/" title="Pug" class="dd-item 
         
         
         
         ">
-      <a href="/developers-journal/js-frameworks/pug/">
+      <a href="/developers-journal/javascript/pug/">
           Pug
           
       </a>
@@ -478,6 +587,120 @@
         ">
       <a href="/developers-journal/scripting/bash/">
           Bash
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/hacking/" title="Hacking" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/hacking/">
+          Hacking
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/bandit/" title="Bandit" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/bandit/">
+          Bandit
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cpp/" title="C&#43;&#43;" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cpp/">
+          <b>X. </b>C&#43;&#43;
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cpp/cpp/" title="Cpp" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cpp/cpp/">
+          Cpp
           
       </a>
       
@@ -725,6 +948,58 @@
  
   
     
+    <li data-nav-id="/developers-journal/python/package/" title="Package" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/package/">
+          Package
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/django/" title="Django" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/django/">
+          Django
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
     <li data-nav-id="/developers-journal/python/venv/" title="Virtual Environment" class="dd-item 
         
         
@@ -894,6 +1169,322 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/php/" title="PHP" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/php/">
+          PHP
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/design/" title="Design" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/design/">
+          Design
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/design/resources/" title="Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/design/resources/">
+          Resources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/" title="Miscellaneous" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/">
+          Miscellaneous
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/sources/" title="Sources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/sources/">
+          Sources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/shortcuts/" title="Keyboard Shortcuts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/shortcuts/">
+          Keyboard Shortcuts
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/markdown/" title="Markdown" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/markdown/">
+          Markdown
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/lessons/" title="Lessons" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/lessons/">
+          Lessons
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/index/" title="Index" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/index/">
+          Index
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cs/" title="C#" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cs/">
+          C#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cs/csharp/" title="C#" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cs/csharp/">
+          C#
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -916,6 +1507,10 @@
               </li>
           
               <li> 
+                  <a class="padding" href="https://www.instagram.com/kev.in.tech/"><i class='fab fa-instagram'></i> Instagram Page</a>
+              </li>
+          
+              <li> 
                   <a class="padding" href="https://github.com/gkevinb/developers-journal"><i class='fab fa-github'></i> Github Repository</a>
               </li>
           
@@ -929,7 +1524,11 @@
 
     
     <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+      
+
+
+
+<p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
 
     </section>
   </div>
@@ -984,6 +1583,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#resources">Resources</a></li>
     <li><a href="#queries">Queries</a>
       <ul>
         <li><a href="#insert-into-table-dynamically-using-a-loop">Insert into table dynamically using a loop</a></li>
@@ -1014,25 +1614,27 @@
 
 
 
-	<h2 id="queries">Queries</h2>
+	<h2 id="resources">Resources</h2>
+<p><a href="https://sqlbolt.com/">https://sqlbolt.com/</a></p>
+<h2 id="queries">Queries</h2>
 <h3 id="insert-into-table-dynamically-using-a-loop">Insert into table dynamically using a loop</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">DELIMITER</span> <span style="color:#960050;background-color:#1e0010">$$</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">DELIMITER</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#960050;background-color:#1e0010">$</span>
 
 <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">PROCEDURE</span> genRecords()
 <span style="color:#66d9ef">BEGIN</span>
 	<span style="color:#66d9ef">DECLARE</span> x INT <span style="color:#66d9ef">DEFAULT</span> <span style="color:#ae81ff">1</span>;
     WHILE x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span> <span style="color:#66d9ef">DO</span>
-		<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> people (username, age) <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;bob&#39;</span>, <span style="color:#ae81ff">34</span>)
+		<span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> people (username, age) <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">bob</span><span style="color:#e6db74">&#39;</span>, <span style="color:#ae81ff">34</span>)
 		<span style="color:#66d9ef">SET</span> x <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
 	<span style="color:#66d9ef">END</span> WHILE;
 <span style="color:#66d9ef">END</span>;
-<span style="color:#960050;background-color:#1e0010">$$</span>
+<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#960050;background-color:#1e0010">$</span>
 
 <span style="color:#66d9ef">DELIMITER</span> ;
 
 <span style="color:#66d9ef">call</span> genRecords();
 
-<span style="color:#75715e">/* Delete procedure before modifiying it and creating a new one */</span>
+<span style="color:#75715e">/*</span><span style="color:#75715e"> Delete procedure before modifiying it and creating a new one </span><span style="color:#75715e">*/</span>
 <span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">PROCEDURE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">EXISTS</span> genRecords;
 </code></pre></div>
 
@@ -1205,9 +1807,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1215,53 +1814,6 @@
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1308,23 +1860,21 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
                     
                         
             
@@ -1490,6 +2040,220 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1523,6 +2287,188 @@
                     
             
         
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
                     
                         
             
@@ -1558,23 +2504,24 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/developers-journal/js/clipboard.min.js?1596297449"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.min.js?1596297449"></script>
-    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1596297449"></script>
-    <script src="/developers-journal/js/jquery.sticky.js?1596297449"></script>
-    <script src="/developers-journal/js/featherlight.min.js?1596297449"></script>
-    <script src="/developers-journal/js/highlight.pack.js?1596297449"></script>
+    <script src="/developers-journal/js/clipboard.min.js?1757762948"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1757762948"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1757762948"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1757762948"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1757762948"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1757762948"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1596297449"></script>
-    <script src="/developers-journal/js/learn.js?1596297449"></script>
-    <script src="/developers-journal/js/hugo-learn.js?1596297449"></script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1757762948"></script>
+    <script src="/developers-journal/js/learn.js?1757762948"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1757762948"></script>
 
-    <link href="/developers-journal/mermaid/mermaid.css?1596297449" rel="stylesheet" />
-    <script src="/developers-journal/mermaid/mermaid.js?1596297449"></script>
+    <link href="/developers-journal/mermaid/mermaid.css?1757762948" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1757762948"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
     
+
 
   </body>
 </html>

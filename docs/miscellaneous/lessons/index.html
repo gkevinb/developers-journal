@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.60.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/developers-journal/images/favicon.png" type="image/png">
+
+    <title>Lessons :: A Developer&#39;s Journal</title>
+
+    
+    <link href="/developers-journal/css/nucleus.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/fontawesome-all.min.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/hybrid.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/featherlight.min.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/perfect-scrollbar.min.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/auto-complete.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/atom-one-dark-reasonable.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/theme.css?1757762948" rel="stylesheet">
+    <link href="/developers-journal/css/hugo-theme.css?1757762948" rel="stylesheet">
+    
+    <link href="/developers-journal/css/theme-dark.css?1757762948" rel="stylesheet">
+    
+    <link href="/developers-journal/css/custom.css?1757762948" rel="stylesheet">
+
+    <script src="/developers-journal/js/jquery-3.3.1.min.js?1757762948"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141910422-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141910422-1');
+</script>
+
+
+<link rel="stylesheet" href="/developers-journal/css/atom-one-dark.css">
+<script src="/developers-journal/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body class="" data-url="/developers-journal/miscellaneous/lessons/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/developers-journal/">
+    <img src="/developers-journal/images/custom_book_logo.svg" width="160px">
+    <div id="website-title">
+        <a href="/developers-journal/">A Developer's Journal</a>
+    </div>
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/developers-journal/js/lunr.min.js?1757762948"></script>
+<script type="text/javascript" src="/developers-journal/js/auto-complete.js?1757762948"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/gaborkevinbarta.com\/developers-journal\/";
+    
+</script>
+<script type="text/javascript" src="/developers-journal/js/search.js?1757762948"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/glossary/" title="Glossary" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/glossary/">
+          Glossary
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/glossary/principles/" title="Software Principles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/glossary/principles/">
+          Software Principles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/glossary/interesting/" title="Interesting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/glossary/interesting/">
+          Interesting
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/glossary/todo/" title="Todo" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/glossary/todo/">
+          Todo
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/automation/" title="Automation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/automation/">
+          Automation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/automation/gulp/" title="Gulp" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/automation/gulp/">
+          Gulp
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/" title="Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/">
+          Database
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/sql/" title="SQL" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/sql/">
+          SQL
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/database/mongodb/" title="Mongo DB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/database/mongodb/">
+          Mongo DB
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/" title="Javascript" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/">
+          Javascript
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/state-management/" title="State Management" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/state-management/">
+          State Management
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/react/" title="React" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/react/">
+          React
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/js/" title="Javascript" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/js/">
+          Javascript
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/es6&#43;/" title="ES6&#43;" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/es6&#43;/">
+          ES6&#43;
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/vue/" title="Vue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/vue/">
+          Vue
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/javascript/pug/" title="Pug" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/javascript/pug/">
+          Pug
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/" title="Scripting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/">
+          Scripting
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/bash/" title="Bash" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/bash/">
+          Bash
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/hacking/" title="Hacking" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/hacking/">
+          Hacking
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/scripting/bandit/" title="Bandit" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/scripting/bandit/">
+          Bandit
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cpp/" title="C&#43;&#43;" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cpp/">
+          <b>X. </b>C&#43;&#43;
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cpp/cpp/" title="Cpp" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cpp/cpp/">
+          Cpp
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/" title="Styling" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/">
+          Styling
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/css/" title="CSS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/css/">
+          CSS
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/scss/" title="SCSS" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/scss/">
+          SCSS
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/flexbox/" title="Flexbox" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/flexbox/">
+          Flexbox
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/styling/bootstrap/" title="Bootstrap" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/styling/bootstrap/">
+          Bootstrap
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/">
+          Python <i class='fab fa-python'></i> 
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/lessons/" title="Lessons" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/lessons/">
+          Lessons
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/testing/" title="Testing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/testing/">
+          Testing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/package/" title="Package" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/package/">
+          Package
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/django/" title="Django" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/django/">
+          Django
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/python/venv/" title="Virtual Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/python/venv/">
+          Virtual Environment
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/" title="Technology" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/">
+          Technology
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/docker/" title="Docker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/docker/">
+          Docker
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/git/" title="Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/git/">
+          Git
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/git/glo/" title="Glo Boards" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/git/glo/">
+          Glo Boards
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/nginx/" title="Nginx" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/nginx/">
+          Nginx
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/technology/php/" title="PHP" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/technology/php/">
+          PHP
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/design/" title="Design" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/design/">
+          Design
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/design/resources/" title="Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/design/resources/">
+          Resources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/" title="Miscellaneous" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/">
+          Miscellaneous
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/sources/" title="Sources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/sources/">
+          Sources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/shortcuts/" title="Keyboard Shortcuts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/shortcuts/">
+          Keyboard Shortcuts
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/markdown/" title="Markdown" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/markdown/">
+          Markdown
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/lessons/" title="Lessons" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/developers-journal/miscellaneous/lessons/">
+          Lessons
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/miscellaneous/index/" title="Index" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/miscellaneous/index/">
+          Index
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cs/" title="C#" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cs/">
+          C#
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-journal/cs/csharp/" title="C#" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-journal/cs/csharp/">
+          C#
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://gaborkevinbarta.com/"><i class='fas fa-globe'></i> Portfolio Website</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.instagram.com/kev.in.tech/"><i class='fab fa-instagram'></i> Instagram Page</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/gkevinb/developers-journal"><i class='fab fa-github'></i> Github Repository</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://themes.gohugo.io/theme/hugo-theme-learn/en"><i class='fas fa-book'></i> Hugo Learn Theme</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      
+
+
+
+<p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/developers-journal/'>A Developer's Journal</a> > <a href='/developers-journal/miscellaneous/'>Miscellaneous</a> > Lessons
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Lessons
+            </h1>
+          
+
+        
+
+
+
+	
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/developers-journal/js/clipboard.min.js?1757762948"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.min.js?1757762948"></script>
+    <script src="/developers-journal/js/perfect-scrollbar.jquery.min.js?1757762948"></script>
+    <script src="/developers-journal/js/jquery.sticky.js?1757762948"></script>
+    <script src="/developers-journal/js/featherlight.min.js?1757762948"></script>
+    <script src="/developers-journal/js/highlight.pack.js?1757762948"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/developers-journal/js/modernizr.custom-3.6.0.js?1757762948"></script>
+    <script src="/developers-journal/js/learn.js?1757762948"></script>
+    <script src="/developers-journal/js/hugo-learn.js?1757762948"></script>
+
+    <link href="/developers-journal/mermaid/mermaid.css?1757762948" rel="stylesheet" />
+    <script src="/developers-journal/mermaid/mermaid.js?1757762948"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+
+  </body>
+</html>
